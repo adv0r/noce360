@@ -1,0 +1,121 @@
+﻿<krpano >
+	
+	<!-- the skin -->
+	<include url="../../assets/krpano/skin/noceskin_advanced.xml" />
+
+	<!-- audioplayer -->
+
+	<plugin name="soundinterface"
+        url.html5="../../assets/krpano/plugins/soundinterface.js"
+        preload="true"
+        rootpath=""
+        volume="1.0"
+        mute="false"
+        />
+
+<scene name="scene_gigapixel" title="" onstart="playsound(bgsnd, '../../assets/sounds/river.mp3', 1);" thumburl="thumb.png" lat="" lng="" heading="Gigapixel Presanella">
+
+	<!-- view settings -->
+	<view hlookat="280" vlookat="20" maxpixelzoom="3.0" fovmax="130" limitview="auto" fov="110" />
+	
+	<!-- default autorotate settings (disabled by default) -->
+	<autorotate enabled="true" waittime="1.0" accel="2.0" speed="8.0" horizon="0.0" tofov="90.0" />
+      
+	<preview url="gigaPresenellaPATCH.tiles/preview.jpg" />
+
+
+	<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+		<level tiledimagewidth="7808" tiledimageheight="7808">
+			<cube url="gigaPresenellaPATCH.tiles/%s/l4/%v/l4_%s_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="3840" tiledimageheight="3840">
+			<cube url="gigaPresenellaPATCH.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="2048" tiledimageheight="2048">
+			<cube url="gigaPresenellaPATCH.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="1024" tiledimageheight="1024">
+			<cube url="gigaPresenellaPATCH.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+		</level>
+	</image>
+
+	<!-- A hotelement -->
+	<hotspot name="droneVideoHotspot"
+	         type="image"
+	         url="../../assets/images/element.png"
+	         keep="false"
+	         visible="true"
+	         enabled="true"
+	         handcursor="true"
+	         maskchildren="false"
+	         ath="-50.0" atv="-30.0"
+	         edge="center"
+	         zoom="false"
+	         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+	         width="" height=""
+	         scale="0.5"
+	         rotate="0.0"
+	         alpha="1.0"
+	         onclick="playDrone"
+	         borderwidth="2"
+	         bordercolor="#0xAAAAAA"
+	         />
+
+	       <layer name="gotodrone"
+	       type="text"
+	       align="lefttop" x="0" y="-25"
+	       parent="hotspot[droneVideoHotspot]"
+	       html="Fai un giro sul [b]drone[/b]"
+	       css="font-family:Arial; font-size:16px; color:#000000;"
+	       vcenter="false"
+	       padding="2"
+	       wordwrap="true"
+	       bg="true"
+	       bgcolor="0xFFFFFF"
+	       bgalpha="0.5"
+	       bgborder="0"
+	       bgroundedge="0"
+	       mergedalpha="true"
+	       interactivecontent="false"
+	       />
+	<!-- end hotelement  -->
+</scene>
+
+
+	<!-- Video drone  -->
+<scene name="scene_drone" title="Drone Ossana" onstart="stopallsounds();skin_view_littleplanet(); switch(autorotate.enabled);" thumburl="thumb_drone.png" lat="" lng="" heading="Drone Ossana">
+
+
+   	<plugin name="video"
+   	url.html5="../../assets/krpano/plugins/videoplayer.js"
+    videourl="../../assets/media/videos/drone-ossana.webm"
+    panovideo="true"
+    pausedonstart="false"
+    loop="true"
+    volume="1.0"
+    playbackrate="3"
+    onerror=""
+    />
+
+	<image hfov="360" vfov="180">
+	   <sphere url="plugin:video" />
+	</image>
+
+
+</scene>
+
+
+<!-- startup action - load the first scene -->
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+	</action>
+
+
+<action name="playDrone" >
+	loadscene("scene_drone", null, MERGE);
+</action>
+
+
+</krpano>
