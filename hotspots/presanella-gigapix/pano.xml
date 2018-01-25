@@ -60,7 +60,23 @@
 		         bordercolor="#0xAAAAAA"
 		         />
 
-		     
+		       <layer name="gotodrone"
+		       type="text"
+		       align="lefttop" x="0" y="-25"
+		       parent="hotspot[droneVideoHotspot]"
+		       html="Fai un giro sul [b]drone[/b]"
+		       css="font-family:Arial; font-size:16px; color:#000000;"
+		       vcenter="false"
+		       padding="2"
+		       wordwrap="true"
+		       bg="true"
+		       bgcolor="0xFFFFFF"
+		       bgalpha="0.5"
+		       bgborder="0"
+		       bgroundedge="0"
+		       mergedalpha="true"
+		       interactivecontent="true"
+		       />
 		<!-- end hotelement  -->
 </scene>
 
