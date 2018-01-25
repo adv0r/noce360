@@ -5,13 +5,11 @@
     <include url="../../assets/krpano/skin/noceskin_advanced.xml" />
 	
 	
-
 	<!-- Scene 1 -->
 	<scene name="scene_photo1" title="Meledrio 1" onstart="" thumburl="thumb1.png" lat="" lng="" heading="Meledrio 1" distorted="true">
 
 		<!-- view settings -->
 		<view hlookat="30" vlookat="0" maxpixelzoom="1.0" fovmax="130" limitview="range" fov="90"/>
-
 
 		<preview url="photo1.tiles/preview.jpg" />
 
@@ -182,8 +180,7 @@
 	<scene name="scene_giga" title="Gigapixel Cascata" onstart="" thumburl="thumb4.png" lat="" lng="" heading="Gigapixel cascata">
 
 		<view hlookat="0" vlookat="0" maxpixelzoom="3.0" fovmax="130" limitview="range" fov="110" />
-		
-
+	
 		<preview url="GigaMeledrioPATCH.tiles/preview.jpg" />
 
 		<image>

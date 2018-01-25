@@ -4,7 +4,6 @@
 	<include url="../../assets/krpano/skin/noceskin_advanced.xml" />
 
 	<!-- audioplayer -->
-
 	<plugin name="soundinterface"
         url.html5="../../assets/krpano/plugins/soundinterface.js"
         preload="true"
