@@ -62,24 +62,29 @@
 	         bordercolor="#0xAAAAAA"
 	         />
 
-	         <layer name="gotoscene2"
-	       type="text"
-	       align="lefttop" x="0" y="-25"
-	       parent="hotspot[gotoscene2]"
-	       html="Vai a un altro ponte"
-	       css="font-family:Arial; font-size:16px; color:#000000;"
-	       vcenter="false"
-	       padding="2"
-	       distorted="true"
-	       wordwrap="true"
-	       bg="true"
-	       bgcolor="0xFFFFFF"
-	       bgalpha="0.5"
-	       bgborder="0"
-	       bgroundedge="0"
-	       mergedalpha="true"
-	       interactivecontent="false"
-	       />
+ <!-- LABEL TESTUALE  -->
+		       <hotspot name="gotoscene2text"
+		         type="text"
+		         ath="-150.0" atv="0.0"
+             	 edge="center" distorted="true" renderer="webgl"
+		         oy="30"
+		         html="Esplora un altro ponte"
+		         css="font-family:Arial; font-size:13px; color:#000000;"
+		         vcenter="false"
+		         padding="2"
+		         wordwrap="true"
+		         bg="true"
+		         bgcolor="0xFFFFFF"
+		         bgalpha="1.0"
+		         bgborder="0"
+		         bgroundedge="0"
+		         bgshadow=""
+		         txtshadow=""
+		         mergedalpha="true"
+		         oversampling="1.0"
+		         mipmapping="false"
+		         onautosized=""
+		         />
 
 	<!-- end hotelement  -->
 
@@ -93,23 +98,32 @@
              onclick="togglesch"
              />
              
-           <layer name="mytext"
-	       type="text"
-	       align="lefttop" x="0" y="-25"
-	       parent="hotspot[infospot1]"
-	       html="Il Ponte Magico"
-	       css="font-family:Arial; font-size:16px; color:#000000;"
-	       vcenter="false"
-	       padding="2"
-	       wordwrap="true"
-	       bg="true"
-	       bgcolor="0xFFFFFF"
-	       bgalpha="0.5"
-	       bgborder="0"
-	       bgroundedge="0"
-	       mergedalpha="true"
-	       interactivecontent="false"
-	       />
+
+             <!-- LABEL TESTUALE  -->
+		       <hotspot name="mytext"
+		         type="text"
+		         ath="60"
+             	 atv="-4" 
+             	 edge="center" distorted="true" renderer="webgl"
+		         oy="30"
+		         html="Il Ponte Magico"
+		         css="font-family:Arial; font-size:13px; color:#000000;"
+		         vcenter="false"
+		         padding="2"
+		         wordwrap="true"
+		         bg="true"
+		         bgcolor="0xFFFFFF"
+		         bgalpha="1.0"
+		         bgborder="0"
+		         bgroundedge="0"
+		         bgshadow=""
+		         txtshadow=""
+		         mergedalpha="true"
+		         oversampling="1.0"
+		         mipmapping="false"
+		         onautosized=""
+		         />
+
 
 
 
@@ -154,23 +168,30 @@
 	         bordercolor="#0xAAAAAA"
 	         />
 
-	        <layer name="gotoscene1text"
-	       type="text"
-	       align="lefttop" x="0" y="-25"
-	       parent="hotspot[gotoscene1]"
-	       html="Torna al primo ponte"
-	       css="font-family:Arial; font-size:16px; color:#000000;"
-	       vcenter="false"
-	       padding="2"
-	       wordwrap="true"
-	       bg="true"
-	       bgcolor="0xFFFFFF"
-	       bgalpha="0.5"
-	       bgborder="0"
-	       bgroundedge="0"
-	       mergedalpha="true"
-	       interactivecontent="false"
-	       />
+       <!-- LABEL TESTUALE  -->
+		       <hotspot name="gotoscene1text"
+		         type="text"
+		         ath="10.0" atv="0.0"
+             	 edge="center" distorted="true" renderer="webgl"
+		         oy="30"
+		         html="Torna al primo ponte"
+		         css="font-family:Arial; font-size:13px; color:#000000;"
+		         vcenter="false"
+		         padding="2"
+		         wordwrap="true"
+		         bg="true"
+		         bgcolor="0xFFFFFF"
+		         bgalpha="1.0"
+		         bgborder="0"
+		         bgroundedge="0"
+		         bgshadow=""
+		         txtshadow=""
+		         mergedalpha="true"
+		         oversampling="1.0"
+		         mipmapping="false"
+		         onautosized=""
+		         />
+
 	<!-- end hotelement  -->
 	</scene>
 
