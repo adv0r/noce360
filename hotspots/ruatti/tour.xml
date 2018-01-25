@@ -2,6 +2,22 @@
 
     <include url="../../assets/krpano/skin/noceskin_advanced.xml" />
 
+    <!-- Gyroscope -->
+        <plugin name="gyro" devices="html5" keep="true"
+        url="../../assets/krpano/plugins/gyro2.js" 
+        enabled="true"
+        camroll="true"
+        friction="0.0"
+        touch_mode="full"
+        sensor_mode="1"
+        softstart="0.5"
+        autocalibration="false"
+        onavailable=""
+        onunavailable=""
+        onenable=""
+        ondisable=""
+        />
+        
 
 	<!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">

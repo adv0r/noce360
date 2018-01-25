@@ -4,6 +4,22 @@
 	<!-- the skin -->
     <include url="../../assets/krpano/skin/noceskin_advanced.xml" />
 	
+	<!-- Gyroscope -->
+        <plugin name="gyro" devices="html5" keep="true"
+        url="../../assets/krpano/plugins/gyro2.js" 
+        enabled="true"
+        camroll="true"
+        friction="0.0"
+        touch_mode="full"
+        sensor_mode="1"
+        softstart="0.5"
+        autocalibration="false"
+        onavailable=""
+        onunavailable=""
+        onenable=""
+        ondisable=""
+        />
+        
 	
 	<!-- Scene 1 -->
 	<scene name="scene_photo1" title="Meledrio 1" onstart="" thumburl="thumb1.png" lat="" lng="" heading="Meledrio 1" distorted="true">

@@ -12,7 +12,7 @@
         mute="false"
         />
 
-	<!-- audioplayer -->
+	<!-- Gyroscope -->
         <plugin name="gyro" devices="html5" keep="true"
         url="../../assets/krpano/plugins/gyro2.js" 
         enabled="true"
