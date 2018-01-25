@@ -105,8 +105,8 @@ var hotspots = {
 	    },
 	    {
 	      "name": "Isola del gal",
-	      "lat": 46.35332,
-	      "long": 10.92312,
+	      "lat": 46.353599, 
+	      "long": 10.923331,
 	      "href": "meledrio/",
 	      "type": "normal",
 	      "marker": "normal",
