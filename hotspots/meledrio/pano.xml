@@ -11,9 +11,19 @@
 
 		<!-- view settings -->
 		<view hlookat="30" vlookat="0" maxpixelzoom="1.0" fovmax="130" limitview="range" fov="90"/>
-		<image type="SPHERE" hfov="360" vfov="180" voffset="0">
-		    <sphere url="photo1.jpg" mapping="" mjpegstream="" />
+
+
+		<preview url="photo1.tiles/preview.jpg" />
+
+		<image type="CUBE" hfov="360" vfov="180" voffset="0" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048">
+				<cube url="photo1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="photo1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
 		</image>
+
 
 
 
