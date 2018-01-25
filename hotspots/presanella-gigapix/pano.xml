@@ -57,7 +57,7 @@
 		<!-- A hotelement -->
 		<hotspot name="droneVideoHotspot"
 		         type="image"
-		         url="../../assets/images/element.png"
+		         url="../../assets/images/drone-icon.png"
 		         keep="false"
 		         visible="true"
 		         enabled="true"
