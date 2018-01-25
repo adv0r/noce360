@@ -12,6 +12,22 @@
         mute="false"
         />
 
+	<!-- audioplayer -->
+        <plugin name="gyro" devices="html5" keep="true"
+        url="../../assets/krpano/plugins/gyro2.js" 
+        enabled="false"
+        camroll="true"
+        friction="0.0"
+        touch_mode="full"
+        sensor_mode="1"
+        softstart="0.5"
+        autocalibration="false"
+        onavailable=""
+        onunavailable=""
+        onenable=""
+        ondisable=""
+        />
+
 	<scene name="scene_gigapixel" title="" onstart="playsound(bgsnd, '../../assets/sounds/river.mp3', 1);" thumburl="thumb.png" lat="" lng="" heading="Gigapixel Presanella">
 
 		<!-- view settings -->
