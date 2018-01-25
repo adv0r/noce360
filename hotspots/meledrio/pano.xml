@@ -106,9 +106,17 @@
 	<scene name="scene_photo2" title="Meledrio 2" onstart="" thumburl="thumb2.png" lat="" lng="" heading="Meledrio 2">
 		<view hlookat="30" vlookat="0" maxpixelzoom="1.0" fovmax="130" limitview="range" fov="90"/>
 
-		<image type="SPHERE" hfov="360" vfov="180" voffset="0" prealign="">
-		    <sphere url="photo2.jpg" mapping="" mjpegstream="" />
-		</image>
+		
+	<preview url="photo2.tiles/preview.jpg" />
+
+	<image type="CUBE" multires="true" tilesize="512">
+		<level tiledimagewidth="2048" tiledimageheight="2048">
+			<cube url="photo2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="1024" tiledimageheight="1024">
+			<cube url="photo2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+		</level>
+	</image>
 
 			<!-- A hotelement -->
 	<hotspot name="gotoscene1"
@@ -157,8 +165,15 @@
 	<scene name="scene_photo3" title="Meledrio 3" onstart="" thumburl="thumb3.png" lat="" lng="" heading="Meledrio 3">
 
 		<view hlookat="30" vlookat="0" maxpixelzoom="1.0" fovmax="130" limitview="range" fov="90"/>
-		<image type="SPHERE" hfov="360" vfov="180" voffset="0" prealign="">
-		    <sphere url="photo3.jpg" mapping="" mjpegstream="" />
+		<preview url="photo3.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048">
+				<cube url="photo3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="photo3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
 		</image>
 	</scene>
 
