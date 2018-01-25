@@ -76,23 +76,28 @@
 		         bordercolor="#0xAAAAAA"
 		         />
 
-		       <layer name="gotodrone"
-		       type="text"
-		       align="lefttop" x="0" y="-25"
-		       parent="hotspot[droneVideoHotspot]"
-		       html="Fai un giro sul [b]drone[/b]"
-		       css="font-family:Arial; font-size:16px; color:#000000;"
-		       vcenter="false"
-		       padding="2"
-		       wordwrap="true"
-		       bg="true"
-		       bgcolor="0xFFFFFF"
-		       bgalpha="0.5"
-		       bgborder="0"
-		       bgroundedge="0"
-		       mergedalpha="true"
-		       interactivecontent="true"
-		       />
+		
+			       <hotspot name="gotodrone"
+			         type="text"
+			         ath="-50.0" atv="-30.0" edge="center" distorted="true" renderer="webgl"
+			         oy="30"
+			         html="Fai un giro sul [b]drone[/b]"
+			         css="font-family:Arial; font-size:13px; color:#000000; background-color:black;"
+			         vcenter="false"
+			         padding="2"
+			         wordwrap="true"
+			         bg="true"
+			         bgcolor="0xFFFFFF"
+			         bgalpha="1.0"
+			         bgborder="0"
+			         bgroundedge="0"
+			         bgshadow=""
+			         txtshadow=""
+			         mergedalpha="true"
+			         oversampling="1.0"
+			         mipmapping="false"
+			         onautosized=""
+			         />
 		<!-- end hotelement  -->
 </scene>
 

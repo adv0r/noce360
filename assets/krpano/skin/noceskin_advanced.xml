@@ -42,7 +42,7 @@
 	               controlbar_offset_closed="-40"
 	               controlbar_overlap.no-fractionalscaling="10"
 	               controlbar_overlap.fractionalscaling="0"
-	               design_skin_images="vtourskin.png"
+	               design_skin_images="noceskin.png"
 	               design_bgcolor="0x2D3E50"
 	               design_bgalpha="0.8"
 	               design_bgborder="0"

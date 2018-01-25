@@ -157,7 +157,10 @@ function loadMarkersFromDb(map) {
     //Create custom marker for POIs with 360 media
     var poiMarker = L.icon({
         iconUrl: 'assets/images/poi.png',
+        shadowUrl: 'assets/images/poi_shadow.png',
         iconSize: [30, 30],
+        shadowSize:   [30, 30], 
+        shadowAnchor: [2, 10],  
         iconAnchor: [15, 15],
         popupAnchor: [-3, -20]
     });
@@ -165,7 +168,10 @@ function loadMarkersFromDb(map) {
     //Create custom marker for POIs without 360 media
     var poiNoMediaMarker = L.icon({
         iconUrl: 'assets/images/poinomedia.png',
+        shadowUrl: 'assets/images/poi_shadow.png',
         iconSize: [30, 30],
+        shadowSize:   [30, 30], 
+        shadowAnchor: [2, 10],  
         iconAnchor: [15, 15],
         popupAnchor: [-3, -20]
     });
