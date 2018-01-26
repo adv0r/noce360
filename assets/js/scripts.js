@@ -89,6 +89,7 @@ function onMapClick(e) {
     //TODO reactivate after fixing issue #11
     console.log("Closing all popups..");
     nocemap.closePopup();
+    hideScheda();
     //nocemap.unbindPopup();
     //event.popup._source.unbindPopup();
 
@@ -104,7 +105,7 @@ function onMapClick(e) {
 function onMarkerClick(e) {
     console.log("You clicked the marker at " + e.latlng);
     console.log("Marker name : " + this.name);
-
+    hideScheda();
     var tempPopup = this.tempMarker.getPopup();
   
         if (tempPopup) {
@@ -134,8 +135,18 @@ function onMarkerClick(e) {
         	}
 
         }
-    
+}
 
+
+function onMarkerNoMediaClick(e) {
+    console.log("You clicked the marker no media at " + e.latlng);
+    console.log("Marker name : " + this.name);
+
+    nocemap.closePopup();
+
+    fillScheda(this.scheda.titolo,this.scheda.sottotitolo,this.scheda.contenuto);
+    if(!isSchedaVisible() && this.scheda.titolo != "") 
+        showScheda();
 }
 
 function onCircleClick(e) {
@@ -204,9 +215,44 @@ function loadMarkersFromDb(map) {
             icon: poiNoMediaMarker
         }).addTo(map);
         tempSpot.tempMarker = tempMarker;
-        tempMarker.on('click', onMarkerClick, tempSpot);
+        tempMarker.on('click', onMarkerNoMediaClick, tempSpot);
         if (tempSpot.bounce) {
             tempMarker.bounce(10);
         }
     }
 }
+
+
+
+// Scheda Info su mappa ------- 
+
+
+function isSchedaVisible(){
+    return (document.getElementById("schedaSuMappaId").style.visibility=="visible");
+}
+function toggleScheda(){
+    var scheda = document.getElementById("schedaSuMappaId");
+    var vis = scheda.style.visibility;
+    if(vis=="visible")
+        scheda.style.visibility="hidden";
+    else 
+        scheda.style.visibility="visible";
+}
+
+function hideScheda(scheda){
+    document.getElementById("schedaSuMappaId").style.visibility = "hidden";
+}
+
+function showScheda(scheda){
+    document.getElementById("schedaSuMappaId").style.visibility = "visible";
+}
+
+
+
+function fillScheda(title,subtitle,content){
+    document.getElementById("schedaTitolo").innerHTML = title;
+    document.getElementById("schedaSottotitolo").innerHTML=subtitle;
+    document.getElementById("schedaContent").innerHTML=content;
+
+}
+
