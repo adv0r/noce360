@@ -1,6 +1,6 @@
 ﻿<krpano version="1.19" title="Virtual Tour">
 
-    <include url="../../assets/krpano/skin/noceskin_advanced.xml" />
+    <include url="../../assets/krpano/skin/noceskin.xml" />
 
     <!-- Gyroscope -->
         <plugin name="gyro" devices="html5" keep="true"

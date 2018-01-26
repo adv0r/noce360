@@ -1,7 +1,7 @@
 ﻿<krpano >
 	
 	<!-- the skin -->
-	<include url="../../assets/krpano/skin/noceskin_advanced.xml" />
+    <include url="../../assets/krpano/skin/noceskin.xml" />
 
 	<!-- audioplayer -->
 	<plugin name="soundinterface"
