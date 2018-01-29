@@ -644,7 +644,7 @@
 			copy(layer[skin_btn_gyro].x, lpos);
 			if(show_gyrobutton, inc(lpos,40));
 
-			set(layer[skin_btn_vr].align, left);
+			set(layer[skin_btn_vr].align, center);
 			copy(layer[skin_btn_vr].visible, show_vrbutton);
 			copy(layer[skin_btn_vr].x, lpos);
 			if(show_vrbutton, inc(lpos,80));
