@@ -89,10 +89,7 @@
 	<!-- end hotelement  -->
 
 
-
-	
-
-             	<hotspot name="infospot1"
+<hotspot name="infospot1"
 	         type="image"
 	         url="../../assets/images/element.png"
 	         keep="false"
@@ -112,16 +109,14 @@
 	         borderwidth="2"
 	         bordercolor="#0xAAAAAA"
 	         />
-             
-	        
-             <!-- LABEL TESTUALE  -->
-		       <hotspot name="mytext"
+
+       <!-- LABEL TESTUALE  -->
+		       <hotspot name="infospot1-label"
 		         type="text"
-		         ath="60"
-             	 atv="-4" 
+		          ath="60" atv="-4"
              	 edge="center" distorted="true" renderer="webgl"
 		         oy="30"
-		         html="Il Ponte Magico"
+		         html="Il ponte magico"
 		         css="font-family:Arial; font-size:13px; color:#000000;"
 		         vcenter="false"
 		         padding="2"
@@ -138,6 +133,8 @@
 		         mipmapping="false"
 		         onautosized=""
 		         />
+
+
 
 
 
