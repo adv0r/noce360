@@ -30,6 +30,7 @@ function initMap() {
         zoom: 11.2,
         maxBounds: bounds,
         maxBoundsViscosity: 0.75,
+        attributionControl : false,
         closePopupOnClick: false
     });
 
@@ -43,6 +44,8 @@ function initMap() {
         id: 'mapbox.streets',
         accessToken: MapBoxAccessToken
     }).addTo(nocemap);
+
+
 
     //Make it fullscreen
     //$(window).on("resize", function () { $("#mapdiv").height($(window).height()); nocemap.invalidateSize(); }).trigger("resize");

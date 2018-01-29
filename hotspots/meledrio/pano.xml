@@ -90,15 +90,30 @@
 
 
 
-	<hotspot name="infospot1"
-	         url="../../assets/images/element.png"
-             ath="60"
-             atv="-4"
-             scale="0.5"
-             onclick="togglesch"
-             />
-             
+	
 
+             	<hotspot name="infospot1"
+	         type="image"
+	         url="../../assets/images/element.png"
+	         keep="false"
+	         visible="true"
+	         enabled="true"
+	         handcursor="true"
+	         maskchildren="false"
+	         ath="60" atv="-4"
+	         edge="center"
+	         zoom="false"
+	         distorted="true" rx="0.0" ry="0.0" rz="0.0"
+	         width="" height=""
+	         scale="0.5"
+	         rotate="0.0"
+	         alpha="1.0"
+	         onclick="togglesch"
+	         borderwidth="2"
+	         bordercolor="#0xAAAAAA"
+	         />
+             
+	        
              <!-- LABEL TESTUALE  -->
 		       <hotspot name="mytext"
 		         type="text"
