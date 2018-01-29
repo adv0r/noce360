@@ -614,6 +614,8 @@
 
 		copy(layer[skin_btn_navi].visible, show_dirbuttons);
 		copy(layer[skin_btn_soundtoggle].visible, show_dirbuttons);
+		copy(layer[skin_btn_hide].visible, show_dirbuttons);
+
 
 
 		copy(layer[skin_btn_prev].visible, show_selbuttons);
