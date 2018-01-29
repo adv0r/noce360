@@ -606,7 +606,7 @@
 		set(lpos,6);
 		set(cpos,0);
 		if(show_gyrobutton, dec(cpos,20));
-		if(show_vrbutton, dec(cpos,64));
+		if(show_vrbutton, dec(cpos,84));
 		set(rpos,6);
 
 		calc(show_dirbuttons, !device.mobile AND ((area.pixelwidth + 2*cpos) GT 520));
