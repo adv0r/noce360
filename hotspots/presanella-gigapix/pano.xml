@@ -107,14 +107,14 @@
 
 
    	<plugin name="video"
-   	url.html5="../../assets/krpano/plugins/videoplayer.js"
-    videourl="../../assets/media/videos/drone-ossana.webm"
-    panovideo="true"
-    pausedonstart="false"
-    loop="true"
-    volume="1.0"
-    playbackrate="3"
-    onerror=""
+	   	url.html5="../../assets/krpano/plugins/videoplayer.js"
+	   	videourl="../../assets/media/videos/DRONE-OSSANA_high.mp4|../../assets/media/videos/DRONE-OSSANA_high.webm|DRONE-OSSANA_iphone-audio.m4a"
+	   	posterurl="../../assets/media/videos/DRONE-OSSANA-high-poster.jpg"
+	    panovideo="true"
+	    pausedonstart="false"
+	    loop="true"
+	    volume="1.0"
+	    playbackrate="3"
     />
 
 	<image hfov="360" vfov="180">
