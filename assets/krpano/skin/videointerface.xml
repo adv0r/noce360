@@ -514,18 +514,14 @@
 	</action>
 
 
-	<!-- context menu - http://krpano.com/docu/xml/#contextmenu -->
+		<!-- context menu - http://krpano.com/docu/xml/#contextmenu -->
 	<contextmenu>
-		<item name="kr" caption="KRPANO"     />
+		<item name="cc" caption="About Noce360..." onclick="skin_goabout();"  separator="true" />
 		<item name="fs" caption="FULLSCREEN" />
-		<item name="cc" caption="Change Controlmode" onclick="skin_changecontrolmode();"  separator="true" devices="mouse" />
-		<item name="tv" caption="Flat View"          onclick="skin_view_flat();"          separator="true" />
-		<item name="nv" caption="Normal View"        onclick="skin_view_normal();"        />
-		<item name="fv" caption="Fisheye View"       onclick="skin_view_fisheye();"       />
-		<item name="sv" caption="Stereographic View" onclick="skin_view_stereographic();" />
-		<item name="av" caption="Architectural View" onclick="skin_view_architectural();" />
-		<item name="pv" caption="Pannini View"       onclick="skin_view_pannini();"       />
-		<item name="lp" caption="Little Planet View" onclick="skin_view_littleplanet();"  />
+		<item name="nv" caption="Normal View"        onclick="skin_view_normal();"        showif="view.vlookatrange == 180" separator="true"      />
+		<item name="fv" caption="Fisheye View"       onclick="skin_view_fisheye();"       showif="view.vlookatrange == 180" devices="flash|webgl" />
+		<item name="sv" caption="Stereographic View" onclick="skin_view_stereographic();" showif="view.vlookatrange == 180" devices="flash|webgl" />
+		<item name="lp" caption="Little Planet View" onclick="skin_view_littleplanet();"  showif="view.vlookatrange == 180" devices="flash|webgl" />
 	</contextmenu>
 
 	<action name="skin_changecontrolmode">
