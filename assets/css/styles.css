@@ -243,6 +243,7 @@ h3 {
     border-top: solid 2px #717375;
     border-left: solid 2px #717375;
     border-right: solid 2px #717375;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .chiudi a, .chiudi a:link, .chiudi a:visited, .chiudi a:active {
