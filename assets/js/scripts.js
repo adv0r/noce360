@@ -23,20 +23,22 @@ function initMap() {
     var long = hotspots.centerLong;
     var boundsOffset = 0.5;
 
+    var zoomLevelDesktop = 11.2;
+      if (L.Browser.mobile) {
+        zoomLevelDesktop = 14;
+    }
     var bounds = new L.LatLngBounds(new L.LatLng(lat + boundsOffset, long + boundsOffset), new L.LatLng(lat - boundsOffset, long - boundsOffset));
 
     nocemap = new L.Map('mapdiv', {
         center: bounds.getCenter(),
-        zoom: 11.2,
+        zoom: zoomLevelDesktop,
         maxBounds: bounds,
         maxBoundsViscosity: 0.75,
         attributionControl : false,
         closePopupOnClick: false
     });
 
-    if (L.Browser.mobile) {
-        alert('Upgrade your browser, dude!');
-    }
+  
 
     nocemap.addControl(new L.Control.Fullscreen());
 
