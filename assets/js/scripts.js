@@ -34,6 +34,10 @@ function initMap() {
         closePopupOnClick: false
     });
 
+    if (L.Browser.mobile) {
+        alert('Upgrade your browser, dude!');
+    }
+
     nocemap.addControl(new L.Control.Fullscreen());
 
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
