@@ -32,7 +32,7 @@ var hotspots = {
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Alle sorgenti del Noce",
-	      "bounce": true
+	      "bounce": false
 	    },{
 	      "name": "Pian Palú",
 	      "lat": 46.33679, 
@@ -40,7 +40,7 @@ var hotspots = {
 	      "href": "ossana/",
 	      "type": "normal",
 	      "marker": "normal",
-	      "description": "Alle sorgenti del Noce",
+	      "description": "Un lago idroelettrico",
 	      "bounce": false
 	    },
 	    {

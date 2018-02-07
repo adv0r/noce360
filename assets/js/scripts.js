@@ -129,7 +129,7 @@ function onMarkerClick(e) {
         } else {
             var popup = L.popup({
                 closeButton: true
-            }).setContent("<b>" + this.name + "</b><br>" + this.description + ".");
+            }).setContent("<b>" + this.name + "</b><br>" + this.description );
 
             this.tempMarker.bindPopup(popup);
             console.log("Open Popup : " + this.href);
