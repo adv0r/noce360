@@ -186,17 +186,13 @@
 			<!-- left buttons - play/pause, volume -->
 			<layer name="skin_btn_playpause" style="skin_base|skin_glow" crop="0|640|64|64" align="left" x="5" y="0" scale="0.5" onclick="plugin[video].togglepause();" />
 
-			<layer name="skin_btn_volume" visible.no-desktop="false" style="skin_glow" type="container" width="32" height="32" align="left" x="40" y="0" bgcapture="true" children="false" onover2="stopdelayedcall(skin_autohide);stopdelayedcall(autoclose_volumectrl); skin_open_volumectrl();" onout2="if(layer[skin_volumectrl].pressed == false, delayedcall(autoclose_volumectrl, 0.5, skin_close_volumectrl()); );" onclick="if(layer[skin_volumectrl].alpha == 1.0, if(plugin[video].volume GT 0.0, set(plugin[video].volume,0.0), set(plugin[video].volume,1.0)); skin_volumectrl_update(); );">
-				<layer name="skin_btn_volume_icon" style="skin_base" crop="64|704|64|64" scale="0.5" align="lefttop" />
-			</layer>
-
 			<!-- noce360 home -->
 
-			<layer name="skin_btn_home"  visible.no-desktop="false"   style="skin_base|skin_glow" crop="64|770|64|64"  align="left" x="70"   y="0"  scale="0.5" ondown2="goHome();" />
+			<layer name="skin_btn_home"  visible.no-desktop="false"   style="skin_base|skin_glow" crop="64|770|64|64"  align="left" x="45"   y="0"  scale="0.5" ondown2="goHome();" />
 
 
 			<!-- seek bar -->
-			<layer name="skin_video_seekbar_container" type="container" align="left" x.desktop="110" x.no-desktop="50" width.desktop.and.fullscreensupport="-240" width.desktop.and.no-fullscreensupport="-188" width.no-desktop.and.fullscreensupport="-188" width.no-desktop.and.no-fullscreensupport="-148" height="100%" bgcapture="true" ondown="stopdelayedcall(skin_autohide);skin_video_ondownseeking();">
+			<layer name="skin_video_seekbar_container" type="container" align="left" x.desktop="90" x.no-desktop="50" width.desktop.and.fullscreensupport="-240" width.desktop.and.no-fullscreensupport="-188" width.no-desktop.and.fullscreensupport="-188" width.no-desktop.and.no-fullscreensupport="-148" height="100%" bgcapture="true" ondown="stopdelayedcall(skin_autohide);skin_video_ondownseeking();">
 				<layer name="skin_video_seekbar" type="container" bgcolor="0xFFFFFF" bgalpha="0.25" align="center" width="100%" height="4">
 					<layer name="skin_video_loadbar" type="container" bgcolor="0xFFFFFF" bgalpha="0.5" align="left" width="0" height="4" />
 					<layer name="skin_video_seekpos" type="container" bgcolor="0xFFFFFF" bgalpha="1.0" align="left" edge="center" x="0" bgroundedge="8" width="10" height="10" />
