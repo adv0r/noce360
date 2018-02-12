@@ -32,8 +32,8 @@
 	        onavailable="webvr_onavailable();"
 	        onunavailable=""
 	        onunknowndevice="webvr_onunknowndevice();"
-	        onentervr="webvr_onentervr();  hidespot();"
-	        onexitvr="webvr_onexitvr(); showspot();"
+	        onentervr="webvr_onentervr();"
+	        onexitvr="webvr_onexitvr();"
 	        />
 
 	
@@ -143,8 +143,6 @@
 		if(webvr.isfake,
 			webvr_show_fakemode_info(true);
 		  );
-
-
 	</action>
 
 
@@ -895,10 +893,5 @@
 			copy(layer[vr_setup_vig2].html, i_vig);
 		  );
 	</action>
-
-
-	<action name="hidespot"> for(set(i,0), i LT hotspot.count, inc(i),     if(hotspot[get(i)].novrspot == yes,         set(hotspot[get(i)].visible,false);       );    );</action>
-
-	<action name="showspot">  for(set(i,0), i LT hotspot.count, inc(i),     if(hotspot[get(i)].novrspot == yes,         set(hotspot[get(i)].visible,true);       );    );</action>
 
 </krpano>

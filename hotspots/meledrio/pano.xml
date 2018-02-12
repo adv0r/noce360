@@ -108,6 +108,7 @@
 	         onclick="togglesch"
 	         borderwidth="2"
 	         bordercolor="#0xAAAAAA"
+	         vr="false"
 	         />
 
        <!-- LABEL TESTUALE  -->
@@ -132,12 +133,9 @@
 		         oversampling="1.0"
 		         mipmapping="false"
 		         onautosized=""
+		         onclick="togglesch"
+     	         vr="false"
 		         />
-
-
-
-
-
 
 	</scene>
 
