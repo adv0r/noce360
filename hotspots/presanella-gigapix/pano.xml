@@ -28,7 +28,7 @@
         ondisable=""
         />
 
-	<scene name="scene_gigapixel" title="" onstart="playsound(bgsnd, '../../assets/sounds/river.mp3|../../assets/sounds/river.ogg', 0);" thumburl="thumb.png" lat="" lng="" heading="Gigapixel Presanella">
+	<scene name="scene_gigapixel" title="" onstart="playsound(bgsnd, '../../assets/sounds/river.ogg', 0);" thumburl="thumb.png" lat="" lng="" heading="Gigapixel Presanella">
 
 		<!-- view settings -->
 		<view hlookat="280" vlookat="20" maxpixelzoom="3.0" fovmax="130" limitview="auto" fov="110" />

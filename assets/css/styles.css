@@ -284,7 +284,7 @@ body {
     height: 80px;
     position: absolute;
     z-index: 1;
-    background-color: grey;
+    background-color: white;
     left: 20%;
     text-transform: uppercase;
 }
@@ -320,4 +320,8 @@ body {
     overflow: auto;
     visibility: hidden;
 }
+/* ---- popup------------- */
 
+.markerPopup {
+    cursor: pointer;
+}

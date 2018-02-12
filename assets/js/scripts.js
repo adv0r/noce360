@@ -116,7 +116,7 @@ function onMarkerClick(e) {
     console.log("Marker name : " + this.name);
     hideScheda();
     var tempPopup = this.tempMarker.getPopup();
-  
+
         if (tempPopup) {
             if (tempPopup.isOpen()) {
              if (this.href != "") {
@@ -128,7 +128,8 @@ function onMarkerClick(e) {
             }
         } else {
             var popup = L.popup({
-                closeButton: true
+                closeButton: true,
+                className: 'markerPopup'
             }).setContent("<b>" + this.name + "</b><br>" + this.description );
 
             this.tempMarker.bindPopup(popup);
