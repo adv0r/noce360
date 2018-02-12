@@ -1,3 +1,115 @@
+
+.container{
+    max-width: 445px;
+    margin:0 auto;
+}
+
+@font-face {
+    font-family: 'walkway';
+    src: url(../font/walkway_semibold.ttf) format('truetype');
+    src: url(../font/walkway_semibold.woff) format('woff');
+}
+@font-face {
+    font-family: 'walkUltra';
+    src: url(../font/walkway_ultrabold.ttf) format('truetype');
+    src: url(../font/walkway_ultrabold.woff) format('woff');
+}
+@font-face {
+    font-family: 'walkBlack';
+    src: url(../font/walkway_black.ttf) format('truetype');
+    src: url(../font/walkway_black.woff) format('woff');
+}
+
+
+
+.container {
+    max-width: 1000px;
+    background-color: white;
+}
+
+.row {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h3 {
+    margin-top:0px;
+}
+
+h1, h2{
+    color:#2382c0;
+    font-family: 'walkUltra', sans-serif;
+}
+
+h2{
+    font-size: 27px;
+}
+
+.master {
+    /*border: solid 2px #35506f;*/
+    font-family: 'walkway', sans-serif;
+    background-color: #FFFFFF;
+    font-size: 15px;
+    color:#385370;
+}
+
+
+.chiudi {
+    font-family: 'walkBlack', sans-serif;
+    height:40px;
+    padding:4px 5px 10px 10px;
+    margin:0px;
+    text-align:right;
+    font-weight:bold;
+    font-size:1.4em;
+
+    /*border-top: solid 2px #717375;
+    border-left: solid 2px #717375;
+    border-right: solid 2px #717375;*/
+}
+
+.chiudi a, .chiudi a:link, .chiudi a:visited, .chiudi a:active {
+    text-decoration:none;
+    text-shadow: 1px 1px 3px #2d2d2d;
+    color:#385370;
+    padding:5px 10px;
+    /*background-color:#8ab5dd;*/
+}
+
+.chiudi a:hover {
+    color:#ffffff;
+    background-color:transparent;
+
+}
+
+
+.imageInright {
+    float: right;
+    display: block;
+    margin: 0 0 20px 20px ;
+}
+
+
+
+.imageInleft {
+    float: left;
+    display: block;
+    margin: 0 20px 20px 0 ;
+
+}
+
+
+.small-img {
+    max-width: 300px;
+}
+
+
+/* Home et al ----- */
+
+.titles {
+    color:white;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -9,10 +121,6 @@ body {
     width: 100%;
 }
 
-.container{
-    max-width: 1200px;
-    margin:0 auto;
-}
 
 .half-col{
     width: 48%;
@@ -97,7 +205,7 @@ body {
 }
 
 #footerline3 p{
-	padding-left: 1rem;
+    padding-left: 1rem;
     padding-right: 1rem;
 }
 
@@ -167,6 +275,7 @@ body {
 }
 
 
+
 /* ---- Hotspots POI ------------- */
 
 .hotspot-title {
@@ -211,73 +320,4 @@ body {
     overflow: auto;
     visibility: hidden;
 }
-
-.container {
-    max-width: 1000px;
-}
-
-.row {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-h3 {
-    margin-top:0px;
-}
-.master {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border: solid 2px #35506f;
-    text-align: justify;
-    color:#929497;
-    background-color: #FFFFFF
-}
-
-.chiudi {
-    background-color:#929497;
-    height:40px;
-    padding:4px 5px 10px 10px;
-    margin:0px;
-    text-align:right;
-    font-weight:bold;
-    font-size:1.4em;
-    border-top: solid 2px #717375;
-    border-left: solid 2px #717375;
-    border-right: solid 2px #717375;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-.chiudi a, .chiudi a:link, .chiudi a:visited, .chiudi a:active {
-    text-decoration:none;
-    color:#FFFFFF;
-    padding:5px 10px;
-    background-color:#d0d1d3;
-}
-
-.chiudi a:hover {
-    color:#000000;
-    background-color:#FFFFFF;
-}
-
-.titles {
-    background-color: #35506f;
-    color:white;
-}
-
-
-.imageInright {
-    float: right;
-    display: block;
-    margin: 0 0 20px 20px ;
-}
-
-.imageInleft {
-    float: left;
-    display: block;
-    margin: 0 20px 20px 0 ;
-}
-
-.small-img {
-    max-width: 300px;
-}
-
 
