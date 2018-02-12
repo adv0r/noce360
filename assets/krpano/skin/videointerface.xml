@@ -61,7 +61,7 @@
 
 
 	<!-- include VR support - http://krpano.com/plugins/webvr/ -->
-	<include url="%SWFPATH%/plugins/webvr.xml" devices="html5" />
+	<include url="../plugins/webvr.xml" devices="html5" />
 
 	<!-- overwrite some settings from the webvr.xml for the skin integration -->
 	<plugin name="WebVR" keep="true" devices="html5"
@@ -130,7 +130,7 @@
 
 
 	<!-- gyro plugin -->
-	<plugin name="skin_gyro" keep="true" url="%SWFPATH%/plugins/gyro2.js" devices="html5.and.touch" enabled="true" onavailable="skin_have_gyro_support();" onenable="skin_gyro_enabled();" ondisable="skin_gyro_disabled();" />
+	<plugin name="skin_gyro" keep="true" url="../plugins/gyro2.js" devices="html5.and.touch" enabled="true" onavailable="skin_have_gyro_support();" onenable="skin_gyro_enabled();" ondisable="skin_gyro_disabled();" />
 
 
 	<!-- skin styles -->

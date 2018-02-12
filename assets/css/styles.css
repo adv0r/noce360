@@ -1,327 +1,245 @@
-
-.container{
-    max-width: 445px;
-    margin:0 auto;
+ .container{
+     max-width: 445px;
+     margin:0 auto;
 }
-
-@font-face {
-    font-family: 'walkway';
-    src: url(../font/walkway_semibold.ttf) format('truetype');
-    src: url(../font/walkway_semibold.woff) format('woff');
+ @font-face {
+     font-family: 'walkway';
+     src: url(../font/walkway_semibold.ttf) format('truetype');
+     src: url(../font/walkway_semibold.woff) format('woff');
 }
-@font-face {
-    font-family: 'walkUltra';
-    src: url(../font/walkway_ultrabold.ttf) format('truetype');
-    src: url(../font/walkway_ultrabold.woff) format('woff');
+ @font-face {
+     font-family: 'walkUltra';
+     src: url(../font/walkway_ultrabold.ttf) format('truetype');
+     src: url(../font/walkway_ultrabold.woff) format('woff');
 }
-@font-face {
-    font-family: 'walkBlack';
-    src: url(../font/walkway_black.ttf) format('truetype');
-    src: url(../font/walkway_black.woff) format('woff');
+ @font-face {
+     font-family: 'walkBlack';
+     src: url(../font/walkway_black.ttf) format('truetype');
+     src: url(../font/walkway_black.woff) format('woff');
 }
-
-
-
-.container {
-    max-width: 1000px;
-    background-color: white;
+ .container {
+     max-width: 1000px;
+     background-color: white;
 }
-
-.row {
-    margin-left: 20px;
-    margin-right: 20px;
+ .row {
+     margin-left: 20px;
+     margin-right: 20px;
 }
-
-h3 {
-    margin-top:0px;
+ h3 {
+     margin-top:0px;
 }
-
-h1, h2{
-    color:#2382c0;
-    font-family: 'walkUltra', sans-serif;
+ h1, h2{
+     color:#2382c0;
+     font-family: 'walkUltra', sans-serif;
 }
-
-h2{
-    font-size: 27px;
+ h2{
+     font-size: 27px;
 }
-
-.master {
-    /*border: solid 2px #35506f;*/
-    font-family: 'walkway', sans-serif;
-    background-color: #FFFFFF;
-    font-size: 15px;
-    color:#385370;
+ .master {
+    /*border: solid 2px #35506f;
+    */
+     font-family: 'walkway', sans-serif;
+     background-color: #FFFFFF;
+     font-size: 15px;
+     color:#385370;
 }
-
-
-.chiudi {
-    font-family: 'walkBlack', sans-serif;
-    height:40px;
-    padding:4px 5px 10px 10px;
-    margin:0px;
-    text-align:right;
-    font-weight:bold;
-    font-size:1.4em;
-
+ .chiudi {
+     font-family: 'walkBlack', sans-serif;
+     height:40px;
+     padding:4px 5px 10px 10px;
+     margin:0px;
+     text-align:right;
+     font-weight:bold;
+     font-size:1.4em;
     /*border-top: solid 2px #717375;
-    border-left: solid 2px #717375;
-    border-right: solid 2px #717375;*/
+     border-left: solid 2px #717375;
+     border-right: solid 2px #717375;
+    */
 }
-
-.chiudi a, .chiudi a:link, .chiudi a:visited, .chiudi a:active {
-    text-decoration:none;
-    text-shadow: 1px 1px 3px #2d2d2d;
-    color:#385370;
-    padding:5px 10px;
-    /*background-color:#8ab5dd;*/
+ .chiudi a, .chiudi a:link, .chiudi a:visited, .chiudi a:active {
+     text-decoration:none;
+     text-shadow: 1px 1px 3px #2d2d2d;
+     color:#385370;
+     padding:5px 10px;
+    /*background-color:#8ab5dd;
+    */
 }
-
-.chiudi a:hover {
-    color:#ffffff;
-    background-color:transparent;
-
+ .chiudi a:hover {
+     color:#ffffff;
+     background-color:transparent;
 }
-
-
-.imageInright {
-    float: right;
-    display: block;
-    margin: 0 0 20px 20px ;
+ .imageInright {
+     float: right;
+     display: block;
+     margin: 0 0 20px 20px ;
 }
-
-
-
-.imageInleft {
-    float: left;
-    display: block;
-    margin: 0 20px 20px 0 ;
-
+ .imageInleft {
+     float: left;
+     display: block;
+     margin: 0 20px 20px 0 ;
 }
-
-
-.small-img {
-    max-width: 300px;
+ .small-img {
+     max-width: 300px;
 }
-
-
 /* Home et al ----- */
-
-.titles {
-    color:white;
+ .titles {
+     color:white;
 }
-
-body {
-    padding: 0;
-    margin: 0;
+ body {
+     padding: 0;
+     margin: 0;
 }
-
-html
-body {
-    height: 100%;
-    width: 100%;
+ html body {
+     height: 100%;
+     width: 100%;
 }
-
-
-.half-col{
-    width: 48%;
-    display: inline-block;
-    margin-right: 2%;
+ .half-col{
+     width: 48%;
+     display: inline-block;
+     margin-right: 2%;
 }
-
-.half-col:last-child{
-    margin-right: 0;
+ .half-col:last-child{
+     margin-right: 0;
 }
-
-.text-center{
-    text-align: center;
+ .text-center{
+     text-align: center;
 }
-
-.inline-list{
-    list-style: none;
+ .inline-list{
+     list-style: none;
 }
-
-.inline-list li{
-    display: inline;
-    margin-right: 1rem;
+ .inline-list li{
+     display: inline;
+     margin-right: 1rem;
 }
-
-.inline-list li:last-child{
-    margin-right: 0;
+ .inline-list li:last-child{
+     margin-right: 0;
 }
-
-#header{
-    height: 100px;
+ #header{
+     height: 100px;
 }
-
-#mapdiv{
-    height: calc(100vh - 200px);
+ #mapdiv{
+     height: calc(100vh - 200px);
 }
-
-#footer{
-    min-height: 150px;
+ #footer{
+     min-height: 150px;
 }
-
-#footer ul{
-    padding-left: 0;
+ #footer ul{
+     padding-left: 0;
 }
-
-#logo{
-    position: relative;
-    text-align: left;
-    vertical-align: top;
-    padding-top: 1.5rem;
+ #logo{
+     position: relative;
+     text-align: left;
+     vertical-align: top;
+     padding-top: 1.5rem;
 }
-
-#logo img{
-    margin-left: 0.5rem;
+ #logo img{
+     margin-left: 0.5rem;
 }
-
-#top_graphic{
-    text-align: right;
+ #top_graphic{
+     text-align: right;
 }
-
-#top_graphic img{
-    margin-right: 1rem;
+ #top_graphic img{
+     margin-right: 1rem;
 }
-
-#top_graphic img{
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+ #top_graphic img{
+     padding-top: 0.25rem;
+     padding-bottom: 0.25rem;
 }
-
-#footerline1,
-#footerline2,
-#footerline3{
-    display: block;
-    width: 100%;
-    overflow: hidden;
-    background-color: #FFFFFF;
+ #footerline1, #footerline2, #footerline3{
+     display: block;
+     width: 100%;
+     overflow: hidden;
+     background-color: #FFFFFF;
 }
-
-#footerline1 ul,
-#footerline2 ul{
-    padding-left: 1rem;
-    padding-right: 1rem;
+ #footerline1 ul, #footerline2 ul{
+     padding-left: 1rem;
+     padding-right: 1rem;
 }
-
-#footerline3 p{
-    padding-left: 1rem;
-    padding-right: 1rem;
+ #footerline3 p{
+     padding-left: 1rem;
+     padding-right: 1rem;
 }
-
-
-
-@media only screen and (max-width: 767px) {
-
-    #header{
-        height: 100px;
+ @media only screen and (max-width: 767px) {
+     #header{
+         height: 100px;
     }
-
-    #mapdiv{
-        height: 400px;
+     #mapdiv{
+         height: 400px;
     }
-
-    #footer{
-        min-height: auto;
+     #footer{
+         min-height: auto;
     }
-
-    #footer img{
-        margin-bottom: 1rem;
+     #footer img{
+         margin-bottom: 1rem;
     }
-
 }
-
-
-@media only screen and (max-width: 600px) {
-    .half-col{
-        width: 100%;
-        display: block;
-        margin-right: 0;
+ @media only screen and (max-width: 600px) {
+     .half-col{
+         width: 100%;
+         display: block;
+         margin-right: 0;
     }
-
-    #top_graphic{
-        display: none;
+     #top_graphic{
+         display: none;
     }
-
-    #logo{
-        text-align: center;
+     #logo{
+         text-align: center;
     }
-
-    #logo img{
-        margin-left: 0;
+     #logo img{
+         margin-left: 0;
     }
-
 }
-
-
-@media only screen and (max-width: 480px) {
-
-    #header{
-        height: 100px;
+ @media only screen and (max-width: 480px) {
+     #header{
+         height: 100px;
     }
-
-    #mapdiv{
-        height: 380px;
+     #mapdiv{
+         height: 380px;
     }
-
-    #footer{
-        min-height: auto;
+     #footer{
+         min-height: auto;
     }
-
-    #footer img{
-        margin-bottom: 1rem;
+     #footer img{
+         margin-bottom: 1rem;
     }
-
 }
-
-
-
 /* ---- Hotspots POI ------------- */
-
-.hotspot-title {
-    padding-right: 15px;
-    padding-left: 15px;
-    height: 80px;
-    position: absolute;
-    z-index: 1;
-    background-color: white;
-    left: 20%;
-    text-transform: uppercase;
+ .hotspot-title {
+     padding-right: 15px;
+     padding-left: 15px;
+     height: 80px;
+     position: absolute;
+     z-index: 1;
+     background-color: white;
+     left: 20%;
+     text-transform: uppercase;
 }
-
-
-
 /* ---- Scheda informativa su mappa ------------- */
-
-
-.schedaSuMappa {
-    position: absolute;
-    top:110px;
-    left:110px;
-    z-index: 10000;
-    width: 450px;
-    height: 80%;
-    opacity: 1;
-    overflow: auto;
-    visibility: hidden;
+ .schedaSuMappa {
+     position: absolute;
+     top:110px;
+     left:110px;
+     z-index: 10000;
+     width: 450px;
+     height: 80%;
+     opacity: 1;
+     overflow: auto;
+     visibility: hidden;
 }
-
 /* ---- Scheda contenuto POI ------------- */
-
-
-.schedaContenuto {
-    position: absolute;
-    top:10px;
-    left:10px;
-    z-index: 1;
-    width: 450px;
-    height: 80%;
-    opacity: 1;
-    overflow: auto;
-    visibility: hidden;
+ .schedaContenuto {
+     position: absolute;
+     top:10px;
+     left:10px;
+     z-index: 1;
+     width: 450px;
+     height: 80%;
+     opacity: 1;
+     overflow: auto;
+     visibility: hidden;
 }
 /* ---- popup------------- */
-
-.markerPopup {
-    cursor: pointer;
+ .markerPopup {
+     cursor: pointer;
 }
+ 

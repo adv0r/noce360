@@ -24,7 +24,7 @@ function initMap() {
     var boundsOffset = 0.5;
 
     var zoomLevelDesktop = 11.2;
-      if (L.Browser.mobile) {
+    if (L.Browser.mobile) {
         zoomLevelDesktop = 10;
     }
     var bounds = new L.LatLngBounds(new L.LatLng(lat + boundsOffset, long + boundsOffset), new L.LatLng(lat - boundsOffset, long - boundsOffset));
@@ -34,11 +34,11 @@ function initMap() {
         zoom: zoomLevelDesktop,
         maxBounds: bounds,
         maxBoundsViscosity: 0.75,
-        attributionControl : false,
+        attributionControl: false,
         closePopupOnClick: false
     });
 
-  
+
 
     //nocemap.addControl(new L.Control.Fullscreen()); //Removed fullscreen because in fullscreen mode all divs are hidden otherwise and there is no solution
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -66,29 +66,29 @@ function initMap() {
     /*
     //add testCircle
     var testCircle = L.circle([lat-0.0023, long-0.033], {
-	    color: 'red',
-	    fillColor: '#f03',
-	    fillOpacity: 0.5,
-	    radius: 500
-	}).addTo(nocemap);
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5,
+        radius: 500
+    }).addTo(nocemap);
 
     //add testPoligon
     
     var testPolygon = L.polygon([
-   	 	[lat+0.09, long+0.003],
-    	[lat+0.02, long+0.009],
-    	[lat-0.01, long+0.14]
-	]).addTo(nocemap);
-	
+        [lat+0.09, long+0.003],
+        [lat+0.02, long+0.009],
+        [lat-0.01, long+0.14]
+    ]).addTo(nocemap);
+    
 
-	//Add Markers 
-	testCircle.bindPopup("I am a circle.");
-	//testPolygon.bindPopup("I am a polygon.");
+    //Add Markers 
+    testCircle.bindPopup("I am a circle.");
+    //testPolygon.bindPopup("I am a polygon.");
 
-	//add Listeners
-	testCircle.on('click', onCircleClick);
-	//testPolygon.on('click', onPolyClick);
-	*/
+    //add Listeners
+    testCircle.on('click', onCircleClick);
+    //testPolygon.on('click', onPolyClick);
+    */
 }
 
 
@@ -116,45 +116,46 @@ function onMarkerClick(e) {
     hideScheda();
     var tempPopup = this.tempMarker.getPopup();
 
-        if (tempPopup) {
-            if (tempPopup.isOpen()) {
-             if (this.href != "") {
+    if (tempPopup) {
+        if (tempPopup.isOpen()) {
+            if (this.href != "") {
                 console.log("Opening specific hotspot  : " + this.href);
                 window.location.href = hotspotsDir + this.href;
-            	}
-            } else {
-                this.tempMarker.openPopup();
             }
         } else {
-            var popup = L.popup({
-                closeButton: true,
-                className: 'markerPopup'
-            }).setContent("<b>" + this.name + "</b><br>" + this.description );
-
-            this.tempMarker.bindPopup(popup);
-            console.log("Open Popup : " + this.href);
             this.tempMarker.openPopup();
-            var tempPopup = this.tempMarker.getPopup();
-            var link = this.href;
-              if (this.href != "") {
-	            L.DomEvent.on(tempPopup._wrapper, 'click', function(e) {
-	                console.log("Opening specific hotspot  : " + link);
-	                window.location.href = hotspotsDir + link;
-	            });
-        	}
-
         }
+    } else {
+        var popup = L.popup({
+            closeButton: true,
+            className: 'markerPopup'
+        }).setContent("<b>" + this.name + "</b><br>" + this.description +
+            "<center><p><i>Clicca per entrare</i></p></center>");
+
+        this.tempMarker.bindPopup(popup);
+        console.log("Open Popup : " + this.href);
+        this.tempMarker.openPopup();
+        var tempPopup = this.tempMarker.getPopup();
+        var link = this.href;
+        if (this.href != "") {
+            L.DomEvent.on(tempPopup._wrapper, 'click', function(e) {
+                console.log("Opening specific hotspot  : " + link);
+                window.location.href = hotspotsDir + link;
+            });
+        }
+
+    }
 }
 
 
 function onMarkerNoMediaClick(e) {
-    console.log("You clicked the marker no media at " + e.latlng);
-    console.log("Marker name : " + this.name);
+    //console.log("You clicked the marker no media at " + e.latlng);
+    //console.log("Marker name : " + this.name);
 
     nocemap.closePopup();
 
-    fillScheda(this.scheda.titolo,this.scheda.sottotitolo,this.scheda.contenuto);
-    if(!isSchedaVisible() && this.scheda.titolo != "") 
+    fillScheda(this.scheda.titolo, this.scheda.sottotitolo, this.scheda.contenuto);
+    if (!isSchedaVisible() && this.scheda.titolo != "")
         showScheda();
 }
 
@@ -179,8 +180,8 @@ function loadMarkersFromDb(map) {
         iconUrl: 'assets/images/poi.png',
         shadowUrl: 'assets/images/poi_shadow.png',
         iconSize: [30, 30],
-        shadowSize:   [30, 30], 
-        shadowAnchor: [2, 10],  
+        shadowSize: [30, 30],
+        shadowAnchor: [2, 10],
         iconAnchor: [15, 15],
         popupAnchor: [-3, -20]
     });
@@ -190,8 +191,8 @@ function loadMarkersFromDb(map) {
         iconUrl: 'assets/images/poinomedia.png',
         shadowUrl: 'assets/images/poi_shadow.png',
         iconSize: [30, 30],
-        shadowSize:   [30, 30], 
-        shadowAnchor: [2, 10],  
+        shadowSize: [30, 30],
+        shadowAnchor: [2, 10],
         iconAnchor: [15, 15],
         popupAnchor: [-3, -20]
     });
@@ -236,32 +237,32 @@ function loadMarkersFromDb(map) {
 // Scheda Info su mappa ------- 
 
 
-function isSchedaVisible(){
-    return (document.getElementById("schedaSuMappaId").style.visibility=="visible");
-}
-function toggleScheda(){
-    var scheda = document.getElementById("schedaSuMappaId");
-    var vis = scheda.style.visibility;
-    if(vis=="visible")
-        scheda.style.visibility="hidden";
-    else 
-        scheda.style.visibility="visible";
+function isSchedaVisible() {
+    return (document.getElementById("schedaSuMappaId").style.visibility == "visible");
 }
 
-function hideScheda(scheda){
+function toggleScheda() {
+    var scheda = document.getElementById("schedaSuMappaId");
+    var vis = scheda.style.visibility;
+    if (vis == "visible")
+        scheda.style.visibility = "hidden";
+    else
+        scheda.style.visibility = "visible";
+}
+
+function hideScheda(scheda) {
     document.getElementById("schedaSuMappaId").style.visibility = "hidden";
 }
 
-function showScheda(scheda){
+function showScheda(scheda) {
     document.getElementById("schedaSuMappaId").style.visibility = "visible";
 }
 
 
 
-function fillScheda(title,subtitle,content){
+function fillScheda(title, subtitle, content) {
     document.getElementById("schedaTitolo").innerHTML = title;
-    document.getElementById("schedaSottotitolo").innerHTML=subtitle;
-    document.getElementById("schedaContent").innerHTML=content;
+    document.getElementById("schedaSottotitolo").innerHTML = subtitle;
+    document.getElementById("schedaContent").innerHTML = content;
 
 }
-

@@ -32,8 +32,8 @@
 	        onavailable="webvr_onavailable();"
 	        onunavailable=""
 	        onunknowndevice="webvr_onunknowndevice();"
-	        onentervr="webvr_onentervr();"
-	        onexitvr="webvr_onexitvr();"
+	        onentervr="webvr_onentervr();  hidespot();"
+	        onexitvr="webvr_onexitvr(); showspot();"
 	        />
 
 	
@@ -131,10 +131,10 @@
 
 	<action name="webvr_onentervr">
 		tween(layer[webvr_enterbutton].alpha,0,0);
-
 		webvr_showbuttons();
-		webvr_hide_all_non_vr_layers();
 
+		webvr_hide_all_non_vr_layers();
+		webvr_hide_all_non_vr_hotspots();
 		<!-- when the screen size is unknown an no custom size is set, open the setup screen on entering the VR mode -->
 		if(webvr.ismobilevr == true AND !webvr.isfake AND ask_user_for_screensize == true AND webvr.mobilevr_screensize == 'auto',
 			set(ask_user_for_screensize, false);
@@ -143,10 +143,12 @@
 		if(webvr.isfake,
 			webvr_show_fakemode_info(true);
 		  );
+
 	</action>
 
 
 	<action name="webvr_onexitvr">
+
 		stopdelayedcall(vr_button_fadeout);
 
 		tween(layer[webvr_enterbutton].alpha,1);
@@ -156,12 +158,30 @@
 		webvr_show_fakemode_info(false);
 
 		webvr_restore_layers();
+		webvr_restore_hotspots();
+
+	</action>
+
+
+	<action name="webvr_hide_all_non_vr_hotspots">
+		trace('hide hotspots ');
+		for(set(i,0), i LT hotspot.count, inc(i),
+			copy(lr, hotspot[get(i)]);
+
+			if(lr.vr == false,
+				copy(lr.vr_backup_visible, lr.visible);
+				set(lr.visible, false);
+				trace('hide :', lr.name);
+			  );
+		  );
 	</action>
 
 
 	<action name="webvr_hide_all_non_vr_layers">
 		for(set(i,0), i LT layer.count, inc(i),
 			copy(lr, layer[get(i)]);
+			trace('hide :', lr.name);
+
 			if(lr.vr !== true,
 				copy(lr.vr_backup_visible, lr.visible);
 				set(lr.visible, false);
@@ -172,6 +192,16 @@
 	<action name="webvr_restore_layers">
 		for(set(i,0), i LT layer.count, inc(i),
 			copy(lr, layer[get(i)]);
+			if(lr.vr_backup_visible,
+				copy(lr.visible, lr.vr_backup_visible);
+				delete(lr.vr_backup_visible);
+			  );
+		  );
+	</action>
+
+	<action name="webvr_restore_hotspots">
+		for(set(i,0), i LT hotspot.count, inc(i),
+			copy(lr, hotspot[get(i)]);
 			if(lr.vr_backup_visible,
 				copy(lr.visible, lr.vr_backup_visible);
 				delete(lr.vr_backup_visible);
@@ -892,6 +922,17 @@
 			copy(layer[vr_setup_cac2].html, i_ca);
 			copy(layer[vr_setup_vig2].html, i_vig);
 		  );
+	</action>
+
+
+	<action name="hidespot"> 
+		trace('hidespot')
+		for(set(i,0), i LT hotspot.count, inc(i),     if(hotspot[get(i)].novrspot == yes,         set(hotspot[get(i)].visible,false);       );    );
+	</action>
+
+	<action name="showspot">  
+		trace(showspot)
+		for(set(i,0), i LT hotspot.count, inc(i),     if(hotspot[get(i)].novrspot == yes,         set(hotspot[get(i)].visible,true);       );    );
 	</action>
 
 </krpano>
