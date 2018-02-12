@@ -33,7 +33,7 @@
 
 		<!-- add the video sources and play the video -->
 		<action name="add_video_sources">
-		videointerface_addsource('1024x512', '../../assets/media/videos/OUTPUT1_low.mp4|../../assets/media/videos/OUTPUT1_low.webm|OUTPUT1_iphone-audio.m4a');
+		videointerface_addsource('1024x512', '../../assets/media/videos/OUTPUT1_low.mp4|../../assets/media/videos/OUTPUT1_low.webm|../../assets/media/videos/OUTPUT1_iphone-audio.m4a');
 			videointerface_addsource('4096×2048', '../../assets/media/videos/OUTPUT1_high.mp4|OUTPUT1_iphone-audio.m4a', '../../assets/media/videos/DRONE-OSSANA-high-poster.jpg');
 			
 			if(device.ios,
