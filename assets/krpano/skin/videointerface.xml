@@ -192,7 +192,7 @@
 
 
 			<!-- seek bar -->
-			<layer name="skin_video_seekbar_container" type="container" align="left" x.desktop="90" x.no-desktop="90" width.desktop.and.fullscreensupport="-240" width.desktop.and.no-fullscreensupport="-188" width.no-desktop.and.fullscreensupport="-168" width.no-desktop.and.no-fullscreensupport="-128" height="100%" bgcapture="true" ondown="stopdelayedcall(skin_autohide);skin_video_ondownseeking();">
+			<layer name="skin_video_seekbar_container" type="container" align="left" x.desktop="90" x.no-desktop="90" width.desktop.and.fullscreensupport="-240" width.desktop.and.no-fullscreensupport="-188" width.no-desktop.and.fullscreensupport="-128" width.no-desktop.and.no-fullscreensupport="-88" height="100%" bgcapture="true" ondown="stopdelayedcall(skin_autohide);skin_video_ondownseeking();">
 				<layer name="skin_video_seekbar" type="container" bgcolor="0xFFFFFF" bgalpha="0.25" align="center" width="100%" height="4">
 					<layer name="skin_video_loadbar" type="container" bgcolor="0xFFFFFF" bgalpha="0.5" align="left" width="0" height="4" />
 					<layer name="skin_video_seekpos" type="container" bgcolor="0xFFFFFF" bgalpha="1.0" align="left" edge="center" x="0" bgroundedge="8" width="10" height="10" />
