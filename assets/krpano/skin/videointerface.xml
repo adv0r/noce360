@@ -188,7 +188,7 @@
 
 			<!-- noce360 home -->
 
-			<layer name="skin_btn_home"  visible.no-desktop="false"   style="skin_base|skin_glow" crop="64|770|64|64"  align="left" x="45"   y="0"  scale="0.5" ondown2="goHome();" />
+			<layer name="skin_btn_home"  visible.no-desktop="true"   style="skin_base|skin_glow" crop="64|770|64|64"  align="left" x="45"   y="0"  scale="0.5" ondown2="goHome();" />
 
 
 			<!-- seek bar -->
