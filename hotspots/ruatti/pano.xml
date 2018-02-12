@@ -26,7 +26,6 @@
 		if(startactions !== null, startactions() );
 	</action>
 
-
 	
 	<scene name="scene_IMG_20170708_165702" title="Esterno" onstart="" havevrimage="true" thumburl="panos/IMG_20170708_165702.tiles/thumb.jpg" lat="" lng="" heading="">
 

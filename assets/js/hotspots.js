@@ -8,7 +8,7 @@ var hotspots = {
 	      "name": "Molino Ruatti",
 	      "lat": 46.3662,
 	      "long": 10.89407,
-	      "href": "ruatti/tour.html",
+	      "href": "ruatti/index.html",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Virtual Tour del Molino Ruatti",
