@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Noce360 - Titolo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<style>
+		@-ms-viewport { width:device-width; }
+		@media only screen and (min-device-width:800px) { html { overflow:hidden; } }
+		html { height:100%; }
+		body { height:100%; overflow:hidden; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#FFFFFF; background-color:#000000; }
+	</style>
+
+	<link rel="stylesheet" href="../../assets/css/styles.css">
+
+</head>
+<body>
+
+<script src="../../assets/krpano/pano.js"></script>
+<script src="../../assets/js/poi.js"></script>
+
+<div class="hotspot-title"><h1>Titolo</h1></div>
+
+
+
+<div id="pano" style="width:100%;height:100%;">
+	<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
+	<script>
+		embedpano({xml:"pano.xml", target:"pano", html5:"auto", mobilescale:1.0, passQueryParameters:true});
+	</script>
+
+
+	<!-- scheda contenuto-->
+	<div class="schedaContenuto" id="scheda">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 chiudi">
+					<a href="#" onclick="hideScheda(this)">X</a>
+				</div>
+			</div>
+		</div>
+		<div class="container master">
+			<div class="row">
+				<div class="col-xs-12 titles">
+					<h1>ALLE PORTE DELL’ECOMUSEO DEL MELEDRIO</h1>
+					<h2>La segheria di Dimaro</h2><br />
+				</div>
+				
+				<div class="col-xs-12">
+					<br />
+					<p>Recentemente restaurata dall’amministrazione comunale di Dimaro e inaugurata nel 2013, la segheria alla veneziana rappresenta una delle porte di accesso all’Ecomuseo della Valle del Meledrio.</p>
+					<br />
+				</div>
+			</div>
+			<div class="row">	
+				<div class="col-xs-12 ">
+					<img src="01-segheria-dimaro.jpg" alt="La segheria di Dimaro" class="imageInright img-responsive">
+					<p>
+						Posta ai margini meridionali del paese, lungo la strada che porta a Madonna di Campiglio e in Val Rendena, venne edificata nei primi anni dell’Ottocento e rimase attiva fino al 1960. La sua progressiva decadenza è stata fermata dall’intervento di restauro che l’ha resa agibile e perfettamente funzionante, oltre che fruibile attraverso un percorso didattico-espositivo.<br />La scoperta dell’Ecomuseo che parte dalla storica segheria prosegue lungo il "Percorso della Trementina" per poi continuare verso le "Fosinace", dove veniva lavorato il ferro, con il maglio perfettamente conservato. Si prosegue poi verso la "Calcara", antica fornace per la cottura e la produzione della calce e quindi fino allo storico e misterioso "Doss di Santa Brigida", dove sorgeva un ospizio per i viandanti retto da religiosi, i cui resti sono riemersi a seguito da recenti indagini archeologiche.
+					</p>
+					<br />
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fine scheda contenuto-->
+	
+</div>
+
+</body>
+</html>
