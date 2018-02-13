@@ -3,41 +3,22 @@ var hotspots = {
     "hotspotsDir":"hotspots/",
     "centerLat" : 46.336089,
     "centerLong" : 10.885649,
-	 "spotsWithMedia": [
-	    {
-	      "name": "Molino Ruatti",
-	      "lat": 46.3662,
-	      "long": 10.89407,
-	      "href": "ruatti/index.html",
-	      "type": "normal",
-	      "marker": "normal",
-	      "description": "Virtual Tour del Molino Ruatti",
-	      "bounce": false
-	    },
-	    {
-	      "name": "Ossana",
-	      "lat": 46.30798,
-	      "long": 10.73726,
-	      "href": "ossana/",
-	      "type": "normal",
-	      "marker": "normal",
-	      "description": "Il fiume e il suo castello",
-	      "bounce": false
-	    },
+	"spotsWithMedia": [
 	    {
 	      "name": "Corno dei Tre Signori",
 	      "lat": 46.343261,
 	      "long": 10.51583,
-	      "href": "ossana/",
+	      "href": "1-corno-tre-signori/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Alle sorgenti del Noce",
 	      "bounce": false
-	    },{
+	    },
+	    {
 	      "name": "Pian Palú",
-	      "lat": 46.33679, 
+	      "lat": 46.33679,
 	      "long": 10.61313,
-	      "href": "ossana/",
+	      "href": "2-diga-pian-palu/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Un lago idroelettrico",
@@ -47,7 +28,7 @@ var hotspots = {
 	      "name": "Torbiera di Passo Tonale",
 	      "lat": 46.2575,
 	      "long": 10.59107,
-	      "href": "ossana/",
+	      "href": "3-torbiera-tonale/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Un libro di storia naturale",
@@ -57,7 +38,7 @@ var hotspots = {
 	      "name": "Presanella",
 	      "lat": 46.216647,
 	      "long": 10.667041,
-	      "href": "presanella-gigapix/",
+	      "href": "4-presanella/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "La più alta del Trentino",
@@ -67,127 +48,150 @@ var hotspots = {
 	      "name": "Il bosco di Derniga",
 	      "lat": 46.30512,
 	      "long": 10.73201,
-	      "href": "ossana/",
+	      "href": "5-bosco-derniga/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Alla scoperta del mondo vegetale",
 	      "bounce": false
 	    },
 	    {
-	      "name": "Val Meledrio - Cascata del Pison",
-	      "lat": 46.29925, 
-	      "long": 10.87363,
-	      "href": "meledrio/",
+	      "name": "Ossana",
+	      "lat": 46.30798,
+	      "long": 10.73726,
+	      "href": "6-ossana/",
 	      "type": "normal",
 	      "marker": "normal",
-	      "description": "Natura e macchine ad acqua",
+	      "description": "Il fiume e il suo castello",
 	      "bounce": false
 	    },
-	      {
+	    {
 	      "name": "Val Meledrio - Segheria di Dimaro",
-	      "lat": 46.31877, 
+	      "lat": 46.31877,
 	      "long": 10.87632,
-	      "href": "meledrio/",
+	      "href": "7-meledrio-segheria/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Porta dell’Ecomuseo del Meledrio",
 	      "bounce": false
 	    },
 	    {
+	      "name": "Val Meledrio - Cascata del Pison",
+	      "lat": 46.29925,
+	      "long": 10.87363,
+	      "href": "8-meledrio-pison/",
+	      "type": "normal",
+	      "marker": "normal",
+	      "description": "Natura e macchine ad acqua",
+	      "bounce": false
+	    },
+	    {
+	      "name": "Pista ciclabile",
+	      "lat": 46.32172,
+	      "long": 10.85369,
+	      "href": "9-pista-ciclabile/",
+	      "type": "normal",
+	      "marker": "normal",
+	      "description": "Un percorso lungo il noce",
+	      "bounce": false
+	    },
+	    {
 	      "name": "Ontaneta di Croviana",
 	      "lat": 46.34008,
 	      "long": 10.90813,
-	      "href": "meledrio/",
+	      "href": "10-ontaneta/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Alla scoperta dello scazzone",
 	      "bounce": false
 	    },
 	    {
-	      "name": "Isola del gal",
-	      "lat": 46.353599, 
-	      "long": 10.923331,
-	      "href": "meledrio/",
-	      "type": "normal",
-	      "marker": "normal",
-	      "description": "La vita nel fiume",
-	      "bounce": false
-	    }, 
-	    {
 	      "name": "Segheria di Malè",
 	      "lat": 46.3466,
 	      "long": 10.9144,
-	      "href": "meledrio/",
+	      "href": "11-segheria-male/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Storie d’acqua e legno",
 	      "bounce": false
-	    }, { 
+	    },
+	    {
+	      "name": "Isola del gal",
+	      "lat": 46.353599,
+	      "long": 10.923331,
+	      "href": "12-isola-gal/",
+	      "type": "normal",
+	      "marker": "normal",
+	      "description": "La vita nel fiume",
+	      "bounce": false
+	    },
+	    {
 	      "name": "Pondasio",
 	      "lat": 46.35832,
 	      "long": 10.91395,
-	      "href": "meledrio/",
+	      "href": "13-pondasio/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Dal medioevo, il luogo delle macchine ad acqua",
 	      "bounce": false
-	    },{ 
+	    },
+	    {
+	      "name": "Prati aridi e le orchidee di Arnago",
+	      "lat": 46.36723,
+	      "long": 10.91184,
+	      "href": "14-prati-aridi/",
+	      "type": "normal",
+	      "marker": "normal",
+	      "description": "Uno straordinario ambiente naturale",
+	      "bounce": false
+	    },
+	    {
+	      "name": "Molino Ruatti",
+	      "lat": 46.3662,
+	      "long": 10.89407,
+	      "href": "15-molino-ruatti/",
+	      "type": "normal",
+	      "marker": "normal",
+	      "description": "Virtual Tour del Molino Ruatti",
+	      "bounce": false
+	    },
+	    {
 	      "name": "Segheria Rabbi Fonti",
-	      "lat": 46.41062, 
+	      "lat": 46.41062,
 	      "long": 10.78856,
-	      "href": "meledrio/",
+	      "href": "16-rabbi-fonti/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Nel cuore del Parco",
 	      "bounce": false
 	    },
-	    { 
-	      "name": "Prati aridi e le orchidee di Arnago",
-	      "lat": 46.36723, 
-	      "long": 10.91184,
-	      "href": "meledrio/",
-	      "type": "normal",
-	      "marker": "normal",
-	      "description": "Uno straordinario ambiente naturale",
-	      "bounce": false
-	    },{ 
+	    {
 	      "name": "Cascata Saent",
-	      "lat": 46.43674, 
+	      "lat": 46.43674,
 	      "long": 10.76887,
-	      "href": "meledrio/",
+	      "href": "17-cascata-saent/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "L’acqua dà spettacolo",
 	      "bounce": false
 	    },
-	    { 
+	    {
 	      "name": "Le Contre",
-	      "lat": 46.36595, 
+	      "lat": 46.36595,
 	      "long": 10.9459,
-	      "href": "meledrio/",
+	      "href": "18-contre/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Un luogo di turismo e cultura",
 	      "bounce": false
 	    },
-	    { 
+	    {
 	      "name": "Forra prima di Mostizzolo",
-	      "lat": 46.39313, 
+	      "lat": 46.39313,
 	      "long": 11.01212,
-	      "href": "meledrio/",
+	      "href": "19-forra/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Là dove il fiume si nasconde",
-	      "bounce": false
-	    },
-	    { 
-	      "name": "Pista ciclabile",
-	      "lat": 46.32172, 
-	      "long": 10.85369,
-	      "href": "meledrio/",
-	      "type": "normal",
-	      "marker": "normal",
-	      "description": "Un percorso lungo il noce",
 	      "bounce": false
 	    }
 	  ],

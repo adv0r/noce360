@@ -1,9 +1,17 @@
-﻿<krpano>
+﻿<krpano >
 	
-
 	<!-- the skin -->
     <include url="../../assets/krpano/skin/noceskin.xml" />
-	
+
+	<!-- audioplayer -->
+	<plugin name="soundinterface"
+        url.html5="../../assets/krpano/plugins/soundinterface.js"
+        preload="true"
+        rootpath=""
+        volume="1.0"
+        mute="false"
+        />
+
 	<!-- Gyroscope -->
         <plugin name="gyro" devices="html5" keep="true"
         url="../../assets/krpano/plugins/gyro2.js" 
@@ -19,57 +27,62 @@
         onenable=""
         ondisable=""
         />
-        
-	
-	<!-- Scene 1 -->
-	<scene name="scene_photo1" title="Meledrio 1" onstart="" thumburl="thumb1.png" lat="" lng="" heading="Meledrio 1" distorted="true">
+
+	<scene name="scene_gigapixel" title="" onstart="playsound(bgsnd, '../../assets/sounds/river.ogg', 0);" thumburl="thumb.png" lat="" lng="" heading="Gigapixel Presanella">
 
 		<!-- view settings -->
-		<view hlookat="30" vlookat="0" maxpixelzoom="1.0" fovmax="130" limitview="range" fov="90"/>
+		<view hlookat="280" vlookat="20" maxpixelzoom="3.0" fovmax="130" limitview="auto" fov="110" />
+		
+		<!-- default autorotate settings (disabled by default) -->
+		<autorotate enabled="true" waittime="1.0" accel="2.0" speed="8.0" horizon="0.0" tofov="90.0" />
+	      
+		<preview url="gigaPresenellaPATCH.tiles/preview.jpg" />
 
-		<preview url="photo1.tiles/preview.jpg" />
 
-		<image type="CUBE" hfov="360" vfov="180" voffset="0" multires="true" tilesize="512">
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="7808" tiledimageheight="7808">
+				<cube url="gigaPresenellaPATCH.tiles/%s/l4/%v/l4_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="3840" tiledimageheight="3840">
+				<cube url="gigaPresenellaPATCH.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
 			<level tiledimagewidth="2048" tiledimageheight="2048">
-				<cube url="photo1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="gigaPresenellaPATCH.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="photo1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="gigaPresenellaPATCH.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
+		<!-- A hotelement -->
+		<hotspot name="droneVideoHotspot"
+		         type="image"
+		         url="../../assets/images/drone-icon.png"
+		         keep="false"
+		         visible="true"
+		         enabled="true"
+		         handcursor="true"
+		         maskchildren="false"
+		         ath="-50.0" atv="-30.0"
+		         edge="center"
+		         zoom="false"
+		         distorted="true" rx="0.0" ry="0.0" rz="0.0"
+		         width="" height=""
+		         scale="0.5"
+		         rotate="0.0"
+		         alpha="1.0"
+		         onclick="playDrone"
+		         borderwidth="2"
+		         bordercolor="#0xAAAAAA"
+		         />
 
-
-
-	<!-- A hotelement -->
-	<hotspot name="gotoscene2"
-	         type="image"
-	         url="../../assets/images/element.png"
-	         keep="false"
-	         visible="true"
-	         enabled="true"
-	         handcursor="true"
-	         distorted="true"
-	         maskchildren="false"
-	         ath="-150.0" atv="0.0"
-	         edge="center"
-	         zoom="false"
-	         scale="0.5"
-	         rotate="0.0"
-	         alpha="1.0"
-	         onclick="loadscene('scene_photo2', null, MERGE);"
-	         borderwidth="2"
-	         bordercolor="#0xAAAAAA"
-	         />
-
- <!-- LABEL TESTUALE  -->
-		       <hotspot name="gotoscene2text"
+				<!-- LABEL TESTUALE  -->
+		       <hotspot name="gotodrone"
 		         type="text"
-		         ath="-150.0" atv="0.0"
-             	 edge="center" distorted="true" renderer="webgl"
+		         ath="-50.0" atv="-30.0" edge="center" distorted="true" renderer="webgl"
 		         oy="30"
-		         html="Esplora un altro ponte"
-		         css="font-family:Arial; font-size:13px; color:#000000;"
+		         html="Fai un giro sul [b]drone[/b]"
+		         css="font-family:Arial; font-size:13px; color:#000000; background-color:black;"
 		         vcenter="false"
 		         padding="2"
 		         wordwrap="true"
@@ -85,156 +98,31 @@
 		         mipmapping="false"
 		         onautosized=""
 		         />
-
-	<!-- end hotelement  -->
-
-
-<hotspot name="infospot1"
-	         type="image"
-	         url="../../assets/images/element.png"
-	         keep="false"
-	         visible="true"
-	         enabled="true"
-	         handcursor="true"
-	         maskchildren="false"
-	         ath="60" atv="-4"
-	         edge="center"
-	         zoom="false"
-	         distorted="true" rx="0.0" ry="0.0" rz="0.0"
-	         width="" height=""
-	         scale="0.5"
-	         rotate="0.0"
-	         alpha="1.0"
-	         onclick="togglesch"
-	         borderwidth="2"
-	         bordercolor="#0xAAAAAA"
-	         vr="false"
-	         />
-
-       <!-- LABEL TESTUALE  -->
-		       <hotspot name="infospot1-label"
-		         type="text"
-		          ath="60" atv="-4"
-             	 edge="center" distorted="true" renderer="webgl"
-		         oy="30"
-		         html="Il ponte magico"
-		         css="font-family:Arial; font-size:13px; color:#000000;"
-		         vcenter="false"
-		         padding="2"
-		         wordwrap="true"
-		         bg="true"
-		         bgcolor="0xFFFFFF"
-		         bgalpha="0.5"
-		         bgborder="0"
-		         bgroundedge="0"
-		         bgshadow=""
-		         txtshadow=""
-		         mergedalpha="true"
-		         oversampling="1.0"
-		         mipmapping="false"
-		         onautosized=""
-		         onclick="togglesch"
-     	         vr="false"
-		         />
-
-	</scene>
+		<!-- end hotelement  -->
+</scene>
 
 
-	<!-- Scene 2 -->
-	<scene name="scene_photo2" title="Meledrio 2" onstart="" thumburl="thumb2.png" lat="" lng="" heading="Meledrio 2">
-		<view hlookat="30" vlookat="0" maxpixelzoom="1.0" fovmax="130" limitview="range" fov="90"/>
+	<!-- Video drone  -->
+<scene name="scene_drone" title="Drone Ossana" onstart="stopallsounds();skin_view_littleplanet(); switch(autorotate.enabled);" thumburl="thumb_drone.png" lat="" lng="" heading="Drone Ossana">
 
-		
-	<preview url="photo2.tiles/preview.jpg" />
 
-	<image type="CUBE" multires="true" tilesize="512">
-		<level tiledimagewidth="2048" tiledimageheight="2048">
-			<cube url="photo2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-		</level>
-		<level tiledimagewidth="1024" tiledimageheight="1024">
-			<cube url="photo2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-		</level>
+   	<plugin name="video"
+	   	url.html5="../../assets/krpano/plugins/videoplayer.js"
+	   	videourl="../../assets/media/videos/DRONE-OSSANA_high.mp4|../../assets/media/videos/DRONE-OSSANA_high.webm|../../assets/media/videos/DRONE-OSSANA_iphone-audio.m4a"
+	   	posterurl="../../assets/media/videos/DRONE-OSSANA-high-poster.jpg"
+	    panovideo="true"
+	    pausedonstart="false"
+	    loop="true"
+	    volume="1.0"
+	    playbackrate="3"
+    />
+
+	<image hfov="360" vfov="180">
+	   <sphere url="plugin:video" />
 	</image>
 
-			<!-- A hotelement -->
-	<hotspot name="gotoscene1"
-	         type="image"
-	         url="../../assets/images/element.png"
-	         keep="false"
-	         visible="true"
-	         enabled="true"
-	         handcursor="true"
-	         maskchildren="false"
-	         ath="10.0" atv="0.0"
-	         edge="center"
-	         zoom="false"
-	         distorted="true" rx="0.0" ry="0.0" rz="0.0"
-	         width="" height=""
-	         scale="0.5"
-	         rotate="0.0"
-	         alpha="1.0"
-	         onclick="loadscene('scene_photo1', null, MERGE);"
-	         borderwidth="2"
-	         bordercolor="#0xAAAAAA"
-	         />
 
-       <!-- LABEL TESTUALE  -->
-		       <hotspot name="gotoscene1text"
-		         type="text"
-		         ath="10.0" atv="0.0"
-             	 edge="center" distorted="true" renderer="webgl"
-		         oy="30"
-		         html="Torna al primo ponte"
-		         css="font-family:Arial; font-size:13px; color:#000000;"
-		         vcenter="false"
-		         padding="2"
-		         wordwrap="true"
-		         bg="true"
-		         bgcolor="0xFFFFFF"
-		         bgalpha="0.5"
-		         bgborder="0"
-		         bgroundedge="0"
-		         bgshadow=""
-		         txtshadow=""
-		         mergedalpha="true"
-		         oversampling="1.0"
-		         mipmapping="false"
-		         onautosized=""
-		         />
-
-	<!-- end hotelement  -->
-	</scene>
-
-
-	<!-- Scene 3 -->
-	<scene name="scene_photo3" title="Meledrio 3" onstart="" thumburl="thumb3.png" lat="" lng="" heading="Meledrio 3">
-
-		<view hlookat="30" vlookat="0" maxpixelzoom="1.0" fovmax="130" limitview="range" fov="90"/>
-		<preview url="photo3.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="2048" tiledimageheight="2048">
-				<cube url="photo3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="photo3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-	</scene>
-
-
-	<!-- Scene GigaPixel -->
-	<scene name="scene_giga" title="Gigapixel Cascata" onstart="" thumburl="thumb4.png" lat="" lng="" heading="Gigapixel cascata">
-
-		<view hlookat="0" vlookat="0" maxpixelzoom="3.0" fovmax="130" limitview="range" fov="110" />
-	
-		<preview url="GigaMeledrioPATCH.tiles/preview.jpg" />
-
-		<image>
-			<cube url="GigaMeledrioPATCH.tiles/pano_%s.jpg" />
-		</image>
-	</scene>
-
+</scene>
 
 
 <!-- startup action - load the first scene -->
@@ -244,9 +132,10 @@
 		if(startactions !== null, startactions() );
 	</action>
 
-	<action name="togglesch" type="Javascript"><![CDATA[
-		toggleScheda();
-	]]></action>
+
+<action name="playDrone" >
+	loadscene("scene_drone", null, MERGE);
+</action>
 
 
 </krpano>
