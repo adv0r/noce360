@@ -260,9 +260,11 @@ function showScheda(scheda) {
 
 
 
+var contentOpening = "<div class='row'><div class='col-xs-12'><br /><p>";
+var contentClosing = "</p></div></div>";
+
 function fillScheda(title, subtitle, content) {
     document.getElementById("schedaTitolo").innerHTML = title;
     document.getElementById("schedaSottotitolo").innerHTML = subtitle;
-    document.getElementById("schedaContent").innerHTML = content;
-
+    document.getElementById("schedaContent").innerHTML = contentOpening+content+contentClosing;
 }
