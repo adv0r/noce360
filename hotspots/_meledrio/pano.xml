@@ -105,7 +105,7 @@
 	         scale="0.5"
 	         rotate="0.0"
 	         alpha="1.0"
-	         onclick="togglesch"
+	         onclick="togglescheda"
 	         borderwidth="2"
 	         bordercolor="#0xAAAAAA"
 	         vr="false"
@@ -133,7 +133,7 @@
 		         oversampling="1.0"
 		         mipmapping="false"
 		         onautosized=""
-		         onclick="togglesch"
+		         onclick="togglescheda"
      	         vr="false"
 		         />
 
@@ -244,7 +244,7 @@
 		if(startactions !== null, startactions() );
 	</action>
 
-	<action name="togglesch" type="Javascript"><![CDATA[
+	<action name="togglescheda" type="Javascript"><![CDATA[
 		toggleScheda();
 	]]></action>
 

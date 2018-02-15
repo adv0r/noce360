@@ -28,7 +28,7 @@
 
 
 
-	<action name="togglesch" type="Javascript"><![CDATA[
+	<action name="togglescheda" type="Javascript"><![CDATA[
 		toggleScheda();
 	]]></action>
 

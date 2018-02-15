@@ -35,6 +35,7 @@
 		         onclick="loadscene('scene_photo2', null, MERGE);"
 		         url="../../assets/images/element.png"
 		         visible="false"
+		         vr="false"
 		         keep="false" enabled="true" handcursor="true" distorted="true" maskchildren="false" rotate="0.0" alpha="1.0" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA"
 		         />
 
@@ -45,6 +46,8 @@
 	     vr="false"
 	     oy="30"
 	     visible="false"
+	     vr="false"
+	     onclick="loadscene('scene_photo2', null, MERGE);"
 	 	 edge="center" distorted="true" renderer="webgl"  type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized="" />
 
 		<!-- End Hotelement -->
@@ -99,7 +102,7 @@
 		if(startactions !== null, startactions() );
 	</action>
 
-	<action name="togglesch" type="Javascript"><![CDATA[
+	<action name="togglescheda" type="Javascript"><![CDATA[
 		toggleScheda();
 	]]></action>
 

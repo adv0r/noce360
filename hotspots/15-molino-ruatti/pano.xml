@@ -30,6 +30,26 @@
 	
 	<scene name="scene_IMG_20170708_165702" title="IMG_20170708_165702" onstart="" thumburl="panos/IMG_20170708_165702.tiles/thumb.jpg" lat="" lng="" heading="">
 
+		<!-- Hotelement Start Scheda contenuto toggle-->
+		<hotspot name="openschedahotspot"
+		         type="image"
+		         ath="170.0" atv="0.0"
+		         scale="0.5"
+		         onclick="togglescheda"
+		         url="../../assets/images/element.png"
+		         visible="true"
+		         vr="false"
+		         keep="false" enabled="true" handcursor="true" distorted="true" maskchildren="false" rotate="0.0" alpha="1.0" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA"
+		         />
+
+         <hotspot name="openschedahotspotText"
+		         html="Toggle scheda"
+		         ath="170.0" atv="0.0"
+		         vr="false"
+		         oy="30"
+		         type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+		         />
+
 		<view hlookat="170.0" vlookat="-25.0"  fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/IMG_20170708_165702.tiles/preview.jpg" />
@@ -375,6 +395,11 @@
 		</image>
 
 	</scene>
+
+
+	<action name="togglescheda" type="Javascript"><![CDATA[
+		toggleScheda();
+	]]></action>
 
 	</krpano>
 
