@@ -7,87 +7,73 @@
      <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
         touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
         
-	
-	<!-- start Scene 1 -->
-	<scene name="scene_photo1" title="Meledrio 1" onstart="" thumburl="thumb1.png" lat="" lng="" heading="Meledrio 1" distorted="true">
+	<scene name="scene_pondasio-corridoio" title="pondasio-corridoio" onstart="" thumburl="panos/pondasio-corridoio.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<!-- View settings -->
-		<view hlookat="30" vlookat="0" maxpixelzoom="1.0" fovmax="130" limitview="range" fov="90"/>
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="photo1.tiles/preview.jpg" />
-
-		<image type="CUBE" hfov="360" vfov="180" voffset="0" multires="true" tilesize="512">
-			<level tiledimagewidth="2048" tiledimageheight="2048">
-				<cube url="photo1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="photo1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-
-
-		<!-- Hotelement Start-->
-		<hotspot name="gotoscene2"
-		         type="image"
-		         ath="-150.0" atv="0.0"
-		         scale="0.5"
-		         onclick="loadscene('scene_photo2', null, MERGE);"
-		         url="../../assets/images/element.png"
-		         visible="false"
-		         keep="false" enabled="true" handcursor="true" distorted="true" maskchildren="false" rotate="0.0" alpha="1.0" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA"
-		         />
-
-	 	<!-- label testuale hotelement  -->
-	    <hotspot name="gotoscene2text"
-	     html="Esplora un altro ponte"
-	     ath="-150.0" atv="0.0"
-	     vr="false"
-	     oy="30"
-	     visible="false"
-	 	 edge="center" distorted="true" renderer="webgl"  type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized="" />
-
-		<!-- End Hotelement -->
-
-	</scene> 	<!-- End Scene 1 -->
-
-
-
-	<!-- start Scene 1 -->
-	<scene name="scene_photo2" title="Meledrio 2" onstart="" thumburl="thumb2.png" lat="" lng="" heading="Meledrio 2">
-		<view hlookat="30" vlookat="0" maxpixelzoom="1.0" fovmax="130" limitview="range" fov="90"/>
-
-		
-		<preview url="photo2.tiles/preview.jpg" />
+		<preview url="panos/pondasio-corridoio.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="2048" tiledimageheight="2048">
-				<cube url="photo2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/pondasio-corridoio.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="photo2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/pondasio-corridoio.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+
 	</scene>
 
+	<scene name="scene_pondasio-entrata" title="pondasio-entrata" onstart="" thumburl="panos/pondasio-entrata.tiles/thumb.jpg" lat="" lng="" heading="">
 
-	<!-- Scene 3 -->
-	<scene name="scene_photo3" title="Meledrio 3" onstart="" thumburl="thumb3.png" lat="" lng="" heading="Meledrio 3">
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<view hlookat="30" vlookat="0" maxpixelzoom="1.0" fovmax="130" limitview="range" fov="90"/>
-		<preview url="photo3.tiles/preview.jpg" />
+		<preview url="panos/pondasio-entrata.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="2048" tiledimageheight="2048">
-				<cube url="photo3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/pondasio-entrata.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="photo3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/pondasio-entrata.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-	</scene> <!-- End Scene 1 -->
 
+	</scene>
 
+	<scene name="scene_pondasio-esterno" title="pondasio-esterno" onstart="" thumburl="panos/pondasio-esterno.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/pondasio-esterno.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/pondasio-esterno.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/pondasio-esterno.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_pondasio-fuoco" title="pondasio-fuoco" onstart="" thumburl="panos/pondasio-fuoco.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/pondasio-fuoco.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/pondasio-fuoco.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/pondasio-fuoco.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
 
 	<!-- start Actions-->
 

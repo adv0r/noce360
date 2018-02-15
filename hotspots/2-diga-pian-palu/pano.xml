@@ -9,83 +9,90 @@
         
 	
 	<!-- start Scene 1 -->
-	<scene name="scene_photo1" title="Meledrio 1" onstart="" thumburl="thumb1.png" lat="" lng="" heading="Meledrio 1" distorted="true">
+		<scene name="scene_palu-acqua" title="palu-acqua" onstart="" thumburl="panos/palu-acqua.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<!-- View settings -->
-		<view hlookat="30" vlookat="0" maxpixelzoom="1.0" fovmax="130" limitview="range" fov="90"/>
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="photo1.tiles/preview.jpg" />
-
-		<image type="CUBE" hfov="360" vfov="180" voffset="0" multires="true" tilesize="512">
-			<level tiledimagewidth="2048" tiledimageheight="2048">
-				<cube url="photo1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="photo1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-
-
-		<!-- Hotelement Start-->
-		<hotspot name="gotoscene2"
-		         type="image"
-		         ath="-150.0" atv="0.0"
-		         scale="0.5"
-		         onclick="loadscene('scene_photo2', null, MERGE);"
-		         url="../../assets/images/element.png"
-		         visible="false"
-		         keep="false" enabled="true" handcursor="true" distorted="true" maskchildren="false" rotate="0.0" alpha="1.0" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA"
-		         />
-
-	 	<!-- label testuale hotelement  -->
-	    <hotspot name="gotoscene2text"
-	     html="Esplora un altro ponte"
-	     ath="-150.0" atv="0.0"
-	     vr="false"
-	     oy="30"
-	     visible="false"
-	 	 edge="center" distorted="true" renderer="webgl"  type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized="" />
-
-		<!-- End Hotelement -->
-
-	</scene> 	<!-- End Scene 1 -->
-
-
-
-	<!-- start Scene 1 -->
-	<scene name="scene_photo2" title="Meledrio 2" onstart="" thumburl="thumb2.png" lat="" lng="" heading="Meledrio 2">
-		<view hlookat="30" vlookat="0" maxpixelzoom="1.0" fovmax="130" limitview="range" fov="90"/>
-
-		
-		<preview url="photo2.tiles/preview.jpg" />
+		<preview url="panos/palu-acqua.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="2048" tiledimageheight="2048">
-				<cube url="photo2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/palu-acqua.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="photo2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/palu-acqua.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+
 	</scene>
 
+	<scene name="scene_palu-diga" title="palu-diga" onstart="" thumburl="panos/palu-diga.tiles/thumb.jpg" lat="" lng="" heading="">
 
-	<!-- Scene 3 -->
-	<scene name="scene_photo3" title="Meledrio 3" onstart="" thumburl="thumb3.png" lat="" lng="" heading="Meledrio 3">
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<view hlookat="30" vlookat="0" maxpixelzoom="1.0" fovmax="130" limitview="range" fov="90"/>
-		<preview url="photo3.tiles/preview.jpg" />
+		<preview url="panos/palu-diga.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="2048" tiledimageheight="2048">
-				<cube url="photo3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/palu-diga.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="photo3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/palu-diga.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-	</scene> <!-- End Scene 1 -->
+
+	</scene>
+
+	<scene name="scene_palu-lago" title="palu-lago" onstart="" thumburl="panos/palu-lago.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/palu-lago.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/palu-lago.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/palu-lago.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_palu-maso" title="palu-maso" onstart="" thumburl="panos/palu-maso.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/palu-maso.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/palu-maso.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/palu-maso.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_palu-strada" title="palu-strada" onstart="" thumburl="panos/palu-strada.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/palu-strada.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/palu-strada.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/palu-strada.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
 
 
 
