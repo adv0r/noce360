@@ -8,8 +8,10 @@
         touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
         
 		
-	<scene name="scene_arnago-casetta" title="arnago-casetta" onstart="" thumburl="panos/arnago-casetta.tiles/thumb.jpg" lat="46.36715600" lng="10.91033900" heading="0.0">
 
+	<scene name="scene_arnago-hdr" title="arnago-hdr" onstart="" thumburl="panos/arnago-hdr.tiles/thumb.jpg" lat="46.36688333" lng="10.91185556" heading="0.0">
+
+		
 		<!-- Hotelement Start Scheda contenuto toggle-->
 		<hotspot name="openschedahotspot"
 		         type="image"
@@ -32,6 +34,24 @@
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
+		<preview url="panos/arnago-hdr.tiles/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/arnago-hdr.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/arnago-hdr.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+	
+		
+	<scene name="scene_arnago-casetta" title="arnago-casetta" onstart="" thumburl="panos/arnago-casetta.tiles/thumb.jpg" lat="46.36715600" lng="10.91033900" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
 		<preview url="panos/arnago-casetta.tiles/preview.jpg" />
 
 		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
@@ -45,22 +65,7 @@
 
 	</scene>
 
-	<scene name="scene_arnago-hdr" title="arnago-hdr" onstart="" thumburl="panos/arnago-hdr.tiles/thumb.jpg" lat="46.36688333" lng="10.91185556" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/arnago-hdr.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/arnago-hdr.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/arnago-hdr.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-	</scene>
 
 	<scene name="scene_arnago-laghetto" title="arnago-laghetto" onstart="" thumburl="panos/arnago-laghetto.tiles/thumb.jpg" lat="46.36712700" lng="10.91074500" heading="0.0">
 

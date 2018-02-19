@@ -3,6 +3,9 @@
 	<!-- the skin -->
     <include url="../../assets/krpano/skin/noceskin.xml" />
 
+	<!-- Override noce's skin -->
+	<skin_settings thumbs_opened="false" />
+
 	<!-- audioplayer -->
 	<plugin name="soundinterface"
         url.html5="../../assets/krpano/plugins/soundinterface.js"
@@ -12,23 +15,10 @@
         mute="false"
         />
 
-	<!-- Gyroscope -->
-        <plugin name="gyro" devices="html5" keep="true"
-        url="../../assets/krpano/plugins/gyro2.js" 
-        enabled="true"
-        camroll="true"
-        friction="0.0"
-        touch_mode="full"
-        sensor_mode="1"
-        softstart="0.5"
-        autocalibration="false"
-        onavailable=""
-        onunavailable=""
-        onenable=""
-        ondisable=""
-        />
-
-	<scene name="scene_gigapixel" title="" onstart="playsound(bgsnd, '../../assets/sounds/river.ogg', 0);" thumburl="thumb.png" lat="" lng="" heading="Gigapixel Presanella">
+	<!-- Import gyroscope plugin -->
+     <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
+        touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
+        
 
 		<!-- view settings -->
 		<view hlookat="280" vlookat="20" maxpixelzoom="3.0" fovmax="130" limitview="auto" fov="110" />
@@ -54,88 +44,16 @@
 			</level>
 		</image>
 
-		<!-- A hotelement -->
-		<hotspot name="droneVideoHotspot"
-		         type="image"
-		         url="../../assets/images/drone-icon.png"
-		         keep="false"
-		         visible="true"
-		         enabled="true"
-		         handcursor="true"
-		         maskchildren="false"
-		         ath="-50.0" atv="-30.0"
-		         edge="center"
-		         zoom="false"
-		         distorted="true" rx="0.0" ry="0.0" rz="0.0"
-		         width="" height=""
-		         scale="0.5"
-		         rotate="0.0"
-		         alpha="1.0"
-		         onclick="playDrone"
-		         borderwidth="2"
-		         bordercolor="#0xAAAAAA"
-		         />
-
-				<!-- LABEL TESTUALE  -->
-		       <hotspot name="gotodrone"
-		         type="text"
-		         ath="-50.0" atv="-30.0" edge="center" distorted="true" renderer="webgl"
-		         oy="30"
-		         html="Fai un giro sul [b]drone[/b]"
-		         css="font-family:Arial; font-size:13px; color:#000000; background-color:black;"
-		         vcenter="false"
-		         padding="2"
-		         wordwrap="true"
-		         bg="true"
-		         bgcolor="0xFFFFFF"
-		         bgalpha="0.5"
-		         bgborder="0"
-		         bgroundedge="0"
-		         bgshadow=""
-		         txtshadow=""
-		         mergedalpha="true"
-		         oversampling="1.0"
-		         mipmapping="false"
-		         onautosized=""
-		         />
-		<!-- end hotelement  -->
-</scene>
+	
 
 
-	<!-- Video drone  -->
-<scene name="scene_drone" title="Drone Ossana" onstart="stopallsounds();skin_view_littleplanet(); switch(autorotate.enabled);" thumburl="thumb_drone.png" lat="" lng="" heading="Drone Ossana">
+	<!-- start Actions-->
 
+	<action name="togglescheda" type="Javascript"><![CDATA[
+		toggleScheda();
+	]]></action>
 
-   	<plugin name="video"
-	   	url.html5="../../assets/krpano/plugins/videoplayer.js"
-	   	videourl="../../assets/media/videos/DRONE-OSSANA_high.mp4|../../assets/media/videos/DRONE-OSSANA_high.webm|../../assets/media/videos/DRONE-OSSANA_iphone-audio.m4a"
-	   	posterurl="../../assets/media/videos/DRONE-OSSANA-high-poster.jpg"
-	    panovideo="true"
-	    pausedonstart="false"
-	    loop="true"
-	    volume="1.0"
-	    playbackrate="3"
-    />
-
-	<image hfov="360" vfov="180">
-	   <sphere url="plugin:video" />
-	</image>
-
-
-</scene>
-
-
-<!-- startup action - load the first scene -->
-	<action name="startup" autorun="onstart">
-		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
-		loadscene(get(startscene), null, MERGE);
-		if(startactions !== null, startactions() );
-	</action>
-
-
-<action name="playDrone" >
-	loadscene("scene_drone", null, MERGE);
-</action>
+	<!-- end Actions-->
 
 
 </krpano>
