@@ -2,12 +2,6 @@ function backHome() {
     document.location.href = '../../'; //one level up;
 }
 
-function playDroneVideo() {
-    console.log("Play drone video");
-    document.location.href = '../ossana-drone'; //one level up;
-}
-
-
 
 function toggleScheda() {
     var schede = document.getElementsByClassName("schedaContenuto");
@@ -39,8 +33,38 @@ function addSchedaToPano() {
 //Equivalent of jQuery onDocument ready thanks to https://stackoverflow.com/a/30319853
 r(function() {
     addSchedaToPano();
+
+    //Preventing the user from zooming while inside scheda
+    document.getElementById('scheda')
+        .addEventListener('mouseenter', function (event) {
+            mouseEnteredScheda();
+        });
+
+
+    document.getElementById('scheda')
+        .addEventListener('mouseout', function (event) {
+            mouseOutScheda();
+        });
+
 });
 
 function r(f) {
     /in/.test(document.readyState) ? setTimeout('r(' + f + ')', 9) : f()
 }
+
+
+function mouseEnteredScheda(){
+    var krpano = document.getElementById("krpanoSWFObject");
+    krpano.set("control.mousefovchange",0);
+    console.log("blocked mousewheel");
+}
+
+function mouseOutScheda(){
+    var krpano = document.getElementById("krpanoSWFObject");
+    krpano.set("control.mousefovchange",1);
+    console.log("released mousewheel");
+
+}
+
+
+
