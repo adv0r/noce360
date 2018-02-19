@@ -21,13 +21,36 @@
              />
 
          <hotspot name="openschedahotspotText"
-             html="Toggle scheda"
+             html="Prati terrazzati"
              ath="0.0" atv="0.0"
              vr="false"
              oy="30"
              type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
              />
 
+
+
+
+
+    <!-- Hotelement Start Scheda contenuto toggle-->
+    <hotspot name="openOssanaSpot"
+             type="image"
+             ath="30.0" atv="0.0"
+             scale="0.5"
+             onclick="forma_pct(0.8,0.7,../../schede/scheda-castello-di-ossana.html,Scheda Contenuto);"
+             url="../../assets/images/element.png"
+             visible="true"
+             vr="false"
+             keep="false" enabled="true" handcursor="true" distorted="true" maskchildren="false" rotate="0.0" alpha="1.0" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA"
+             />
+
+         <hotspot name="openOssanaSpotText"
+             html="Castello Ossana"
+             ath="30.0" atv="0.0"
+             vr="false"
+             oy="30"
+             type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+             />
 
 
 <!--  width and height of the window in percentages

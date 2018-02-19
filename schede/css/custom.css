@@ -1,0 +1,132 @@
+/* CSS Document */
+
+.container {
+	/*max-width: 445px;*/
+
+}
+
+@font-face {
+    font-family: 'walkway';
+    src: url(../font/walkway_semibold.ttf) format('truetype');
+	src: url(../font/walkway_semibold.woff) format('woff');
+}
+@font-face {
+    font-family: 'walkUltra';
+    src: url(../font/walkway_ultrabold.ttf) format('truetype');
+	src: url(../font/walkway_ultrabold.woff) format('woff');
+}
+@font-face {
+    font-family: 'walkBlack';
+    src: url(../font/walkway_black.ttf) format('truetype');
+	src: url(../font/walkway_black.woff) format('woff');
+}
+
+h3 {
+
+	margin-top:0px;
+
+}
+
+h1, h2{
+    color:#2382c0;
+    font-family: 'walkUltra', sans-serif;
+}
+
+h2{
+    font-size: 27px;
+}
+.master {
+
+	/*border: solid 2px #35506f;*/
+    font-family: 'walkway', sans-serif;
+	background-color: #FFFFFF;
+    font-size: 15px;
+    color:#385370;
+
+}
+
+
+
+.chiudi {
+
+    font-family: 'walkBlack', sans-serif;
+
+	height:40px;
+
+	padding:4px 5px 10px 10px;
+
+	margin:0px;
+
+	text-align:right;
+
+	font-weight:bold;
+
+	font-size:1.4em;
+
+	/*border-top: solid 2px #717375;
+
+	border-left: solid 2px #717375;
+
+	border-right: solid 2px #717375;*/
+
+}
+
+
+
+.chiudi a, .chiudi a:link, .chiudi a:visited, .chiudi a:active {
+
+	text-decoration:none;
+    
+    text-shadow: 1px 1px 3px #2d2d2d;
+
+	color:#385370;
+
+	padding:5px 10px;
+
+	/*background-color:#8ab5dd;*/
+
+}
+
+
+
+.chiudi a:hover {
+
+	color:#ffffff;
+
+	background-color:transparent;
+
+}
+
+
+
+
+.imageInright {
+
+	float: right;
+
+	display: block;
+
+    margin: 0 0 20px 20px ;
+
+}
+
+
+
+.imageInleft {
+
+	float: left;
+
+	display: block;
+
+    margin: 0 20px 20px 0 ;
+
+}
+
+
+
+.small-img {
+
+    max-width: 300px;
+
+}
+

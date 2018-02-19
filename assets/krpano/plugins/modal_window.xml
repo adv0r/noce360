@@ -1,10 +1,10 @@
 <krpano>
 <!-- The close button. (The red cross image. Put here your own image, if needed.) -->
- <plugin name="close_mod" url="../../images/close.png" align="center" x="0" y="0" onclick="closew();" visible="false" zorder="999" keep="true" />
+ <plugin name="close_mod" url="../../../schede/img/close.png" align="center" x="0" y="0" onclick="closew();" visible="false" zorder="999" keep="true" />
 
 <!-- The black semi transparent mask. Set the alpha here.-->
 <!--If you need you can order the close of modal window  on the mask here onclick="closew();"  --> 
-<plugin name="mask_black" url="../../images/black_w.png" align="center" width="100%" height="100%" enabled="false" keep="true" zorder="900" visible="false" alpha="0.7"/>
+<plugin name="mask_black" url="../../../schede/img/black_w.png" align="center" width="100%" height="100%" enabled="false" keep="true" zorder="900" visible="false" alpha="0.7"/>
 
 
 <action name="forma_px">
