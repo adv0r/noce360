@@ -1,0 +1,74 @@
+<krpano>
+<!-- The close button. (The red cross image. Put here your own image, if needed.) -->
+ <plugin name="close_mod" url="../../images/close.png" align="center" x="0" y="0" onclick="closew();" visible="false" zorder="999" keep="true" />
+
+<!-- The black semi transparent mask. Set the alpha here.-->
+<!--If you need you can order the close of modal window  on the mask here onclick="closew();"  --> 
+<plugin name="mask_black" url="../../images/black_w.png" align="center" width="100%" height="100%" enabled="false" keep="true" zorder="900" visible="false" alpha="0.7"/>
+
+
+<action name="forma_px">
+set(videoset,0);
+forma_px1(%1,%2,%3,%4);
+</action>
+
+<action name="forma_video_px">
+set(videoset,1);
+forma_px1(%1,%2,%3,%4);
+</action>
+
+<action name="forma_pct">
+set(videoset,0);
+forma_pct1(%1,%2,%3,%4);
+</action>
+
+<action name="forma_video_pct">
+set(videoset,1);
+forma_pct1(%1,%2,%3,%4);
+</action>
+
+<!-- The call of the window in px-->
+<action name="forma_px1">
+div(mx,%1,2);
+add(mx,22) ;
+div(my,%2,2);
+sub(my,0,my);
+set(plugin[close_mod].x,get(mx));
+set(plugin[close_mod].y,get(my));
+if(plugin[close_mod].visible == true,  set(plugin[close_mod].visible, false ); , set(plugin[close_mod].visible, true ););
+if(plugin[mask_black].visible == true,  set(plugin[mask_black].visible, false ); , set(plugin[mask_black].visible, true ););
+js(openforma(%1|%2|%3|%4));
+</action>
+
+
+<!-- The call of the window in percentage -->
+<action name="forma_pct1">
+set(myWidth,get(area.pixelwidth));
+set(myHeight,get(area.pixelheight));
+mul(myWidth,%1);
+mul(myHeight,%2);
+roundval(myWidth);
+roundval(myHeight);
+forma_pct2(get(myWidth),get(myHeight),%3,%4);
+</action>
+
+<action name="forma_pct2">
+div(mx,%1,2);
+add(mx,22) ;
+div(my,%2,2);
+sub(my,0,my);
+set(plugin[close_mod].x,get(mx));
+set(plugin[close_mod].y,get(my));
+if(plugin[close_mod].visible == true,  set(plugin[close_mod].visible, false ); , set(plugin[close_mod].visible, true ););
+if(plugin[mask_black].visible == true,  set(plugin[mask_black].visible, false ); , set(plugin[mask_black].visible, true ););
+js(openforma(%1|%2|%3|%4));
+</action>
+
+<!-- The close of the window -->
+<action name="closew">
+set(plugin[close_mod].visible, false );
+set(plugin[mask_black].visible, false );
+js(closeforma());
+</action>
+
+</krpano>

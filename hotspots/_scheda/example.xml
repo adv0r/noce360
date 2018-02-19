@@ -1,0 +1,53 @@
+<krpano>
+
+
+<!-- include action modal window -->
+ <include url="../../assets/krpano/plugins/modal_window.xml" keep="true"/>
+
+
+<!-- pano -->
+ 	<view hlookat="0" vlookat="0" maxpixelzoom="1.0" fovmax="150" limitview="auto" />
+
+    <!-- Hotelement Start Scheda contenuto toggle-->
+    <hotspot name="openschedahotspot"
+             type="image"
+             ath="0.0" atv="0.0"
+             scale="0.5"
+             onclick="forma_pct(0.8,0.7,../../schede/scheda-prati-terrazzati.html,Scheda Contenuto);"
+             url="../../assets/images/element.png"
+             visible="true"
+             vr="false"
+             keep="false" enabled="true" handcursor="true" distorted="true" maskchildren="false" rotate="0.0" alpha="1.0" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA"
+             />
+
+         <hotspot name="openschedahotspotText"
+             html="Toggle scheda"
+             ath="0.0" atv="0.0"
+             vr="false"
+             oy="30"
+             type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+             />
+
+
+
+<!--  width and height of the window in percentages
+ onclick="forma_pct(a,b,c,d);"
+a - the width of the window in percentages(for example 0.8, the digit must be in the interval from 0 to 1.  0.8=80% Don't use both width and height 100%. In this case you can't close the window.)
+b - the height of the window in percentages(for example 0.6, the digit must be in the interval from 0 to 1. 0.6=60% Don't use both width and height 100%. In this case you can't close the window.)
+c - the name and the adress of your html file. The absolute (http://www.site.com/show/mypage.html) and the relative paths (slideshow/page.html) are available.
+d - the title of the window It will appears in the color bar at the top of the window. If the parameter is missed, the color bar does not appear.
+  -->
+
+
+
+	<preview url="panos/preview1.jpg" />
+    <image>
+        <cube url="panos/pano_%s.jpg" />
+    </image>
+
+
+
+
+
+
+</krpano>
