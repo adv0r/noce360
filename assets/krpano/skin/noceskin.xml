@@ -61,7 +61,7 @@
 
 
 	<!-- mouse / touch / keyboard(button) control settings - http://krpano.com/docu/xml/#control -->
-	<control mouse="moveto"
+	<control mouse="drag"
 	         touch="drag"
 	         zoomtocursor="false"
 	         zoomoutcursor="false"
