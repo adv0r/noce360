@@ -52,23 +52,11 @@
 		</image>
 
 		<hotspot name="gotoscene222"
-	         type="image"
-	         url="../../assets/images/arrow.png"
-	         keep="false"
-	         visible="true"
-	         enabled="true"
-	         handcursor="true"
-	         distorted="true"
-	         maskchildren="false"
+			 onclick="loadscene('scene_IMG_20170708_165909', null, MERGE);"
 	         ath="-165.0" atv="5.0"
-	         edge="center"
-	         zoom="false"
 	         scale="0.15"
 	         rotate="0.0"
-	         alpha="1.0"
-	         onclick="loadscene('scene_IMG_20170708_165909', null, MERGE);"
-	         borderwidth="2"
-	         bordercolor="#0xAAAAAA"
+	         type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"
 	         />
 
 
