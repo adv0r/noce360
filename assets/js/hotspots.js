@@ -5,7 +5,7 @@ var hotspots = {
     "centerLong" : 10.885649,
 	"spotsWithMedia": [
 	    {
-	      "name": "Corno dei Tre Signori",
+	      "name": "Corno dei Quattro Signori",
 	      "lat": 46.343261,
 	      "long": 10.51583,
 	      "href": "1-corno-tre-signori/",
