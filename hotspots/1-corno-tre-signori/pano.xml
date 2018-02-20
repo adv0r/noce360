@@ -140,11 +140,12 @@
 	<!-- start Actions-->
 
 
-	<!-- startup action - load the first scene -->
+	 startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
-		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(scene_corno-gigapixel, null, MERGE);
+		<!--if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
 		loadscene(get(startscene), null, MERGE);
-		if(startactions !== null, startactions() );
+		if(startactions !== null, startactions() );-->
 	</action>
 
 	<action name="togglescheda" type="Javascript"><![CDATA[
