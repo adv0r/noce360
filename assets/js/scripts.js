@@ -97,7 +97,6 @@ function onMapClick(e) {
     //TODO reactivate after fixing issue #11
     console.log("Closing all popups..");
     nocemap.closePopup();
-    hideScheda();
     //nocemap.unbindPopup();
     //event.popup._source.unbindPopup();
 
@@ -113,7 +112,6 @@ function onMapClick(e) {
 function onMarkerClick(e) {
     console.log("You clicked the marker at " + e.latlng);
     console.log("Marker name : " + this.name);
-    hideScheda();
     var tempPopup = this.tempMarker.getPopup();
 
     if (tempPopup) {
@@ -154,9 +152,8 @@ function onMarkerNoMediaClick(e) {
 
     nocemap.closePopup();
 
-    fillScheda(this.scheda.titolo, this.scheda.sottotitolo, this.scheda.contenuto);
-    if (!isSchedaVisible() && this.scheda.titolo != "")
-        showScheda();
+    if (this.scheda.titolo != "")
+        showScheda(this.scheda.filename);
 }
 
 function onCircleClick(e) {
@@ -236,35 +233,14 @@ function loadMarkersFromDb(map) {
 
 // Scheda Info su mappa ------- 
 
-
-function isSchedaVisible() {
-    return (document.getElementById("schedaSuMappaId").style.visibility == "visible");
-}
-
-function toggleScheda() {
-    var scheda = document.getElementById("schedaSuMappaId");
-    var vis = scheda.style.visibility;
-    if (vis == "visible")
-        scheda.style.visibility = "hidden";
-    else
-        scheda.style.visibility = "visible";
-}
-
-function hideScheda(scheda) {
-    document.getElementById("schedaSuMappaId").style.visibility = "hidden";
-}
-
-function showScheda(scheda) {
-    document.getElementById("schedaSuMappaId").style.visibility = "visible";
-}
-
-
-
-var contentOpening = "<div class='row'><div class='col-xs-12'><br />";
-var contentClosing = "<br /></div></div>";
-
-function fillScheda(title, subtitle, content) {
-    document.getElementById("schedaTitolo").innerHTML = title;
-    document.getElementById("schedaSottotitolo").innerHTML = subtitle;
-    document.getElementById("schedaContent").innerHTML = contentOpening+content+contentClosing;
+function showScheda(filename) {
+    $.fancybox.open({
+                src  : 'schede/'+filename+'.html',
+                type : 'iframe',
+                iframe : {
+                    smallBtn : 'auto',
+                    attr : {scrolling : 'yes'},
+                    css : { width : '600px'}
+                }  
+            });
 }
