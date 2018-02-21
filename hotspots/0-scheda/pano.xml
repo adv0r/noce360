@@ -7,7 +7,7 @@
 	
 		
 
-		 <!-- Hotelement Start Scheda contenuto toggle-->
+	<!-- Hotelement Start Scheda contenuto toggle-->
     <hotspot name="openschedahotspot"
              type="image"
              ath="0.0" atv="0.0"
@@ -48,5 +48,69 @@
              oy="30"
              type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
              />
+
+
+    <layer name="text"
+        url="plugins/textfield.swf"
+        align="lefttop" x="10" y="10"
+        html="data:text"
+        css="data:css"
+        autowidth="auto"
+        autoheight="auto"
+        selectable="false"
+        background="false"
+        border="false"
+        roundedge="0"
+        textshadow="1.0"
+        textshadowrange="7.0"
+        textshadowangle="45"
+        textshadowcolor="0x000000"
+        textshadowalpha="0.6"
+        handcursor="false"
+        />
+
+        <data name="text">
+            <h1>Lista Schede</h1>
+                <a href="javascript:loadScheda('scheda-averla-piccola')" >Averla piccola</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-chirotteri')" >Chirotteri</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-macroinvertebrati-acquatici-e-qualita-delle-acque')" >Macroinvertebrati acquatici e qualita delle acque</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-nymphalis-antiopa')" >Nymphalis Antiopa</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-orso')" >Orso</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-piante-carnivore')" >Piante carnivore</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-scazzone')" >Scazzone</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-trota-marmorata')" >Trota marmorata</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                
+                <br /><br />
+                <a href="javascript:loadScheda('scheda-area-umida-di-ossana')" >Area umimda di Ossana</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-castello-di-ossana')" >Castello di Ossana</a><br />
+                <a href="javascript:loadScheda('scheda-corno-dei-tre-signori-alta-val-di-pejo')" >Corno dei tre signori alta Val di Pejo</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-dighe')" >Dighe</a><br />
+                <a href="javascript:loadScheda('scheda-fucina-marinelli')" >Fucina Marinelli</a><br />
+                <a href="javascript:loadScheda('scheda-geologia-val-di-sole')" >Geologia della Val di Sole</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-isola-del-gal')" >Isola del Gal</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-incubatoio-cavizzana')" >Incubatoio di Cavizzana</a><br />
+                <a href="javascript:loadScheda('scheda-macchine-acqua')" >Macchine d'acqua</a> <em>No immagini</em><br />
+                <a href="javascript:loadScheda('scheda-maso-di-fae')" >Maso di Faé</a><br />
+                <a href="javascript:loadScheda('scheda-miniere-comasine')" >Miniere comasine</a><br />
+                <a href="javascript:loadScheda('scheda-molino-ruatti')" >Mulino Ruatti</a><br />
+                <a href="javascript:loadScheda('scheda-noria')" >Noria</a><br />
+                <a href="javascript:loadScheda('scheda-ontaneta-di-croviana')" >Ontaneta di Croviana</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-ortise-menas')" >Ortisé Menas</a><br />
+                <a href="javascript:loadScheda('scheda-porcjola')" >Porcjola</a><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-praterie-arnago')" >Praterie di Arnago</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-riserva-corredolo')" >La riserva di Corredolo</a><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-riserva-di-mezzana')" >La riserva di Mezzana</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-riserva-di-piano')" >La riserva di Piano</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-segheria-dimaro')" >Segheria di Dimaro</a><br />
+                <a href="javascript:loadScheda('scheda-segheria-fonti-rabbi')" >Segheria Fonti Rabbi</a><br />
+                <a href="javascript:loadScheda('scheda-segheria-male')" >Segheria Malé</a><br />
+                <a href="javascript:loadScheda('scheda-stadio-mezzana')" >Stadio Mezzana</a><br />
+                <a href="javascript:loadScheda('scheda-terzalinea')" >Terza Linea</a><br />
+                <a href="javascript:loadScheda('scheda-torbiera-del-tonale')" >Torbiera del Tonale</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+                <a href="javascript:loadScheda('scheda-prati-terrazzati')" >Prati terrazzati</a> <em>No immagini</em><br /> <!-- 14 dicembre 2017 -->
+
+
+        </data>
+
 
 	</krpano>
