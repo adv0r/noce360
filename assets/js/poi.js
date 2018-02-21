@@ -79,7 +79,8 @@ function loadScheda(nomeScheda){
                 iframe : {
                     smallBtn : 'auto',
                     attr : {scrolling : 'yes'},
-                    css : { width : '600px'}
+                    css : { width : '60%',  
+                            height : '60%'}
                 }  
             });
 }
