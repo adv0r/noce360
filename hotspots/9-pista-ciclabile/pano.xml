@@ -3,6 +3,9 @@
 	<!-- Import noce's sking -->
     <include url="../../assets/krpano/skin/noceskin.xml" />
 	
+	<!-- Import model plugin for schede -->
+	<include url="../../assets/krpano/plugins/showtext.xml" />
+
 	<!-- Override noce's skin -->
 	<skin_settings thumbs_opened="false" />
 

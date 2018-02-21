@@ -3,6 +3,9 @@
 	<!-- Import noce's skin -->
     <include url="../../assets/krpano/skin/noceskin.xml" />
 	
+	<!-- Import model plugin for schede -->
+	<include url="../../assets/krpano/plugins/showtext.xml" />
+
 
 	<!-- Override noce's skin -->
 	<skin_settings thumbs_opened="false" />
@@ -19,7 +22,7 @@
 		         type="image"
 		         ath="0.0" atv="0.0"
 		         scale="0.5"
-		         onclick="togglescheda"
+             	 onclick="jscall(loadScheda('scheda-torbiera-del-tonale'));"
 		         url="../../assets/images/element.png"
 		         visible="true"
 		         vr="false"

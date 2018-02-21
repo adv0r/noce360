@@ -15,6 +15,10 @@
 	</style>
 
 	<link rel="stylesheet" href="../../assets/css/styles.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.fancybox.min.css">
+
+	<script src="../../assets/js/jquery-3.2.1.min.js"></script>
+	<script src="../../assets/js/jquery.fancybox.js"></script>
 
 </head>
 <body>
@@ -26,39 +30,8 @@
 	<div id="pano" style="width:100%;height:100%;">
 		<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
 		<script>
-			embedpano({xml:"pano.xml", target:"pano", html5:"auto", mobilescale:1.0, passQueryParameters:true});
-		</script>
-
-		<!-- scheda contenuto-->
-		<div class="schedaContenuto" id="scheda">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 chiudi">
-						<a href="#" onclick="hideScheda(this);">X</a>
-					</div>
-				</div>
-				</div>
-				<div class="container master">
-					<div class="row">
-						<div class="col-xs-12 titles">
-							<h1>L’ISOLA DEL GAL</h1>
-							<h2>Una piccola oasi naturalistica</h2><br />
-						</div>
-						
-						<div class="col-xs-12">
-							<br />
-							<p>
-								Poco a valle dell'Ontaneta di Croviana il Noce allarga il suo alveo e si espande nella vegetazione limitrofa, creando quell'ambiente ripariale che dà tanto pregio naturalistico a quest'area. Ma le continue variazioni di portata hanno accumulato dei sedimenti al centro dell'alveo fino a formare una piccola isola, un'oasi naturalistica da cui possiamo osservare, dal centro del fiume, dettagli altrimenti difficilmente visibili. Quest'isola è nota come l'Isola del Gal e fa parte della Riserva Locale di Malé.<br />
-								La vegetazione attorno è ricca di ontani, canneti e qualche pioppo bianco solitario, ma se immergiamo la mano nell'acqua del fiume possiamo notare un altro prezioso indicatore ambientale: dei piccoli astucci di ghiaietto e sassolini lunghi meno di 2 cm. Un occhio esperto li può facilmente inquadrare per quello che sono, ovvero delle larve di tricotteri. Questi insetti hanno un torace chitinizzato con zampe sviluppate mentre il ventre è carnoso; per proteggersi utilizzano alcuni materiali disponibili nell'ambiente in cui vivono, per costruire un astuccio che è tenuto insieme dalla presenza di un filo appiccicoso. Ogni specie costruisce i propri astucci con un particolare materiale, ovviamente in base alla disponibilità ambientale: per questo gli astucci sono indice di riconoscimento tra le specie.<br />
-								I materiali adoperati più spesso sono costituiti da frammenti vegetali, granelli di sabbia e frammenti di conchiglie.<br />
-								Essi sono un ottimo indicatore della qualità delle acque: infatti riescono a vivere solo in quelle ben ossigenate e meno inquinate.
-							</p>
-							<br />
-						</div>
-					</div>
-				</div>
-		</div>
-		<!-- Fine scheda contenuto-->
+			embedpano({xml:"pano.xml" +'?ver=' + Math.random(), target:"pano", html5:"prefer", initvars:{design:"flat"}, passQueryParameters:true,id:"krpanoObject"});
+    	</script>
 		
 	</div>
 

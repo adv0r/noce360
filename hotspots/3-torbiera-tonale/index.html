@@ -15,6 +15,10 @@
 	</style>
 
 	<link rel="stylesheet" href="../../assets/css/styles.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.fancybox.min.css">
+
+	<script src="../../assets/js/jquery-3.2.1.min.js"></script>
+	<script src="../../assets/js/jquery.fancybox.js"></script>
 
 </head>
 <body>
@@ -26,41 +30,8 @@
 	<div id="pano" style="width:100%;height:100%;">
 		<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
 		<script>
-			embedpano({xml:"pano.xml", target:"pano", html5:"auto", mobilescale:1.0, passQueryParameters:true});
-		</script>
-
-		<!-- scheda contenuto-->
-		<div class="schedaContenuto" id="scheda">
-			<div class="container">
-			<div class="row">
-				<div class="col-xs-12 chiudi">
-					<a href="#" onclick="hideScheda(this);">X</a>
-				</div>
-			</div>
-			</div>
-			<div class="container master">
-				<div class="row">
-					<div class="col-xs-12 titles">
-						<h1>UN ANTICHISSIMO AMBIENTE NATURALE</h1>
-						<h2>Le Torbiere del Tonale</h2><br />
-					</div>
-					
-					<div class="col-xs-12">
-						<br />
-						<p>
-							Dal confine tra Lombardia e Trentino Alto-Adige nasce uno dei più importanti affluenti del Fiume Noce, il torrente Vermigliana. Ma il Passo del Tonale non è importante solo per questo, il valico alpino infatti contiene uno degli ambienti di più alto pregio naturalistico in tutta la Val di Sole: le Torbiere del Tonale, valorizzate dall'istituzione di una Zona Speciale di Conservazione da parte della rete Natura 2000.<br />
-							Questa tipologia di torbiere alpine forma un ambiente mutevole e delicato, che si forma in aree con acqua semi-stagnante, bloccata da detriti morenici ed alluvionali, soprattutto trascinati al passo dal torrente di Val d'Albiolo.<br />
-							La formazione di una torbiera avviene quando abbiamo dell'acqua stagnante, in questo caso principalmente acqua di risorgiva invasa poi da vari tipi di vegetazione palustre. Una tra le specie che possono contribuire alla formazione della torbiera è lo sfagno, una particolare specie di muschio che grazie all'ambiente povero di ossigeno e all'elevata acidità del suolo non si decompone completamente e cresce a strati l'uno sull'altro.
-							La crescita verticale della torbiera è molto lenta e per formare uno spessore considerevole sono necessari migliaia di anni.<br />
-							Per le torbiere europee questo processo di formazione è iniziato all'incirca 11.000 anni fa, con l'inizio dell'Olocene e la fine delle glaciazioni. In questi luoghi possiamo fare eccezionali ritrovamenti: basti pensare ai numerosi reperti trovati nelle torbiere di tutto il mondo, animali e piante morti al loro interno che grazie all'ambiente particolare troviamo perfettamente conservati. Nella torbiera del Tonale sono stati numerosi i ritrovamenti di tronchi di abete rosso datati a oltre 7000 anni fa.<br />
-							Il valico alpino può raccontarci tante storie anche sulla sanguinosa prima guerra mondiale combattuta proprio qui in cui i crateri delle bombe si possono contare numerosi anche oggi.<br />
-							Curioso come in questi crateri si possa formare un micro ambiente particolare in cui, se siamo fortunati possiamo ammirare alcune preziose specie floristiche come la rarissima <em>Urticularia minor</em>, pianta carnivora subacquea che utilizza una trappola "a risucchio" per intrappolare le sue prede, <em>Drosera rutundifolia</em> altra pianta carnivora di pregio e numerose specie di orchidee tra cui <em>Dactylorhiza cruenta</em> e <em>Dactylorhiza majalis</em>. Questo ambiente offre riparo e habitat a numerose specie animali, tra cui l'aquila reale (<em>Aquila chrysaetos</em>), la civetta nana (<em>Glaucidium passerinum</em>), la civetta capogrosso (<em>Aegolius funereus</em>), il picchio nero (<em>Dryocopus martius</em>), la lucertola vivipara (<em>Zootoca vivipara</em>) e la rana temporaria (<em>Rana temporaria</em>).
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Fine scheda contenuto-->
+			embedpano({xml:"pano.xml" +'?ver=' + Math.random(), target:"pano", html5:"prefer", initvars:{design:"flat"}, passQueryParameters:true,id:"krpanoObject"});
+    	</script>
 		
 	</div>
 

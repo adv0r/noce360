@@ -15,6 +15,10 @@
 	</style>
 
 	<link rel="stylesheet" href="../../assets/css/styles.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.fancybox.min.css">
+
+	<script src="../../assets/js/jquery-3.2.1.min.js"></script>
+	<script src="../../assets/js/jquery.fancybox.js"></script>
 
 </head>
 <body>
@@ -26,59 +30,8 @@
 	<div id="pano" style="width:100%;height:100%;">
 		<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
 		<script>
-			embedpano({xml:"pano.xml", target:"pano", html5:"auto", mobilescale:1.0, passQueryParameters:true});
-		</script>
-
-		<!-- scheda contenuto-->
-		<div class="schedaContenuto" id="scheda">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 chiudi">
-						<a href="#" onclick="hideScheda(this)">X</a>
-					</div>
-				</div>
-				</div>
-				<div class="container master">
-					<div class="row">
-						<div class="col-xs-12 titles">
-							<h1>UNA MILLENARIA GUARDIA DEI CONFINI </h1>
-							<h2>A Ossana, Castel San Michele </h2><br />
-						</div>
-						
-						<div class="col-xs-12">
-							<br />
-							<p>La mole Castel San Michele sorge imponente su un grande sperone di roccia, dominante sulla confluenza tra il Noce e la Vermigliana. Proprio la sua posizione strategica, ideale per il controllo stradale su una via commerciale e militare frequentatissima come quella del Tonale, millenario confine documentato fin dal 774, ha fatto sì che il dosso fosse frequentato fin dall’Età del Bronzo. </p>
-							<br />
-						</div>
-					</div>
-					<div class="row">	
-						<div class="col-xs-12 ">
-							<!-- <h3>LA DIGA DEL CARESER</h3>-->
-							<img src="img/01-castello-ossana_codice-brandis-1615.jpg" alt="Castello di Ossana" class="imageInright img-responsive">
-							<p>
-								Probabile sede di un punto di presidio nell’età tardoromana-altomedievale, ha ospitato dal XII secolo una sede fiscale e giurisdizionale del Principe vescovo di Trento. Un “castrum” di Ossana è citato fin dal 1191, mentre la chiesa annessa al complesso, dedicata a San Michele, compare nel 1213, anche se alcune parti murarie risalgono al VI-VIII secolo. All’inizio del Quattrocento fu la potente famiglia lombarda dei Federici a procedere ad una generale riedificazione del complesso, conferendogli l’assetto attuale, benché ridotto oggi a splendido semirudere.<br />
-								L’estinzione dei Federici, alla metà del Cinquecento, portò a Ossana altre famiglie nobili come i bavaresi Heydorf e i rendenesi Bertelli; tuttavia in questi anni iniziò una fase di decadenza che culminò, alla metà del XIX secolo, con l’inclusione nel demanio miliare austriaco. Dopo la Grande guerra il castello passò al demanio italiano che lo vendette nel 1925 alla famiglia Taraboi di Ossana: è questa l’epoca in cui il paesaggio castellano è utilizzato a pascolo per ovicaprini e a cava di materiali. 
-
-							</p>
-							<br />
-						</div>
-					</div>
-					<br />
-					<div class="row">
-						<div class="col-xs-12">
-							<img src="img/02-castello-ossana.jpg" alt="Castello di Ossana" class="imageInleft small-img">
-							<!--<h3>LA DIGA DI PIAN PALÙ</h3>-->
-							<p>
-								Nel 1992 il complesso è stato acquistato dalla Provincia autonoma di Trento che ha iniziato una attenta opera di consolidamento, restauro e studio archeologico e murario, terminato nel 2014 con l’apertura al pubblico.<br />
-								Tra gli elementi architettonici di pregio, spicca innanzitutto il possente mastio a pianta quadrata, alto 26 metri, dal quale si gode un meraviglioso panorama; reso accessibile dopo il restauro, si caratterizza per la presenza di due tratti di scala intramurali e per il coronamento utile alla difesa piombante; due sono le cinte murarie, la più esterna scandita dalla torre passante protetta dal rivellino, la più interna con l’ingresso al cortile protetto da una bertesca. Solo in un’occasione Castel San Michele è stato assediato: nel 1525, in occasione della guerra dei contadini che imperversò dalla Germania alle Alpi. I contadini ribelli, dapprima respinti con le bombarde, costrinsero dopo ripetuti assalti la guarnigione di venti soldati alla resa. Il castello vive anche nella leggenda: come quella dell’avida moglie del feudatario, bramosa di vedere il lago d’oro esistente nelle segrete del castello e quindi impazzita al cospetto di una simile incredibile ricchezza; o quella del dinasta Federici ucciso in un agguato dal popolo stanco delle angherie subite.
-							</p>
-						</div>
-					</div>
-				</div>
-
-		</div>
-		<!-- Fine scheda contenuto-->
-		
+			embedpano({xml:"pano.xml" +'?ver=' + Math.random(), target:"pano", html5:"prefer", initvars:{design:"flat"}, passQueryParameters:true,id:"krpanoObject"});
+    	</script>
 	</div>
 
 </body>

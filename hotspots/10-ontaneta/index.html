@@ -15,7 +15,10 @@
 	</style>
 
 	<link rel="stylesheet" href="../../assets/css/styles.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.fancybox.min.css">
 
+	<script src="../../assets/js/jquery-3.2.1.min.js"></script>
+	<script src="../../assets/js/jquery.fancybox.js"></script>
 </head>
 <body>
 	<script src="../../assets/krpano/pano.js"></script>
@@ -26,39 +29,10 @@
 	<div id="pano" style="width:100%;height:100%;">
 		<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
 		<script>
-			embedpano({xml:"pano.xml", target:"pano", html5:"auto", mobilescale:1.0, passQueryParameters:true});
-		</script>
+			embedpano({xml:"pano.xml" +'?ver=' + Math.random(), target:"pano", html5:"prefer", initvars:{design:"flat"}, passQueryParameters:tårue,id:"krpanoObject"});
+		    </script>
 
-		<!-- scheda contenuto-->
-		<div class="schedaContenuto" id="scheda">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 chiudi">
-						<a href="#" onclick="hideScheda(this);">X</a>
-					</div>
-				</div>
-				</div>
-				<div class="container master">
-					<div class="row">
-						<div class="col-xs-12 titles">
-							<h1>L’ONTANETA DI CROVIANA</h1>
-							<h2>Uno straordinario ambiente naturale</h2><br />
-						</div>
-						
-						<div class="col-xs-12">
-							<br />
-							<p>
-								Nella piana tra Monclassico e Malé, lungo il fiume Noce si estende una fascia di vegetazione di variabile grandezza che rappresenta una delle aree naturalisticamente più importanti di tutta la valle. Questa fascia di vegetazione riparia composta principalmente da salici, ontani e frassini rappresenta appunto l'Ontaneta.<br />
-								Benché la superficie dell'area si estenda ben oltre il territorio comunale di Croviana, la parte centrale, ovvero il nucleo di maggior importanza, si trova nelle praterie sulla sinistra orografica del fiume nel territorio di questo comune. Si tratta di un boschetto nato da un'antica ansa chiusa del fiume: oltre alla vegetazione lussureggiante, possiamo trovarvi un ruscello che attraversa l'area per poi sfociare nel Noce, alimentato da una scolina all'interno dei campi. Questo ruscello rappresenta un'importante zona di riproduzione di specie ittiche come la trota marmorata (<em>Salmo trutta marmoratus</em>) e lo scazzone (<em>Cottus gobio</em>); vi troviamo anche alcune piante acquatiche come la lenticchia d'acqua (<em>Lemna minor</em>).<br />
-								Il resto dell'ontaneta e la vegetazione riparia, qui come in tutta la valle, fungono da depuratore delle acque, assorbendo attraverso le radici delle piante eventuali sostanze di rifiuto presenti nelle acque. Oltre alla fauna ittica possiamo trovare interessanti specie animali, tra le quali vari uccelli: Piro piro piccolo (<em>Actitis hypoleucos</em>), gufo comune (<em>Asio otus</em>), rigogolo (<em>Oriolus oriolus</em>), picchio verde(<em>Picus viridis</em>), merlo acquaiolo (<em>Cinclus cinclus</em>), pigliamosche (<em>Muscicapa striata</em>), averla piccola (<em>Lanius collurio</em>). Tra i rettili invece la lucertola muraiola (Podarcis muralis) e l'orbettino (Anguis fragilis); tra gli anfibi la salamandra pezzata (<em>Salamandra salamandra</em>), la rana temporaria (<em>Rana temporaria</em>) e il rospo comune (<em>Bufo bufo</em>); tra i mammiferi la volpe (<em>Vulpes vulpes</em>) e il tasso (<em>Meles meles</em>).<br />
-								Tra le specie vegetali ne troviamo alcune molto rare come il <em>Ranunculus prosserii</em>, segnalato sulla "lista rossa" delle specie in via d'estinzione, ma anche alcune specie invasive come la pericolosa <em>Reynoutria japonica</em> e una diffusa popolazione di <em>Robina pseudoacacia</em>. In quest'area dato il grande valore naturalistico è stata istituita una Zona Speciale di Conservazione (ZSC) per tutelare la biodiversità di quest'area attraverso il progetto europeo “Natura 2000”.
-							</p>
-							<br />
-						</div>
-					</div>
-				</div>
-		</div>
-		<!-- Fine scheda contenuto-->
+
 		
 	</div>
 

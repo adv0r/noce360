@@ -72,6 +72,7 @@ function loadScheda(nomeScheda){
      //            src  : '' // Source of the content
      //            type : '' // Content type: image|inline|ajax|iframe|html (optional)
      //            opts : {} // Object containing item options (optional)
+     
     $.fancybox.open({
                 src  : '../../schede/'+nomeScheda+'.html',
                 type : 'iframe',

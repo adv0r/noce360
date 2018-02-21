@@ -2,6 +2,9 @@
 
     <include url="../../assets/krpano/skin/noceskin.xml" />
 
+	<!-- Import model plugin for schede -->
+	<include url="../../assets/krpano/plugins/showtext.xml" />
+
     <!-- Gyroscope -->
         <plugin name="gyro" devices="html5" keep="true"
         url="../../assets/krpano/plugins/gyro2.js" 
@@ -35,7 +38,7 @@
 		         type="image"
 		         ath="170.0" atv="0.0"
 		         scale="0.5"
-		         onclick="togglescheda"
+             	 onclick="jscall(loadScheda('scheda-molino-ruatti'));"
 		         url="../../assets/images/element.png"
 		         visible="true"
 		         vr="false"

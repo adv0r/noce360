@@ -1,8 +1,11 @@
 ﻿<krpano>
 	
-	<!-- Import noce's sking -->
+	<!-- Import noce's skin -->
     <include url="../../assets/krpano/skin/noceskin.xml" />
-	
+
+	<!-- Import model plugin for schede -->
+	<include url="../../assets/krpano/plugins/showtext.xml" />
+
 	<!-- Import gyroscope plugin -->
      <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
         touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
@@ -15,7 +18,7 @@
 		         type="image"
 		         ath="0.0" atv="0.0"
 		         scale="0.5"
-		         onclick="togglescheda"
+             	 onclick="jscall(loadScheda('scheda-corno-dei-tre-signori-alta-val-di-pejo'));"
 		         url="../../assets/images/element.png"
 		         visible="true"
 		         vr="false"
@@ -140,7 +143,7 @@
 	<!-- start Actions-->
 
 
-	 startup action - load the first scene -->
+	 <!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
 		loadscene(scene_corno-gigapixel, null, MERGE);
 		<!--if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
