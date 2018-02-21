@@ -69,8 +69,9 @@
     </image>
 
 
-
-
+    <!--
+    <events name="myhtmlpage" onresize="if(htmlpage==true,forma_px(area.pixelheight,area.pixelheight,../../schede/scheda-castello-di-ossana.html,Scheda Contenuto);set(htmlpage,false);); trace('New W=', area.pixelwidth,'New H=',area.pixelheight);"/>
+    -->
 
 
 </krpano>
