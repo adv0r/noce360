@@ -3,12 +3,24 @@
 
 h1{
     color:#38526f;
-    font: "Walkway Black", sans-serif;
+    font: 'walkBlack', sans-serif;
     font-weight: 300;
 }
-body{
+p, a{
     font-size: 17px ;
     color: #38526f;
-    font: "Walkway Black", sans-serif;
+    font-family: 'walkUltra', sans-serif;
     font-weight: 200;
+}
+p strong{
+    font-size: 17px ;
+    color: #38526f;
+    font-family: 'walkBlack', sans-serif;
+    font-weight: 200;
+}
+.backTo{
+    text-decoration: underline;
+    font-size: 14px;
+    cursor: pointer;
+    
 }

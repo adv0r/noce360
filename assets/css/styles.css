@@ -1,3 +1,7 @@
+ .container{
+     max-width: 445px;
+     margin:0 auto;
+}
  @font-face {
      font-family: 'walkway';
      src: url(../font/walkway_semibold.ttf) format('truetype');
@@ -14,9 +18,8 @@
      src: url(../font/walkway_black.woff) format('woff');
 }
  .container {
+     max-width: 1000px;
      background-color: white;
-     margin:0 auto;
-
 }
  .row {
      margin-left: 20px;
@@ -239,4 +242,24 @@
  .markerPopup {
      cursor: pointer;
 }
- 
+
+/*Modifiche Denis 20feb*/
+.lookVideos {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-top: -60px;
+}
+    
+#footerline3, #footerline3 p a:hover, #footerline3 p a:visited, #footerline3 p a{
+    font-family: 'walkBlack', sans-serif;
+    color:#A9A9A9;
+    font-size: 11px;
+    text-decoration: none;
+}
+#schedaContent{
+    overflow: hidden;
+}
+    
+    
+    
