@@ -23,6 +23,7 @@ function showScheda(scheda) {
 
 }
 
+/* removed for new schede embedded in iframes, uncommento to go back
 function addSchedaToPano() {
     var krpano = document.getElementById("krpanoSWFObject");
     var layer = krpano.get("control.layer");
@@ -47,6 +48,7 @@ r(function() {
         });
 
 });
+*/
 
 function r(f) {
     /in/.test(document.readyState) ? setTimeout('r(' + f + ')', 9) : f()
@@ -66,5 +68,18 @@ function mouseOutScheda(){
 
 }
 
-
+function loadScheda(nomeScheda){
+     //            src  : '' // Source of the content
+     //            type : '' // Content type: image|inline|ajax|iframe|html (optional)
+     //            opts : {} // Object containing item options (optional)
+    $.fancybox.open({
+                src  : '../../schede/'+nomeScheda+'.html',
+                type : 'iframe',
+                iframe : {
+                    smallBtn : 'auto',
+                    attr : {scrolling : 'yes'},
+                    css : { width : '600px'}
+                }  
+            });
+}
 
