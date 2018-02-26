@@ -62,7 +62,6 @@
 
 			videointerface_addsource('3840×1920','../../assets/media/POI-Videos/ciclabile-videoPOI.mp4_high.mp4|../../assets/media/POI-Videos/ciclabile-videoPOI.mp4_high.webm|../../assets/media/POI-Videos/ciclabile-videoPOI.mp4_iphone-audio.m4a','../../assets/media/POI-Videos/ciclabile-videoPOI.mp4_high_.jpg');
 
-			
 			if(device.ios,
 				<!-- iOS Safari has a very slow 'video-to-webgl-texture' transfer, therefore use a low-res video by default -->
 				videointerface_play('1024x512');

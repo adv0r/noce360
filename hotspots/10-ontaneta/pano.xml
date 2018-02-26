@@ -1,6 +1,6 @@
 ﻿<krpano>
 	
-	<!-- Import noce's sking -->
+	<!-- Import noce's skin -->
     <include url="../../assets/krpano/skin/noceskin.xml" />
 	
 	<!-- Import model plugin for schede -->
@@ -11,7 +11,7 @@
         touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
         
 		         
-	<scene name="scene_ontaneta-foresta" title="ontaneta-foresta" onstart="" thumburl="panos/ontaneta-foresta.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
+        <scene name="scene_ontaneta-foresta" title="ontaneta-foresta" onstart="" thumburl="panos/ontaneta-foresta.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
 
 		<!-- Hotelement Start Scheda contenuto toggle-->
 		<hotspot name="openschedahotspot"
@@ -50,7 +50,6 @@
 
 	<scene name="scene_ontaneta-lago" title="ontaneta-lago" onstart="" thumburl="panos/ontaneta-lago.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
 
-
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/ontaneta-lago.tiles/preview.jpg" />
@@ -81,7 +80,8 @@
 			</level>
 		</image>
 
-	</scene>         
+	</scene>
+
 
 
 	<!-- start Actions-->
@@ -101,6 +101,5 @@
 	]]></action>
 
 	<!-- end Actions-->
-
 
 </krpano>
