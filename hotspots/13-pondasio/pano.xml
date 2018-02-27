@@ -35,11 +35,11 @@
 		<!-- End Hotelement scheda contenuto toggle -->
 
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="100.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/pondasio-corridoio.tiles/preview.jpg" />
 
-		<image type="CUBE" multires="true" tilesize="512">
+		<image type="CUBE" multires="true" tilesize="512" prealign="0|0|6">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
 				<cube url="panos/pondasio-corridoio.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
@@ -52,11 +52,11 @@
 
 	<scene name="scene_pondasio-entrata" title="pondasio-entrata" onstart="" thumburl="panos/pondasio-entrata.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/pondasio-entrata.tiles/preview.jpg" />
 
-		<image type="CUBE" multires="true" tilesize="512">
+		<image type="CUBE" multires="true" tilesize="512" prealign="0|0|-6">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
 				<cube url="panos/pondasio-entrata.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
@@ -69,7 +69,7 @@
 
 	<scene name="scene_pondasio-esterno" title="pondasio-esterno" onstart="" thumburl="panos/pondasio-esterno.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/pondasio-esterno.tiles/preview.jpg" />
 
@@ -86,7 +86,7 @@
 
 	<scene name="scene_pondasio-fuoco" title="pondasio-fuoco" onstart="" thumburl="panos/pondasio-fuoco.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/pondasio-fuoco.tiles/preview.jpg" />
 
@@ -106,10 +106,9 @@
 
 	<!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
-		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
-		loadscene(get(startscene), null, MERGE);
-		if(startactions !== null, startactions() );
+		loadscene(scene_pondasio-entrata, null, MERGE);
 	</action>
+
 
 	<action name="togglescheda" type="Javascript"><![CDATA[
 		toggleScheda();

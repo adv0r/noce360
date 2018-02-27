@@ -33,11 +33,11 @@
 		         type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
 		         />
 		         
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/ontaneta-foresta.tiles/preview.jpg" />
 
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512" prealign="0|0|0">>
 			<level tiledimagewidth="2176" tiledimageheight="2176">
 				<cube url="panos/ontaneta-foresta.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
@@ -50,8 +50,9 @@
 
 	<scene name="scene_ontaneta-lago" title="ontaneta-lago" onstart="" thumburl="panos/ontaneta-lago.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+<<<<<<< HEAD
 
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 		<preview url="panos/ontaneta-lago.tiles/preview.jpg" />
 
 		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
@@ -67,7 +68,7 @@
 
 	<scene name="scene_ontaneta-misto" title="ontaneta-misto" onstart="" thumburl="panos/ontaneta-misto.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/ontaneta-misto.tiles/preview.jpg" />
 
@@ -88,11 +89,11 @@
 
 
 	<!-- startup action - load the first scene -->
+	<!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
-		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
-		loadscene(get(startscene), null, MERGE);
-		if(startactions !== null, startactions() );
+		loadscene(scene_ontaneta-foresta, null, MERGE);
 	</action>
+
 
 	<!-- startup action - load the first scene -->
 

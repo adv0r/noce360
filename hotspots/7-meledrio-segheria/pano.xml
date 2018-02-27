@@ -34,7 +34,7 @@
 		         type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
 		         />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-180.0" vlookat="0.0" fovtype="MFOV" fov="140" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/segheria-ruota.tiles/preview.jpg" />
 
@@ -51,7 +51,7 @@
 
 	<scene name="scene_segheriadimaro-caduta" title="segheriadimaro-caduta" onstart="" thumburl="panos/segheriadimaro-caduta.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="85.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/segheriadimaro-caduta.tiles/preview.jpg" />
 
@@ -68,7 +68,7 @@
 
 	<scene name="scene_segheriadimaro-martellone" title="segheriadimaro-martellone" onstart="" thumburl="panos/segheriadimaro-martellone.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/segheriadimaro-martellone.tiles/preview.jpg" />
 
@@ -85,7 +85,7 @@
 
 	<scene name="scene_segheriadimaro-overview" title="segheriadimaro-overview" onstart="" thumburl="panos/segheriadimaro-overview.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/segheriadimaro-overview.tiles/preview.jpg" />
 
@@ -102,7 +102,7 @@
 
 	<scene name="scene_segheriadimaro-ponte" title="segheriadimaro-ponte" onstart="" thumburl="panos/segheriadimaro-ponte.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/segheriadimaro-ponte.tiles/preview.jpg" />
 
@@ -119,7 +119,7 @@
 
 	<scene name="scene_segheriadimaro-ruscello" title="segheriadimaro-ruscello" onstart="" thumburl="panos/segheriadimaro-ruscello.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/segheriadimaro-ruscello.tiles/preview.jpg" />
 
@@ -141,9 +141,7 @@
 
 	<!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
-		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
-		loadscene(get(startscene), null, MERGE);
-		if(startactions !== null, startactions() );
+		loadscene(scene_segheriadimaro-martellone, null, MERGE);
 	</action>
 
 	<action name="togglescheda" type="Javascript"><![CDATA[

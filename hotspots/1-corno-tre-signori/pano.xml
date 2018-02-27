@@ -105,7 +105,7 @@
 
 	</scene>
 
-	<scene name="scene_corno-panorama2" title="corno-panorama2" onstart="" thumburl="panos/corno-panorama2.tiles/thumb.jpg" lat="" lng="" heading="">
+	<!--scene name="scene_corno-panorama2" title="corno-panorama2" onstart="" thumburl="panos/corno-panorama2.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -120,7 +120,7 @@
 			</level>
 		</image>
 
-	</scene>
+	</scene-->
 
 	<scene name="scene_corno-roccia" title="corno-roccia" onstart="" thumburl="panos/corno-roccia.tiles/thumb.jpg" lat="" lng="" heading="">
 
