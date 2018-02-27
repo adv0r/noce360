@@ -18,11 +18,11 @@
 	<!-- Import noce's skin -->
     <include url="../../assets/krpano/skin/noceskin.xml" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/ciclabile.tiles/preview.jpg" />
 
-		<image type="CUBE" multires="true" tilesize="512">
+		<image type="CUBE" multires="true" tilesize="512" prealign="0|0|0">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
 				<cube url="panos/ciclabile.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
