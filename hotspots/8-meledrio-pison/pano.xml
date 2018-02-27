@@ -18,7 +18,7 @@
 
 		<preview url="panos/pison-artificiali.tiles/preview.jpg" />
 
-		<image type="CUBE" multires="true" tilesize="512">
+		<image type="CUBE" multires="true" tilesize="512" prealign="0|35|-05">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
 				<cube url="panos/pison-artificiali.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
