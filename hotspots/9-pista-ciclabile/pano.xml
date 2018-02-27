@@ -1,37 +1,16 @@
 ﻿<krpano>
 	
-	
-	
 	<!-- Import model plugin for schede -->
 	<include url="../../assets/krpano/plugins/showtext.xml" />
 
-	<!-- Override noce's skin -->
-	<skin_settings thumbs_opened="true" />
+	<!-- include the videoplayer interface / skin (with VR support) -->
+	<include url="../../assets/krpano/skin/videointerface.xml" />
 
 	<!-- Import gyroscope plugin -->
      <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
         touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
         
 	
-	
-	<scene name="scene_ciclabile" title="ciclabile" onstart="" thumburl="panos/ciclabile.tiles/thumb.jpg" lat="" lng="" heading="">
-	<!-- Import noce's skin -->
-    <include url="../../assets/krpano/skin/noceskin.xml" />
-
-		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/ciclabile.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512" prealign="0|0|0">
-			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/ciclabile.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/ciclabile.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-	</scene>
-
 	<scene name="videopano" title="Video Ciclabile" thumburl="../../assets/media/POI-Videos/ciclabile-videoPOI.mp4_low_.jpg">
 		
 		<!-- include the videoplayer interface / skin (with VR support) -->
@@ -41,7 +20,7 @@
 		<plugin name="video"
 		        url.html5="../../assets/krpano/plugins/videoplayer.js"
 		        pausedonstart="false"
-		        loop="false"
+		        loop="true"
 		        volume="1.0"
 		        onloaded="add_video_sources();"
 		        />
@@ -71,17 +50,17 @@
 		</action>
 	</scene>
 
-	<!-- start Actions-->
 
-	<!-- startup action - load the first scene -->
+	<!-- start Actions-->
 	<action name="startup" autorun="onstart">
-		loadscene(scene_ciclabile, null, MERGE);
+		
+		if(device.panovideosupport == false,
+			error('Sorry, but panoramic videos are not supported by your current browser!');
+		  ,
+			loadscene(videopano);
+		  );
 	</action>
 
-
-	<action name="togglescheda" type="Javascript"><![CDATA[
-		toggleScheda();
-	]]></action>
 
 	<!-- end Actions-->
 
