@@ -1,7 +1,13 @@
 ﻿<krpano>
 	
-	
-	
+	 <!-- include the videoplayer interface / skin (with VR support) -->
+	<include url="../../assets/krpano/skin/videointerface.xml" />
+
+	<!-- Import noce's skin -->
+    <include url="../../assets/krpano/skin/noceskin.xml" />
+
+
+
 	<!-- Import model plugin for schede -->
 	<include url="../../assets/krpano/plugins/showtext.xml" />
 
@@ -14,9 +20,8 @@
         
 	
 	
-	<scene name="scene_ciclabile" title="ciclabile" onstart="" thumburl="panos/ciclabile.tiles/thumb.jpg" lat="" lng="" heading="">
-	<!-- Import noce's skin -->
-    <include url="../../assets/krpano/skin/noceskin.xml" />
+	<scene name="scene_ciclabile" title="ciclabile" thumburl="panos/ciclabile.tiles/thumb.jpg" lat="" lng="" heading="">
+
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -32,10 +37,8 @@
 		</image>
 	</scene>
 
-	<scene name="videopano" title="Video Ciclabile" thumburl="../../assets/media/POI-Videos/ciclabile-videoPOI.mp4_low_.jpg">
-		
-		<!-- include the videoplayer interface / skin (with VR support) -->
-		<include url="../../assets/krpano/skin/videointerface.xml" />
+	<scene name="videopano" title="Video Ciclabile" thumburl="../../assets/media/POI-Videos/ciclabile-videoPOI.mp4_low_.jpg" onstart="enterVideoMode();">
+	
 
 		<!-- include the videoplayer plugin -->
 		<plugin name="video"
@@ -76,7 +79,55 @@
 	<!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
 		loadscene(scene_ciclabile, null, MERGE);
+		enterPhotoMode();
 	</action>
+
+
+
+
+	<action name="enterVideoMode">		
+		hidePhotoSkin();
+		showVideoSkin();
+	</action>
+
+
+	<action name="enterPhotoMode">		
+		hideVideoSkin();
+		showPhotoSkin();
+	</action>
+
+
+
+
+
+	<action name="showPhotoSkin">		
+		set(layer[skin_layer_photos].visible, true);
+		set(layer[skin_layer_photos].enabled, true);
+		set(layer[skin_layer_photos].alpha, 1);
+	</action>
+
+
+	<action name="hidePhotoSkin">		
+		set(layer[skin_layer_photos].visible, false);
+		set(layer[skin_layer_photos].enabled, false);
+		set(layer[skin_layer_photos].alpha, 0);
+	</action>
+
+	<action name="showVideoSkin">		
+		set(layer[skin_layer_videos].visible, true);
+		set(layer[skin_layer_videos].enabled, true);
+		set(layer[skin_layer_videos].alpha, 1);
+	</action>
+
+
+	<action name="hideVideoSkin">		
+		set(layer[skin_layer_videos].visible, false);
+		set(layer[skin_layer_videos].enabled, false);
+		set(layer[skin_layer_videos].alpha, 0);
+	</action>
+
+
+
 
 
 	<action name="togglescheda" type="Javascript"><![CDATA[
