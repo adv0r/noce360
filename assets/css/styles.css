@@ -28,7 +28,7 @@
  h3 {
      margin-top:0px;
 }
- h1, h2{
+ h1, h2, h3{
      color:#2382c0;
      font-family: 'walkUltra', sans-serif;
 }
@@ -115,7 +115,7 @@
      margin-right: 0;
 }
  #header{
-     height: 100px;
+     /*height: 100px;*/
 }
  #mapdiv{
      height: calc(100vh - 200px);
@@ -207,6 +207,7 @@
  .hotspot-title {
      padding-right: 15px;
      padding-left: 15px;
+     height: 80px;
      position: absolute;
      z-index: 1;
      background-color: white;
@@ -258,7 +259,9 @@
 }
 #schedaContent{
     overflow: hidden;
+}    
+    
+.subtitle-main {
+    padding-left:20px;
+    font-size: 19px;
 }
-    
-    
-    

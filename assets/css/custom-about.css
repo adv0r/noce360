@@ -7,7 +7,7 @@ h1{
     font-weight: 300;
 }
 p, a{
-    font-size: 17px ;
+    font-size: 17px;
     color: #38526f;
     font-family: 'walkUltra', sans-serif;
     font-weight: 200;
@@ -23,4 +23,10 @@ p strong{
     font-size: 14px;
     cursor: pointer;
     
+}
+#footerline3 p, #footerline3 p a:hover, #footerline3 p a:visited, #footerline3 p a{
+    font-family: 'walkBlack', sans-serif;
+    color:#A9A9A9;
+    font-size: 11px;
+    text-decoration: none;
 }

@@ -198,7 +198,7 @@ function loadMarkersFromDb(map) {
     console.log("Number of markers with 360 media found :" + (hotspots.spotsWithMedia.length - 1));
     for (i in hotspots.spotsWithMedia) {
         var tempSpot = hotspots.spotsWithMedia[i];
-        console.log("Marker " + i + " : " + JSON.stringify(tempSpot));
+        //console.log("Marker " + i + " : " + JSON.stringify(tempSpot));
         //Add to map
         var tempMarker = L.marker([tempSpot.lat, tempSpot.long], {
             alt: 'marker',
@@ -215,7 +215,7 @@ function loadMarkersFromDb(map) {
     console.log("Number of markers without 360 media found :" + (hotspots.spotsNoMedia.length - 1));
     for (i in hotspots.spotsNoMedia) {
         var tempSpot = hotspots.spotsNoMedia[i];
-        console.log("Marker " + i + " : " + JSON.stringify(tempSpot));
+        //console.log("Marker " + i + " : " + JSON.stringify(tempSpot));
         //Add to map
         var tempMarker = L.marker([tempSpot.lat, tempSpot.long], {
             alt: 'marker',

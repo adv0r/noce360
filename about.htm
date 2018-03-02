@@ -1,28 +1,65 @@
 <!doctype html>
-<html>
+
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>About Noce360</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/custom-about.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+
+  <title>Noce360</title>
+  <meta name="description" content="A Virtual Tour of our beautiful river : Noce">
+  <meta name="author" content="Nitida Immagine Srl, Wrapping Reality Srls">
+
+  
+   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+  <!--css imports-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/custom-about.css">
+
+  <!--Leaflet CSS-->
+  <link rel="stylesheet" href="assets/css/leaflet.css">
+  <link rel="stylesheet" href='assets/css/leaflet.fullscreen.css' />
+
+  <!--JS Imports-->
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+
+  <!--leaflet js-->
+
+
+  <script src="assets/js/leaflet.js"></script>
+  <script src='assets/js/Leaflet.fullscreen.min.js'></script>
+  <script src="assets/js/leaflet.smoothmarkerbouncing.js"></script>
+
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+
+  <!--leaflet js : tell the mobile browser to disable unwanted scaling of the page and set it to its actual size-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
 </head>
 
 <body>
 
+
+    <div id="header" class="container">
+        <div id="logo" class="half-col">
+            <a href="index.html"><img src="assets/images/logo_noce_360_small.png"/ alt="Noce360"></a><br>
+            <h3 class="subtitle-main">Alla scoperta di un mondo d’acqua, natura e cultura</h3>
+        </div> <!--end logo-->
+        <div id="top_graphic" class="half-col">
+            <img src="assets/images/top_graphic_small.png"/>
+        </div> <!--end logo-->
+    </div> <!--end header-->
+
+
+
+
 <div class="container">
     <div class="row">
-        <div class="col-xs-10">
-            <h1>About NOCE <span style="color:#5ec5ec;">360</span></h1>
-<br>
-
-        </div>
-        <div class="col-xs-2">
-            <img src="assets/images/top_graphic_small.png" class="img-responsive" alt="">
-        </div>
-    </div>
-    <div class="row">
         <div class="col-xs-12 col-sm-6 text-justify">
+            <h2 class="text-left">About the NOCE360 Project</h2>
             <a class="backTo" onclick="window.history.back()">Torna indietro</a><br><br>
 
             <p>
@@ -60,6 +97,46 @@
             </p>
         </div>
     </div> 
-</div> 
+</div> <br>
+<br>
+ 
+<div id="footer" class="container">
+
+        <div id="footerline2" class="inline-list text-center">
+            <ul>
+                <li>
+                    <a href="#" target="_blank"><img src="assets/images/partner1_small.png" alt="Comunità della Valle di Sole" /></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="assets/images/partner2_small.png" alt="Rete di Riserve" /></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="assets/images/partner3_small.png" alt="Aree protette del Trentino" /></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="assets/images/partner4_small.png" alt="Val di Sole" /></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="assets/images/partner5_small.png" alt="Natura 2000" /></a>
+                </li>
+            </ul>
+        </div>  <!--end footer line2-->
+
+        <div id="footerline3" class="text-center">
+            <p>All Rights Reserved &copy; <script type="text/javascript">
+            
+                var data = new Date();
+                document.write(data.getFullYear());
+        
+                  </script> 
+                - <a href="about.htm">About Noce360<a> - Made by <a href="https://nitidaimmagine.it" target="_blank">Nitida Immagine<a> - <a href="https://wrappingreality.com" target="_blank">Wrapping Reality<a> </p>
+        </div>  <!--end footer line2-->
+
+    </div>  <!--end footer-->
+
+  <!--js import-->
+  <script src="assets/js/hotspots.js"></script>
+  <script src="assets/js/scripts.js"></script>
+
 </body>
 </html>
