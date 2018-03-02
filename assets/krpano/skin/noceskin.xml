@@ -561,6 +561,7 @@
 		copy(lp_fov, view.fov);
 		copy(lp_fovmax, view.fovmax);
 		copy(lp_limitview, view.limitview);
+		skin_view_fisheye();
 		set(view.fovmax, 170);
 		set(view.limitview, lookto);
 		set(view.vlookatmin, 90);
