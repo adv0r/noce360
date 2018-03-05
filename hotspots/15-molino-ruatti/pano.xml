@@ -22,367 +22,476 @@
         />
         
 
-	<!-- startup action - load the first scene -->
-	<action name="startup" autorun="onstart">
-		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
-		loadscene(get(startscene), null, MERGE);
-		if(startactions !== null, startactions() );
-	</action>
-
 	
-	
-	<scene name="scene_IMG_20170708_165702" title="IMG_20170708_165702" onstart="" thumburl="panos/IMG_20170708_165702.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="170.0" vlookat="-25.0"  fovtype="MFOV" fov="100" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/IMG_20170708_165702.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_165702.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_165702.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-			<hotspot name="gotoscene222"
-	         scale="0.15"
-	         onclick="loadscene('scene_IMG_20170708_165909', null, MERGE);"
-	         type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
-	         ath="-165.0" atv="5.0"
-
-	         />
-
-
-	</scene>
-
-	<scene name="scene_IMG_20170708_165740" title="IMG_20170708_165740" onstart="" thumburl="panos/IMG_20170708_165740.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_camera2" title="camera2" onstart="" thumburl="panos/camera2.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_165740.tiles/preview.jpg" />
+		<preview url="panos/camera2.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_165740.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/camera2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_165740.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/camera2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-<hotspot name="gotoscene1"
-	         ath="50" atv="25.0"
-	         scale="0.3"
-	         onclick="loadscene('scene_IMG_20170708_165702', null, MERGE);"
-				type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
-	         />
 
-
-	         <hotspot name="gotoscene3"
-	         ath="-195.0" atv="28.0"
-	         scale="0.2"
-	         onclick="loadscene('scene_IMG_20170708_165814', null, MERGE);"
-	         type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
-	         />
-
-	          <hotspot name="gotoscene54"
-	         ath="-155.0" atv="44.0"
-	         scale="0.2"
-	         onclick="loadscene('scene_IMG_20170708_165909', null, MERGE);"
-	         type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
-	         />
 	</scene>
 
-	<scene name="scene_IMG_20170708_165814" title="IMG_20170708_165814" onstart="" thumburl="panos/IMG_20170708_165814.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_cucina" title="cucina" onstart="" thumburl="panos/cucina.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_165814.tiles/preview.jpg" />
+		<preview url="panos/cucina.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_165814.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/cucina.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_165814.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/cucina.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-		
-		<hotspot name="gotoscene2"
-	         ath="255" atv="35.0"
-	         scale="0.3"
-	         onclick="loadscene('scene_IMG_20170708_165740', null, MERGE);"
-	         type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
-	         />
 
-	         <hotspot name="gotoscene4"
-	         ath="81" atv="25.0"
-	         scale="0.3"
-	         onclick="loadscene('scene_IMG_20170708_165909', null, MERGE);"
-	         type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
-	         />
 	</scene>
 
-	<scene name="scene_IMG_20170708_165909" title="IMG_20170708_165909" onstart="" thumburl="panos/IMG_20170708_165909.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_ext1" title="ext1" onstart="" thumburl="panos/ext1.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_165909.tiles/preview.jpg" />
+		<preview url="panos/ext1.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_165909.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/ext1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_165909.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/ext1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_IMG_20170708_165941" title="IMG_20170708_165941" onstart="" thumburl="panos/IMG_20170708_165941.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_ext2" title="ext2" onstart="" thumburl="panos/ext2.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_165941.tiles/preview.jpg" />
+		<preview url="panos/ext2.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_165941.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/ext2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_165941.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/ext2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_IMG_20170708_170101" title="IMG_20170708_170101" onstart="" thumburl="panos/IMG_20170708_170101.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_ext3" title="ext3" onstart="" thumburl="panos/ext3.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_170101.tiles/preview.jpg" />
+		<preview url="panos/ext3.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_170101.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/ext3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_170101.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/ext3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_IMG_20170708_170220" title="IMG_20170708_170220" onstart="" thumburl="panos/IMG_20170708_170220.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_primo_" title="primo " onstart="" thumburl="panos/primo_.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_170220.tiles/preview.jpg" />
+		<preview url="panos/primo_.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_170220.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/primo_.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_170220.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/primo_.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_IMG_20170708_170557" title="IMG_20170708_170557" onstart="" thumburl="panos/IMG_20170708_170557.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_primo_2a" title="primo 2a" onstart="" thumburl="panos/primo_2a.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_170557.tiles/preview.jpg" />
+		<preview url="panos/primo_2a.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_170557.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/primo_2a.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_170557.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/primo_2a.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_IMG_20170708_170618" title="IMG_20170708_170618" onstart="" thumburl="panos/IMG_20170708_170618.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_primo1a" title="primo1a" onstart="" thumburl="panos/primo1a.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_170618.tiles/preview.jpg" />
+		<preview url="panos/primo1a.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_170618.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/primo1a.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_170618.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/primo1a.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_IMG_20170708_170643" title="IMG_20170708_170643" onstart="" thumburl="panos/IMG_20170708_170643.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_primo3" title="primo3" onstart="" thumburl="panos/primo3.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_170643.tiles/preview.jpg" />
+		<preview url="panos/primo3.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_170643.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/primo3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_170643.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/primo3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_IMG_20170708_170810" title="IMG_20170708_170810" onstart="" thumburl="panos/IMG_20170708_170810.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_primo3a" title="primo3a" onstart="" thumburl="panos/primo3a.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_170810.tiles/preview.jpg" />
+		<preview url="panos/primo3a.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_170810.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/primo3a.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_170810.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/primo3a.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_IMG_20170708_170852" title="IMG_20170708_170852" onstart="" thumburl="panos/IMG_20170708_170852.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_primo4" title="primo4" onstart="" thumburl="panos/primo4.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_170852.tiles/preview.jpg" />
+		<preview url="panos/primo4.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_170852.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/primo4.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_170852.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/primo4.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_IMG_20170708_171350" title="IMG_20170708_171350" onstart="" thumburl="panos/IMG_20170708_171350.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_salamuse" title="salamuse" onstart="" thumburl="panos/salamuse.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_171350.tiles/preview.jpg" />
+		<preview url="panos/salamuse.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_171350.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/salamuse.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_171350.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/salamuse.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_IMG_20170708_171432" title="IMG_20170708_171432" onstart="" thumburl="panos/IMG_20170708_171432.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_salamuseo_(2)" title="salamuseo (2)" onstart="" thumburl="panos/salamuseo_(2).tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_171432.tiles/preview.jpg" />
+		<preview url="panos/salamuseo_(2).tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_171432.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/salamuseo_(2).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_171432.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/salamuseo_(2).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_IMG_20170708_171554" title="IMG_20170708_171554" onstart="" thumburl="panos/IMG_20170708_171554.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_salamuseo_1bis" title="salamuseo 1bis" onstart="" thumburl="panos/salamuseo_1bis.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_171554.tiles/preview.jpg" />
+		<preview url="panos/salamuseo_1bis.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_171554.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/salamuseo_1bis.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_171554.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/salamuseo_1bis.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_IMG_20170708_171803" title="IMG_20170708_171803" onstart="" thumburl="panos/IMG_20170708_171803.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_salamuseo" title="salamuseo" onstart="" thumburl="panos/salamuseo.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_171803.tiles/preview.jpg" />
+		<preview url="panos/salamuseo.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_171803.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/salamuseo.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_171803.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/salamuseo.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_IMG_20170708_171907" title="IMG_20170708_171907" onstart="" thumburl="panos/IMG_20170708_171907.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_salamuseo1" title="salamuseo1" onstart="" thumburl="panos/salamuseo1.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_171907.tiles/preview.jpg" />
+		<preview url="panos/salamuseo1.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_171907.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/salamuseo1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_171907.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/salamuseo1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_IMG_20170708_171945" title="IMG_20170708_171945" onstart="" thumburl="panos/IMG_20170708_171945.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_salamuseo2" title="salamuseo2" onstart="" thumburl="panos/salamuseo2.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/IMG_20170708_171945.tiles/preview.jpg" />
+		<preview url="panos/salamuseo2.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/IMG_20170708_171945.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/salamuseo2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/IMG_20170708_171945.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/salamuseo2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
+
+	<scene name="scene_salamuseo3" title="salamuseo3" onstart="" thumburl="panos/salamuseo3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/salamuseo3.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/salamuseo3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/salamuseo3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_salamuseo14" title="salamuseo14" onstart="" thumburl="panos/salamuseo14.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/salamuseo14.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/salamuseo14.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/salamuseo14.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_soffitta_1" title="soffitta 1" onstart="" thumburl="panos/soffitta_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/soffitta_1.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/soffitta_1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/soffitta_1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_soffitta_2" title="soffitta 2" onstart="" thumburl="panos/soffitta_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/soffitta_2.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/soffitta_2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/soffitta_2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_soffitta_3" title="soffitta 3" onstart="" thumburl="panos/soffitta_3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/soffitta_3.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/soffitta_3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/soffitta_3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_soggiorno" title="soggiorno" onstart="" thumburl="panos/soggiorno.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/soggiorno.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/soggiorno.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/soggiorno.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_stanza1" title="stanza1" onstart="" thumburl="panos/stanza1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/stanza1.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/stanza1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/stanza1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_terra1" title="terra1" onstart="" thumburl="panos/terra1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/terra1.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/terra1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/terra1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_terra2" title="terra2" onstart="" thumburl="panos/terra2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/terra2.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/terra2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/terra2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_terra3" title="terra3" onstart="" thumburl="panos/terra3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/terra3.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/terra3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/terra3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
 
 
 	<action name="togglescheda" type="Javascript"><![CDATA[
 		toggleScheda();
 	]]></action>
+
+	<!-- startup action - load the first scene -->
+	<action name="startup" autorun="onstart">
+		loadscene(scene_ext1);
+	</action>
 
 	</krpano>
 
