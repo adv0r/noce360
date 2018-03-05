@@ -10,81 +10,100 @@
      <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
         touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
         
-	<scene name="scene_pondasio-corridoio" title="pondasio-corridoio" onstart="" thumburl="panos/pondasio-corridoio.tiles/thumb.jpg" lat="" lng="" heading="">
+	
+	
+	<scene name="scene_pondasio-1" title="pondasio-1" onstart="" thumburl="panos/pondasio-1.tiles/thumb.jpg" lat="" lng="" heading="">
 
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<view hlookat="100.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
-
-		<preview url="panos/pondasio-corridoio.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512" prealign="0|0|6">
-			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/pondasio-corridoio.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/pondasio-corridoio.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene_pondasio-entrata" title="pondasio-entrata" onstart="" thumburl="panos/pondasio-entrata.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
-
-		<preview url="panos/pondasio-entrata.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512" prealign="0|0|-6">
-			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/pondasio-entrata.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/pondasio-entrata.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene_pondasio-esterno" title="pondasio-esterno" onstart="" thumburl="panos/pondasio-esterno.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
-
-		<preview url="panos/pondasio-esterno.tiles/preview.jpg" />
+		<preview url="panos/pondasio-1.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/pondasio-esterno.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/pondasio-1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/pondasio-esterno.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/pondasio-1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_pondasio-fuoco" title="pondasio-fuoco" onstart="" thumburl="panos/pondasio-fuoco.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_pondasio-2" title="pondasio-2" onstart="" thumburl="panos/pondasio-2.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/pondasio-fuoco.tiles/preview.jpg" />
+		<preview url="panos/pondasio-2.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/pondasio-fuoco.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/pondasio-2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/pondasio-fuoco.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/pondasio-2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
+
+	<scene name="scene_pondasio-3" title="pondasio-3" onstart="" thumburl="panos/pondasio-3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/pondasio-3.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/pondasio-3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/pondasio-3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_pondasio-4" title="pondasio-4" onstart="" thumburl="panos/pondasio-4.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/pondasio-4.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/pondasio-4.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/pondasio-4.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_pondasio-5" title="pondasio-5" onstart="" thumburl="panos/pondasio-5.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/pondasio-5.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/pondasio-5.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/pondasio-5.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
 
 	<!-- start Actions-->
 
 
 	<!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
-		loadscene(scene_pondasio-entrata, null, MERGE);
+		loadscene(scene_pondasio-1, null, MERGE);
 	</action>
 
 
