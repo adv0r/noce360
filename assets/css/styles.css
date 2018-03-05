@@ -160,9 +160,6 @@
      padding-right: 1rem;
 }
  @media only screen and (max-width: 767px) {
-     #header{
-         height: 100px;
-    }
      #mapdiv{
          height: 400px;
     }
