@@ -12,9 +12,43 @@
         
 		        	         
 
+	<scene name="scene_HD1" title="HD1" onstart="" thumburl="panos/HD1.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/HD1.tiles/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/HD1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/HD1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_HDR2" title="HDR2" onstart="" thumburl="panos/HDR2.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/HDR2.tiles/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/HDR2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/HDR2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
 	<scene name="scene_ontaneta-foresta" title="ontaneta-foresta" onstart="" thumburl="panos/ontaneta-foresta.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/ontaneta-foresta.tiles/preview.jpg" />
 
@@ -29,10 +63,26 @@
 
 	</scene>
 
+	<scene name="scene_ontaneta-lago" title="ontaneta-lago" onstart="" thumburl="panos/ontaneta-lago.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ontaneta-lago.tiles/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/ontaneta-lago.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/ontaneta-lago.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
 
 	<scene name="scene_ontaneta-misto" title="ontaneta-misto" onstart="" thumburl="panos/ontaneta-misto.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/ontaneta-misto.tiles/preview.jpg" />
 
@@ -48,28 +98,12 @@
 	</scene>
 
 
-	<scene name="scene_ontaneta-lago" title="ontaneta-lago" onstart="" thumburl="panos/ontaneta-lago.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
-		<preview url="panos/ontaneta-lago.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/ontaneta-lago.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/ontaneta-lago.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
 
 	<!-- start Actions-->
 
 	<!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
-		loadscene(scene_ontaneta-foresta, null, MERGE);
+		loadscene(scene_HDR2, null, MERGE);
 	</action>
 
 
