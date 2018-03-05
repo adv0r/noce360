@@ -262,3 +262,11 @@
     padding-left:20px;
     font-size: 19px;
 }
+
+
+.aprischedalink a{
+    color: #2382c0;
+    font-family: 'walkUltra', sans-serif;
+    text-decoration:none;
+    text-transform: none;
+}

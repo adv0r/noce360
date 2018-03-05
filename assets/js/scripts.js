@@ -129,7 +129,7 @@ function onMarkerClick(e) {
     } else {
         var appendStr = "";
         if (this.type!="choice"){
-            appendStr = "<center><p><i>Clicca per entrare</i></p></center>";
+            appendStr = "<center><p> <img src='assets/images/enter_graph.png' style='width: 20px; vertical-align: middle'> <i>Entra</i></p></center>";
         }
         var popup = L.popup({
             closeButton: true,
