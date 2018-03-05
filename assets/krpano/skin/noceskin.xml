@@ -13,7 +13,7 @@
 	               webvr="true"
 	               webvr_gyro_keeplookingdirection="false"
 	               webvr_prev_next_hotspots="true"
-	               littleplanetintro="true"
+	               littleplanetintro="false"
 	               title="false"
 	               thumbs="true"
 	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
@@ -561,7 +561,6 @@
 		copy(lp_fov, view.fov);
 		copy(lp_fovmax, view.fovmax);
 		copy(lp_limitview, view.limitview);
-		skin_view_fisheye();
 		set(view.fovmax, 170);
 		set(view.limitview, lookto);
 		set(view.vlookatmin, 90);
@@ -1020,6 +1019,11 @@
 	</action>
 
 
+	<!-- startup action -->
+	<action name="initFishEye" autorun="onstart">
+		skin_view_fisheye();
+	</action>
+
 	<!-- videopano support - http://krpano.com/plugins/videoplayer/ -->
 	<action name="skin_video_addcontrols">
 		set(events[skin_events].onclick, skin_video_clickevent() );
@@ -1210,11 +1214,5 @@
 		tween(view.hlookat, get(new_hlookat), distance(100,0.8));
 		skin_deeplinking_update_url(1.0);
 	</action>
-
-
-
-	
-
-
 
 </krpano>
