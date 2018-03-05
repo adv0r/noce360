@@ -89,6 +89,9 @@ function initMap() {
     testCircle.on('click', onCircleClick);
     //testPolygon.on('click', onPolyClick);
     */
+
+    //Add special Porjola hotspot 46.373333, "long": 10.966667,
+
 }
 
 
@@ -124,11 +127,15 @@ function onMarkerClick(e) {
             this.tempMarker.openPopup();
         }
     } else {
+        var appendStr = "";
+        if (this.type!="choice"){
+            appendStr = "<center><p><i>Clicca per entrare</i></p></center>";
+        }
         var popup = L.popup({
             closeButton: true,
             className: 'markerPopup'
         }).setContent("<b>" + this.name + "</b><br>" + this.description +
-            "<center><p><i>Clicca per entrare</i></p></center>");
+            appendStr);
 
         this.tempMarker.bindPopup(popup);
         console.log("Open Popup : " + this.href);
@@ -227,6 +234,9 @@ function loadMarkersFromDb(map) {
             tempMarker.bounce(10);
         }
     }
+
+
+    //Add special marker for porjola with custom tooltip
 }
 
 

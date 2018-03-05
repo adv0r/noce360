@@ -193,6 +193,15 @@ var hotspots = {
 	      "marker": "normal",
 	      "description": "Là dove il fiume si nasconde",
 	      "bounce": false
+	    }, {
+	      "name": "Scegli la scheda",
+	      "lat": 46.373333,
+	      "long": 10.966667,
+	      "href": "",
+	      "type": "choice",
+	      "marker": "normal",
+	      "description": "<ul><li><a href=\"#\" onclick=\"javascript:showScheda('scheda-porcjola')\">Porcjola</a></li><li><a href=\"#\" onclick=\"javascript:showScheda('scheda-maso-di-fae')\">Maso Fae</a></li><li><a href=\"#\" onclick=\"javascript:showScheda('scheda-chirotteri')\">Chirotteri</a></li></ul>",
+	      "bounce": false
 	    }
 	  ],
 	  "spotsNoMedia": [
@@ -255,22 +264,6 @@ var hotspots = {
 	      },
 	      "lat": 46.36986,
 	      "long": 10.95637,
-	      "href": "",
-	      "type": "normal",
-	      "marker": "nomedia",
-	      "bounce": false
-	    },
-	    {
-	      "name": "Biotopo Porcjola",
-	      "description": "Le straordinarie 'sorgenti pietrificanti'",
- 		  "scheda": {
- 		  		"filename" : "scheda-porcjola",
-	      		"titolo" :"LA PORCJÖLA" ,
-	      		"sottotitolo" :"Un antico luogo di pascolo e un’area naturalistica di grande interesse" ,
-	      		"contenuto" :" <p>Nel fondovalle possiamo trovare alcune aree uniche lungo tutto il corso del Noce: una di queste è la Porcjöla. Si tratta di un toponimo tra i più antichi documentati in Val di Sole, risalente all'inizio del XIII secolo, a indicare la presenza di un pascolo di maiali; una zona poco conosciuta ma di alto valore naturalistico.</p> <br /> </div> </div> <div class='row'> <div class='col-xs-12 '> <!-- <h3>LA DIGA DEL CARESER</h3>--> <img src='assets/images/schede/01-porcjola.jpg' alt='La Porcjöla' class='imageInright img-responsive'> <p> La cose più particolari e importanti in quest'area sono senza dubbio le 'sorgenti pietrificanti', un habitat raro con netta dominanza di briofite (principalmente muschi), che si sviluppano su sorgenti e stillicidi di acque dure, che danno origine alla formazione di travertini o tufi per deposito di carbonato di calcio sulle fronde.<br /> I muschi più comuni vicino a queste sorgenti sono Cratoneurion commutatum, Eucladium verticillatum e Philonotis sp.; è un ambiente favorevole per la crescita di piante superiori di particolare interesse, come la pianta carnivora Pinguicola alpina. Queste concrezioni carbonatiche si sviluppano esclusivamente in un ambiente molto umido e ombroso e questo favorisce la formazione di altre aree da segnalare, come una piccola zona di torbiera bassa, uno stagno ed importanti fasce di vegetazione ripariale.<br /> Qui trovano riparo e sostegno diverse specie animali come la trota marmorata (Salmo trutta marmoratus), la salamandra (Salamandra salamandra), la rana temporaria (Rana temporaria), il rospo comune (Bufo bufo) e il picchio muratore (Sitta europaea).<br /> Troviamo anche numerose specie vegetali poste nella 'lista rossa' delle specie in via d'estinzione come Epipactis palustris, Schoenus ferrugineus e Urticularia minor, minacciate anche dalla presenza di alcune specie alloctone come Impatiens glandulifera e parviflora. </p> " 
-	      },
-	      "lat": 46.373333,
-	      "long": 10.966667,
 	      "href": "",
 	      "type": "normal",
 	      "marker": "nomedia",
