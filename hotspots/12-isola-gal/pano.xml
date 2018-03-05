@@ -30,6 +30,42 @@
 			<sphere url="plugin:video" />
 		</image>
 
+
+		<!--scheda-averla-piccola -->
+        <hotspot name="scheda-averla-piccola-Trigger"
+           ath="30" atv="-38"
+           scale="0.3"
+           vr="false"
+           onclick="jscall(loadScheda('scheda-averla-piccola'));"           
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+        />
+
+        <hotspot name="scheda-averla-piccola-TriggerLabel"
+           html="L'Averla Piccola"
+           ath="30" atv="-38"
+           vr="false"
+           oy="30"
+           type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-averla-piccola -->
+
+
+
+		<!--scheda-macroinvertebrati-acquatici-e-qualita-delle-acque -->
+        <hotspot name="scheda-macroinvertebrati-acquatici-e-qualita-delle-acque-Trigger"
+           ath="-30" atv="28"
+           scale="0.3"
+           vr="false"
+           onclick="jscall(loadScheda('scheda-macroinvertebrati-acquatici-e-qualita-delle-acque'));"           
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+        />
+
+        <hotspot name="scheda-macroinvertebrati-acquatici-e-qualita-delle-acque-TriggerLabel"
+           html="Macroinvertebrati acquatici"
+           ath="-30" atv="28"
+           vr="false"
+           oy="30"
+           type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-macroinvertebrati-acquatici-e-qualita-delle-acque -->
 		<!-- set the default view -->
 		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="130" fovmin="75" fovmax="150" distortion="0.0" />
 

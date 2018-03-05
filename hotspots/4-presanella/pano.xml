@@ -31,6 +31,24 @@
 	      
 		<preview url="gigaPresenellaPATCH.tiles/preview.jpg" />
 
+		<!--scheda-geologia-val-di-sole -->
+        <hotspot name="scheda-geologia-val-di-sole-Trigger"
+           ath="-30" atv="-5"
+           scale="0.3"
+           vr="false"
+           onclick="jscall(loadScheda('scheda-geologia-val-di-sole'));"           
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+        />
+
+        <hotspot name="scheda-geologia-val-di-sole-TriggerLabel"
+           html="La geologia della Val di Sole"
+           ath="-30" atv="-5"
+           vr="false"
+           oy="30"
+           type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-geologia-val-di-sole -->
+
+
 
 		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
 			<level tiledimagewidth="7808" tiledimageheight="7808">

@@ -339,6 +339,22 @@ var hotspots = {
 	      "type": "normal",
 	      "marker": "nomedia",
 	      "bounce": false
+	    },
+	     {
+	      "name": "Riserva Locale di Corredolo",
+	      "description": "Una rara zona umida",
+	      "scheda": {
+	      		"filename" : "scheda-riserva-corredolo",
+	      		"titolo" :"Riserva di Corredolo" ,
+	      		"sottotitolo"sss :"s" ,
+	      		"contenuto" :"" ,
+	      },
+	      "lat": 46.285818, 
+	      "long": 10.671677,
+	      "href": "",
+	      "type": "normal",
+	      "marker": "nomedia",
+	      "bounce": false
 	    }
 	  ]
  }

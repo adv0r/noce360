@@ -25,6 +25,7 @@
 			</level>
 		</image>
 
+
 	</scene>
 
 	<scene name="scene_derniga-ferrovia" title="derniga-ferrovia" onstart="" thumburl="panos/derniga-ferrovia.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -63,10 +64,26 @@
 
 	<scene name="scene_derniga-orchidea" title="derniga-orchidea" onstart="" thumburl="panos/derniga-orchidea.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="140" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="-52.0" vlookat="0.0" fovtype="MFOV" fov="140" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/derniga-orchidea.tiles/preview.jpg" />
 
+		<!--scheda-area-umida-di-ossana -->
+        <hotspot name="scheda-area-umida-di-ossana-Trigger"
+           ath="0" atv="0"
+           scale="0.6"
+           vr="false"
+           onclick="jscall(loadScheda('scheda-area-umida-di-ossana'));"           
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+        />
+
+        <hotspot name="scheda-area-umida-di-ossana-TriggerLabel"
+           html="La flora di Derniga"
+           ath="0" atv="0"
+           vr="false"
+           oy="30"
+           type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-area-umida-di-ossana -->
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
 				<cube url="panos/derniga-orchidea.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />

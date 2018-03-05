@@ -34,6 +34,23 @@
 
 		<preview url="panos/pison-gigapixel.tiles/preview.jpg" />
 
+		<!--scheda-orso -->
+        <hotspot name="scheda-orso-Trigger"
+           ath="-10" atv="5"
+           scale="0.3"
+           vr="false"
+           onclick="jscall(loadScheda('scheda-orso'));"           
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+        />
+
+        <hotspot name="scheda-orso-TriggerLabel"
+           html="L'Orso Bruno"
+           ath="-10" atv="5"
+           vr="false"
+           oy="30"
+           type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-orso -->
+
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="7680" tiledimageheight="7680">
 				<cube url="panos/pison-gigapixel.tiles/%s/l4/%v/l4_%s_%v_%h.jpg" />
@@ -53,9 +70,27 @@
 
 	<scene name="scene_pison-meledrio" title="pison-meledrio" onstart="" thumburl="panos/pison-meledrio.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="70.0" vlookat="20.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pison-meledrio.tiles/preview.jpg" />
+
+
+		<!--scheda-trota-marmorata -->
+        <hotspot name="scheda-trota-marmorata-Trigger"
+           ath="30" atv="15"
+           scale="0.35"
+           vr="false"
+           onclick="jscall(loadScheda('scheda-trota-marmorata'));"           
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+        />
+
+        <hotspot name="scheda-trota-marmorata-TriggerLabel"
+           html="Apri scheda-trota-marmorata"
+           ath="30" atv="15"
+           vr="false"
+           oy="30"
+           type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-trota-marmorata -->
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
@@ -70,7 +105,7 @@
 
 	<scene name="scene_pison-canyon" title="pison-canyon" onstart="" thumburl="panos/pison-canyon.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pison-canyon.tiles/preview.jpg" />
 

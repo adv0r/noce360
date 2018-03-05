@@ -14,7 +14,26 @@
 	
 	<scene name="scene_pondasio-1" title="pondasio-1" onstart="" thumburl="panos/pondasio-1.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="70" vlookat="30" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<!--scheda-macchine-acqua -->
+        <hotspot name="scheda-macchine-acqua-Trigger"
+           ath="70" atv="30"
+           scale="0.6"
+           vr="false"
+           onclick="jscall(loadScheda('scheda-macchine-acqua'));"           
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+        />
+
+        <hotspot name="scheda-macchine-acqua-TriggerLabel"
+           html="Le macchine ad acqua"
+           ath="70" atv="30"
+           vr="false"
+           oy="30"
+           type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-macchine-acqua -->
+
+
 
 		<preview url="panos/pondasio-1.tiles/preview.jpg" />
 
