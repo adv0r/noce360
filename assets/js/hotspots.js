@@ -248,7 +248,7 @@ var hotspots = {
 	      "name": "Incubatoio di Cavizzana",
 	      "description": "scheda-incubatoio-cavizzana",
  		  "scheda": {
- 		  		"filename" : "scheda-area-umida-di-ossana",
+ 		  		"filename" : "scheda-incubatoio-cavizzana",
 	      		"titolo" :"DOVE NASCONO LE TROTE" ,
 	      		"sottotitolo" :"L’incubatoio di Cavizzana" ,
 	      		"contenuto" :" <p>Un luogo per garantire la salvaguardia della trota marmorata e per far conoscere, attraverso una intensa attività di visite guidate per le scuole, l’attività dell’Associazione Pescatori Solandri e la fauna ittica del fiume Noce. </p> <br /> </div> </div> <div class='row'> <div class='col-xs-12 '> <!-- <h3>LA DIGA DEL CARESER</h3>--> <img src='assets/images/schede/01-incubatoio-cavizzana.jpg' alt='L’incubatoio di Cavizzana' class='imageInright img-responsive'> <p> L’incubatoio di Cavizzana è oggi un centro specializzato per l’allevamento di questi salmonidi: dal 2002 l’Associazione alleva gli avannotti fino allo stadio di trotella, accompagnando questi animali nella delicata fase dello svezzamento. Il ruolo dell’incubatoio nella protezione della trota è fondamentale, vista la riduzione delle aree naturali di riproduzione a causa delle attività umane. Per questo l’Associazione opera attivamente a sostegno della sopravvivenza di questo prezioso endemismo, nella speranza di non vedere estinguere in pochi anni la Trota Marmorata dalle acque solandre. Dal 2016 è in atto una collaborazione stretta con la vicina Associazione APS C6 della Val di Non, per l'uso in comune dell'incubatoio ai fini di un miglior utilizzo e produzione di novellame pregiato per entrambe le Associazioni. </p> " 
@@ -346,7 +346,7 @@ var hotspots = {
 	      "scheda": {
 	      		"filename" : "scheda-riserva-corredolo",
 	      		"titolo" :"Riserva di Corredolo" ,
-	      		"sottotitolo"sss :"s" ,
+	      		"sottotitolo" :"" ,
 	      		"contenuto" :"" ,
 	      },
 	      "lat": 46.285818, 
