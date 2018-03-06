@@ -38,7 +38,7 @@
 		<!--scheda-scazzone -->
         <hotspot name="scheda-scazzone-Trigger"
            ath="-20" atv="15"
-           scale="0.5"
+           scale="0.8"
            vr="false"
            onclick="jscall(loadScheda('scheda-scazzone'));"           
            type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
@@ -48,8 +48,8 @@
            html="Lo Scazzone"
            ath="-20" atv="15"
            vr="false"
-           oy="30"
-           type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+           oy="50"
+           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
         /><!-- Fine scheda-scazzone -->
 		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
@@ -67,7 +67,7 @@
 		<!--scheda-nymphalis-antiopa -->
         <hotspot name="scheda-nymphalis-antiopa-Trigger"
            ath="0" atv="0"
-           scale="0.5"
+           scale="0.8"
            vr="false"
            onclick="jscall(loadScheda('scheda-nymphalis-antiopa'));"           
            type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
@@ -77,8 +77,8 @@
            html="La Nymphalis antiopa"
            ath="0" atv="0"
            vr="false"
-           oy="30"
-           type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+           oy="50"
+           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
         /><!-- Fine scheda-nymphalis-antiopa -->
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
