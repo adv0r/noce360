@@ -127,6 +127,10 @@ h2{
 .small-img {
 
     max-width: 300px;
+}
 
+.half-width {
+
+    max-width: 45%;
 }
 

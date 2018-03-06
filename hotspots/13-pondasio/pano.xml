@@ -14,12 +14,12 @@
 	
 	<scene name="scene_pondasio-1" title="pondasio-1" onstart="" thumburl="panos/pondasio-1.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="70" vlookat="30" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="70" vlookat="30" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<!--scheda-macchine-acqua -->
         <hotspot name="scheda-macchine-acqua-Trigger"
            ath="70" atv="30"
-           scale="0.6"
+           scale="0.8"
            vr="false"
            onclick="jscall(loadScheda('scheda-macchine-acqua'));"           
            type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
@@ -29,8 +29,8 @@
            html="Le macchine ad acqua"
            ath="70" atv="30"
            vr="false"
-           oy="30"
-           type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+           oy="50"
+           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
         /><!-- Fine scheda-macchine-acqua -->
 
 
@@ -50,7 +50,7 @@
 
 	<scene name="scene_pondasio-2" title="pondasio-2" onstart="" thumburl="panos/pondasio-2.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pondasio-2.tiles/preview.jpg" />
 
@@ -67,7 +67,7 @@
 
 	<scene name="scene_pondasio-3" title="pondasio-3" onstart="" thumburl="panos/pondasio-3.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pondasio-3.tiles/preview.jpg" />
 
@@ -84,7 +84,7 @@
 
 	<scene name="scene_pondasio-4" title="pondasio-4" onstart="" thumburl="panos/pondasio-4.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pondasio-4.tiles/preview.jpg" />
 
@@ -101,7 +101,7 @@
 
 	<scene name="scene_pondasio-5" title="pondasio-5" onstart="" thumburl="panos/pondasio-5.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="100.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="100.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pondasio-5.tiles/preview.jpg" />
 

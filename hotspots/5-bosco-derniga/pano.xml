@@ -12,7 +12,7 @@
         
 	<scene name="scene_derniga-ferrovia-fiore" title="derniga-ferrovia-fiore" onstart="" thumburl="panos/derniga-ferrovia-fiore.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-40.0" vlookat="0.0" fovtype="MFOV" fov="140" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="-40.0" vlookat="0.0" fovtype="MFOV" fov="140" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/derniga-ferrovia-fiore.tiles/preview.jpg" />
 
@@ -30,7 +30,7 @@
 
 	<scene name="scene_derniga-ferrovia" title="derniga-ferrovia" onstart="" thumburl="panos/derniga-ferrovia.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/derniga-ferrovia.tiles/preview.jpg" />
 
@@ -47,7 +47,7 @@
 
 	<scene name="scene_derniga-gnomo" title="derniga-gnomo" onstart="" thumburl="panos/derniga-gnomo.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/derniga-gnomo.tiles/preview.jpg" />
 
@@ -64,14 +64,14 @@
 
 	<scene name="scene_derniga-orchidea" title="derniga-orchidea" onstart="" thumburl="panos/derniga-orchidea.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-52.0" vlookat="0.0" fovtype="MFOV" fov="140" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="-52.0" vlookat="0.0" fovtype="MFOV" fov="140" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/derniga-orchidea.tiles/preview.jpg" />
 
 		<!--scheda-area-umida-di-ossana -->
         <hotspot name="scheda-area-umida-di-ossana-Trigger"
            ath="0" atv="0"
-           scale="0.6"
+           scale="0.8"
            vr="false"
            onclick="jscall(loadScheda('scheda-area-umida-di-ossana'));"           
            type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
@@ -81,8 +81,8 @@
            html="La flora di Derniga"
            ath="0" atv="0"
            vr="false"
-           oy="30"
-           type="text" css="font-family:Arial; font-size:13px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+           oy="50"
+           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
         /><!-- Fine scheda-area-umida-di-ossana -->
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
@@ -97,7 +97,7 @@
 
 	<scene name="scene_derniga-piazzola" title="derniga-piazzola" onstart="" thumburl="panos/derniga-piazzola.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="180.0" vlookat="90.0" fovtype="MFOV" fov="140" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="180.0" vlookat="90.0" fovtype="MFOV" fov="140" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/derniga-piazzola.tiles/preview.jpg" />
 
@@ -114,7 +114,7 @@
 
 	<scene name="scene_derniga-ponte" title="derniga-ponte" onstart="" thumburl="panos/derniga-ponte.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="140" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="140" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/derniga-ponte.tiles/preview.jpg" />
 

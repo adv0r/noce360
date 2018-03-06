@@ -15,7 +15,7 @@
 	<scene name="scene_arnago-hdr" title="arnago-hdr" onstart="" thumburl="panos/arnago-hdr.tiles/thumb.jpg" lat="46.36688333" lng="10.91185556" heading="0.0">
 
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/arnago-hdr.tiles/preview.jpg" />
 
@@ -33,7 +33,7 @@
 		
 	<scene name="scene_arnago-casetta" title="arnago-casetta" onstart="" thumburl="panos/arnago-casetta.tiles/thumb.jpg" lat="46.36715600" lng="10.91033900" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/arnago-casetta.tiles/preview.jpg" />
 
@@ -52,7 +52,7 @@
 
 	<scene name="scene_arnago-laghetto" title="arnago-laghetto" onstart="" thumburl="panos/arnago-laghetto.tiles/thumb.jpg" lat="46.36712700" lng="10.91074500" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/arnago-laghetto.tiles/preview.jpg" />
 
@@ -69,7 +69,7 @@
 
 	<scene name="scene_arnago-tronco" title="arnago-tronco" onstart="" thumburl="panos/arnago-tronco.tiles/thumb.jpg" lat="46.36709900" lng="10.91078100" heading="0.0">
 
-		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/arnago-tronco.tiles/preview.jpg" />
 

@@ -6,7 +6,7 @@
 	               layout_maxwidth_video="814"
 	               controlbar_width_video="-24"
 	               controlbar_height_video="40"
-	               controlbar_offset_video="60"
+	               controlbar_offset_video="600"
 	               design_skin_images_video="noceskin.png"
 	               design_bgcolor_video="0x576573"
 	               design_bgalpha_video="0.8"
