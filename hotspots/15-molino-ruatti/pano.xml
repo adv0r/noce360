@@ -7,6 +7,7 @@
     		title="true"
     		thumbs_text="true"
  		/>
+		
 
 	<!-- Import model plugin for schede -->
 	<include url="../../assets/krpano/plugins/showtext.xml" />
@@ -44,13 +45,13 @@
 		</image>
 		<hotspot name="arrowName"
 			 onclick="loadscene('scene_ext2', null, MERGE);"
-			 ath="-165.0" atv="5.0"
+			 ath="-165.0" atv="10.0"
 			 scale="0.15"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="arrowName2"
 			 onclick="loadscene('scene_ext3', null, MERGE);"
-			 ath="150.0" atv="5.0"
+			 ath="150.0" atv="-3.0"
 			 scale="0.15"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
@@ -72,13 +73,13 @@
 		</image>
 		<hotspot name="arrowName"
 			 onclick="loadscene('scene_sala1', null, MERGE);"
-			 ath="160.0" atv="5.0"
-			 scale="0.15"
+			 ath="160.0" atv="35.0"
+			 scale="0.3"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="arrowName2"
 			 onclick="loadscene('scene_terra1', null, MERGE);"
-			 ath="210.0" atv="5.0"
+			 ath="210.0" atv="35.0"
 			 scale="0.25"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
@@ -122,7 +123,7 @@
 		</image>
 		<hotspot name="scene_terra1"		 
 		onclick="loadscene('scene_terra1', null, MERGE);"
-		 ath="5.0" atv="35.0"
+		 ath="5.0" atv="55.0"
 		 scale="0.25"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
@@ -134,7 +135,7 @@
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_pri8"		 
 		onclick="loadscene('scene_pri8', null, MERGE);"
-		 ath="-15.0" atv="10.0"
+		 ath="-15.0" atv="20.0"
 		 scale="0.25"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
@@ -404,14 +405,14 @@
 		</image>
 		<hotspot name="scene_sala1bis"
 			 onclick="loadscene('scene_sala1bis', null, MERGE);"
-			 ath="60.0" atv="5.0"
-			 scale="0.15"
+			 ath="60.0" atv="45.0"
+			 scale="0.45"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 			<hotspot name="scene_ext2"
 			 onclick="loadscene('scene_ext2', null, MERGE);"
-			 ath="255.0" atv="5.0"
-			 scale="0.15"
+			 ath="255.0" atv="35.0"
+			 scale="0.25"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		
@@ -435,7 +436,7 @@
 		<hotspot name="scene_sala1"
 			 onclick="loadscene('scene_sala1', null, MERGE);"
 			 ath="60.0" atv="45.0"
-			 scale="0.15"
+			 scale="0.35"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 				<hotspot name="scene_sala"
@@ -494,7 +495,12 @@
 				<cube url="panos/sala4.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-
+		<hotspot name="scene_sala1bis"
+			 onclick="loadscene('scene_sala1bis', null, MERGE);"
+			 ath="0.0" atv="55.0"
+			 scale="0.45"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
 
 
@@ -597,13 +603,13 @@
 		
 		<hotspot name="scene_terra2"
 		 onclick="loadscene('scene_terra2', null, MERGE);"
-		 ath="-140.0" atv="00.0"
+		 ath="-140.0" atv="35.0"
 		 scale="0.35"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_terra3"
 		 onclick="loadscene('scene_terra3', null, MERGE);"
-		 ath="50.0" atv="00.0"
+		 ath="48.0" atv="10.0"
 		 scale="0.15"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
@@ -615,7 +621,7 @@
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	<hotspot name="scene_pri1"		 
 		onclick="loadscene('scene_pri1', null, MERGE);"
-		 ath="10.0" atv="-10.0"
+		 ath="15.0" atv="-10.0"
 		 scale="0.35"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
@@ -637,7 +643,7 @@
 		</image>
 		<hotspot name="scene_terra1"		 
 		onclick="loadscene('scene_terra1', null, MERGE);"
-		 ath="-75.0" atv="10.0"
+		 ath="-75.0" atv="35.0"
 		 scale="0.35"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
@@ -659,7 +665,7 @@
 		</image>
 	<hotspot name="scene_terra1"		 
 		onclick="loadscene('scene_terra1', null, MERGE);"
-		 ath="-120.0" atv="10.0"
+		 ath="-120.0" atv="35.0"
 		 scale="0.35"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
