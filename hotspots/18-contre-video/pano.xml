@@ -11,7 +11,7 @@
         touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
         
 	
-	<scene name="videopano" title="Video Contre" thumburl="../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_low_.jpg">
+	<scene name="videopano" title="Video Contre" thumburl="../../assets/media/POI-Videos/ContrePOI.mp4_low_.jpg">
 		
 		<!-- include the videoplayer interface / skin (with VR support) -->
 		<include url="../../assets/krpano/skin/videointerface.xml" />
@@ -36,11 +36,11 @@
 
 		<!-- add the video sources and play the video -->
 		<action name="add_video_sources">
-			videointerface_addsource('1024x512','../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_low.mp4|../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_low.webm|../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_iphone-audio.m4a','../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_low_.jpg');
+			videointerface_addsource('1024x512','../../assets/media/POI-Videos/ContrePOI.mp4_low.mp4|../../assets/media/POI-Videos/ContrePOI.mp4_low.webm|../../assets/media/POI-Videos/ContrePOI.mp4_iphone-audio.m4a','../../assets/media/POI-Videos/ContrePOI.mp4_low_.jpg');
 
-			videointerface_addsource('1920x960','../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_mid.mp4|../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_mid.webm|../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_iphone-audio.m4a','../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_mid_.jpg');
+			videointerface_addsource('1920x960','../../assets/media/POI-Videos/ContrePOI.mp4_mid.mp4|../../assets/media/POI-Videos/ContrePOI.mp4_mid.webm|../../assets/media/POI-Videos/ContrePOI.mp4_iphone-audio.m4a','../../assets/media/POI-Videos/ContrePOI.mp4_mid_.jpg');
 
-			videointerface_addsource('3840×1920','../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_high.mp4|../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_high.webm|../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_iphone-audio.m4a','../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_high_.jpg');
+			videointerface_addsource('3840×1920','../../assets/media/POI-Videos/ContrePOI.mp4_high.mp4|../../assets/media/POI-Videos/ContrePOI.mp4_high.webm|../../assets/media/POI-Videos/ContrePOI.mp4_iphone-audio.m4a','../../assets/media/POI-Videos/ContrePOI.mp4_high_.jpg');
 
 			if(device.ios,
 				<!-- iOS Safari has a very slow 'video-to-webgl-texture' transfer, therefore use a low-res video by default -->
