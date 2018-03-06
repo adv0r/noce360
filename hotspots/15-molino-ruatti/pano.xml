@@ -1,6 +1,12 @@
 ﻿<krpano version="1.19" title="Molino Ruatti">
 
     <include url="../../assets/krpano/skin/noceskin.xml" />
+	
+	<!-- Override noce's skin -->
+    	<skin_settings 	
+    		title="true"
+    		thumbs_text="true"
+ 		/>
 
 	<!-- Import model plugin for schede -->
 	<include url="../../assets/krpano/plugins/showtext.xml" />
@@ -24,7 +30,7 @@
 
 	<scene name="scene_ext1" title="ext1" onstart="" thumburl="panos/ext1.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/ext1.tiles/preview.jpg" />
 
@@ -36,12 +42,23 @@
 				<cube url="panos/ext1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-
+		<hotspot name="arrowName"
+			 onclick="loadscene('scene_ext2', null, MERGE);"
+			 ath="-165.0" atv="5.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="arrowName2"
+			 onclick="loadscene('scene_ext3', null, MERGE);"
+			 ath="150.0" atv="5.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
 
 	<scene name="scene_ext2" title="ext2" onstart="" thumburl="panos/ext2.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/ext2.tiles/preview.jpg" />
 
@@ -53,12 +70,23 @@
 				<cube url="panos/ext2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-
+		<hotspot name="arrowName"
+			 onclick="loadscene('scene_sala1', null, MERGE);"
+			 ath="160.0" atv="5.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="arrowName2"
+			 onclick="loadscene('scene_terra1', null, MERGE);"
+			 ath="210.0" atv="5.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
 
 	<scene name="scene_ext3" title="ext3" onstart="" thumburl="panos/ext3.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="90.0" vlookat="45.0" fovtype="MFOV" fov="140" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/ext3.tiles/preview.jpg" />
 
@@ -70,7 +98,12 @@
 				<cube url="panos/ext3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-
+		<hotspot name="arrowNameXX"
+			 onclick="loadscene('scene_ext1', null, MERGE);"
+			 ath="25.0" atv="15.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
 
 	<scene name="scene_pri1" title="pri1" onstart="" thumburl="panos/pri1.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -79,7 +112,7 @@
 
 		<preview url="panos/pri1.tiles/preview.jpg" />
 
-		<image type="CUBE" multires="true" tilesize="512">
+		<image type="CUBE" multires="true" tilesize="512" prealign="0|0|3">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
 				<cube url="panos/pri1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
@@ -87,12 +120,35 @@
 				<cube url="panos/pri1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-
+		<hotspot name="scene_terra1"		 
+		onclick="loadscene('scene_terra1', null, MERGE);"
+		 ath="5.0" atv="35.0"
+		 scale="0.25"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_pri2"		 
+		onclick="loadscene('scene_pri2', null, MERGE);"
+		 ath="180.0" atv="35.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_pri8"		 
+		onclick="loadscene('scene_pri8', null, MERGE);"
+		 ath="-15.0" atv="10.0"
+		 scale="0.25"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_pri3"		 
+		onclick="loadscene('scene_pri3', null, MERGE);"
+		 ath="135.0" atv="15.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
 
 	<scene name="scene_pri2" title="pri2" onstart="" thumburl="panos/pri2.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="45.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pri2.tiles/preview.jpg" />
 
@@ -104,12 +160,24 @@
 				<cube url="panos/pri2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_pri1"		 
+		onclick="loadscene('scene_pri1', null, MERGE);"
+		 ath="-100.0" atv="45.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_pri7-stubeletto"		 
+		onclick="loadscene('scene_pri7-stubeletto', null, MERGE);"
+		 ath="-190.0" atv="30.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
 	<scene name="scene_pri3" title="pri3" onstart="" thumburl="panos/pri3.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="180.0" vlookat="20.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pri3.tiles/preview.jpg" />
 
@@ -121,6 +189,30 @@
 				<cube url="panos/pri3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_pri5-cucina"		 
+		onclick="loadscene('scene_pri5-cucina', null, MERGE);"
+		 ath="-180.0" atv="30.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_pri4-stube"		 
+		onclick="loadscene('scene_pri4-stube', null, MERGE);"
+		 ath="90.0" atv="30.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_pri6-camera"		 
+		onclick="loadscene('scene_pri6-camera', null, MERGE);"
+		 ath="-90.0" atv="30.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_pri1"		 
+		onclick="loadscene('scene_pri1', null, MERGE);"
+		 ath="0.0" atv="30.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
@@ -138,12 +230,18 @@
 				<cube url="panos/pri4-stube.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_pri3"		 
+		onclick="loadscene('scene_pri3', null, MERGE);"
+		 ath="10.0" atv="30.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
 	<scene name="scene_pri5-cucina" title="pri5-cucina" onstart="" thumburl="panos/pri5-cucina.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pri5-cucina.tiles/preview.jpg" />
 
@@ -155,6 +253,12 @@
 				<cube url="panos/pri5-cucina.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_pri3"		 
+		onclick="loadscene('scene_pri3', null, MERGE);"
+		 ath="-90.0" atv="30.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
@@ -172,6 +276,12 @@
 				<cube url="panos/pri6-camera.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_pri3"		 
+		onclick="loadscene('scene_pri3', null, MERGE);"
+		 ath="-20.0" atv="30.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
@@ -189,12 +299,17 @@
 				<cube url="panos/pri7-stubeletto.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-
+		<hotspot name="scene_pri2"		 
+		onclick="loadscene('scene_pri2', null, MERGE);"
+		 ath="-45.0" atv="30.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
 
 	<scene name="scene_pri8" title="pri8" onstart="" thumburl="panos/pri8.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pri8.tiles/preview.jpg" />
 
@@ -206,6 +321,24 @@
 				<cube url="panos/pri8.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_pri9-ricordi"		 
+		onclick="loadscene('scene_pri9-ricordi', null, MERGE);"
+		 ath="190.0" atv="30.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_pri1"		 
+		onclick="loadscene('scene_pri1', null, MERGE);"
+		 ath="0.0" atv="30.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_soff1"		 
+		onclick="loadscene('scene_soff1', null, MERGE);"
+		 ath="-20.0" atv="00.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
@@ -223,23 +356,12 @@
 				<cube url="panos/pri9-ricordi.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-
-	</scene>
-
-	<scene name="scene_sala-2" title="sala-2" onstart="" thumburl="panos/sala-2.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/sala-2.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/sala-2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/sala-2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
+		<hotspot name="scene_pri8"		 
+		onclick="loadscene('scene_pri8', null, MERGE);"
+		 ath="-70.0" atv="30.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
@@ -257,12 +379,18 @@
 				<cube url="panos/sala.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+				<hotspot name="scene_sala1bis"
+			 onclick="loadscene('scene_sala1bis', null, MERGE);"
+			 ath="180.0" atv="00.0"
+			 scale="0.35"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
 	<scene name="scene_sala1" title="sala1" onstart="" thumburl="panos/sala1.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="80.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/sala1.tiles/preview.jpg" />
 
@@ -274,12 +402,25 @@
 				<cube url="panos/sala1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_sala1bis"
+			 onclick="loadscene('scene_sala1bis', null, MERGE);"
+			 ath="60.0" atv="5.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+			<hotspot name="scene_ext2"
+			 onclick="loadscene('scene_ext2', null, MERGE);"
+			 ath="255.0" atv="5.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		
 
 	</scene>
 
 	<scene name="scene_sala1bis" title="sala1bis" onstart="" thumburl="panos/sala1bis.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/sala1bis.tiles/preview.jpg" />
 
@@ -291,29 +432,35 @@
 				<cube url="panos/sala1bis.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-
-	</scene>
-
-	<scene name="scene_sala2" title="sala2" onstart="" thumburl="panos/sala2.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/sala2.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/sala2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/sala2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-	</scene>
+		<hotspot name="scene_sala1"
+			 onclick="loadscene('scene_sala1', null, MERGE);"
+			 ath="60.0" atv="45.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+				<hotspot name="scene_sala"
+			 onclick="loadscene('scene_sala', null, MERGE);"
+			 ath="-100.0" atv="30.0"
+			 scale="0.35"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+				<hotspot name="scene_sala3"
+			 onclick="loadscene('scene_sala3', null, MERGE);"
+			 ath="-100.0" atv="00.0"
+			 scale="0.35"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+				<hotspot name="scene_sala4"
+			 onclick="loadscene('scene_sala4', null, MERGE);"
+			 ath="-90.0" atv="15.0"
+			 scale="0.35"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+			</scene>
 
 	<scene name="scene_sala3" title="sala3" onstart="" thumburl="panos/sala3.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/sala3.tiles/preview.jpg" />
 
@@ -325,7 +472,12 @@
 				<cube url="panos/sala3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-
+		<hotspot name="scene_sala1bis"
+			 onclick="loadscene('scene_sala1bis', null, MERGE);"
+			 ath="0.0" atv="00.0"
+			 scale="0.35"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
 
 	<scene name="scene_sala4" title="sala4" onstart="" thumburl="panos/sala4.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -345,22 +497,6 @@
 
 	</scene>
 
-	<scene name="scene_sala5" title="sala5" onstart="" thumburl="panos/sala5.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/sala5.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/sala5.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/sala5.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-	</scene>
 
 	<scene name="scene_soff1" title="soff1" onstart="" thumburl="panos/soff1.tiles/thumb.jpg" lat="" lng="" heading="">
 
@@ -376,6 +512,19 @@
 				<cube url="panos/soff1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_soff2-fienile"		 
+		onclick="loadscene('scene_soff2-fienile', null, MERGE);"
+		 ath="-90.0" atv="30.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_pri8"		 
+		onclick="loadscene('scene_pri8', null, MERGE);"
+		 ath="-190.0" atv="45.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		
 
 	</scene>
 
@@ -393,12 +542,24 @@
 				<cube url="panos/soff2-fienile.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_soff3-camera"		 
+		onclick="loadscene('scene_soff3-camera', null, MERGE);"
+		 ath="-190.0" atv="45.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_soff1"		 
+		onclick="loadscene('scene_soff1', null, MERGE);"
+		 ath="90.0" atv="45.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
 	<scene name="scene_soff3-camera" title="soff3-camera" onstart="" thumburl="panos/soff3-camera.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-30.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/soff3-camera.tiles/preview.jpg" />
 
@@ -410,12 +571,18 @@
 				<cube url="panos/soff3-camera.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_soff2-fienile"		 
+		onclick="loadscene('scene_soff2-fienile', null, MERGE);"
+		 ath="-130.0" atv="45.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
 	<scene name="scene_terra1" title="terra1" onstart="" thumburl="panos/terra1.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="150.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/terra1.tiles/preview.jpg" />
 
@@ -427,7 +594,31 @@
 				<cube url="panos/terra1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-
+		
+		<hotspot name="scene_terra2"
+		 onclick="loadscene('scene_terra2', null, MERGE);"
+		 ath="-140.0" atv="00.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_terra3"
+		 onclick="loadscene('scene_terra3', null, MERGE);"
+		 ath="50.0" atv="00.0"
+		 scale="0.15"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_ext2"
+		 onclick="loadscene('scene_ext2', null, MERGE);"
+		 ath="-45.0" atv="00.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+	<hotspot name="scene_pri1"		 
+		onclick="loadscene('scene_pri1', null, MERGE);"
+		 ath="10.0" atv="-10.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
 
 	<scene name="scene_terra2" title="terra2" onstart="" thumburl="panos/terra2.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -444,7 +635,12 @@
 				<cube url="panos/terra2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-
+		<hotspot name="scene_terra1"		 
+		onclick="loadscene('scene_terra1', null, MERGE);"
+		 ath="-75.0" atv="10.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
 
 	<scene name="scene_terra3" title="terra3" onstart="" thumburl="panos/terra3.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -461,7 +657,12 @@
 				<cube url="panos/terra3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-
+	<hotspot name="scene_terra1"		 
+		onclick="loadscene('scene_terra1', null, MERGE);"
+		 ath="-120.0" atv="10.0"
+		 scale="0.35"
+		 rotate="0.0"
+		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
 
 
