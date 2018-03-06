@@ -64,13 +64,20 @@ function initMap() {
     loadMarkersFromDb(nocemap);
 
 
-
-    var testPolygon = L.polygon([
-        [lat+0.09, long+0.003],
-        [lat+0.02, long+0.009],
-        [lat+0.02, long+0.009],
-        [lat-0.01, long+0.14]
-    ]).addTo(nocemap);
+    
+    var noceArea = L.polygon([
+        [lat+0.105, long+0.28],
+        [lat-0.15, long+0.28],
+        [lat-0.15, long-0.27],
+        [lat+0.105, long-0.27]
+        ],{
+            fillOpacity : 0.27,
+            fillColor : '#e0ecfc',
+            stroke: true,
+            color: '#63a5f9',
+            weight: 6,
+            opacity : 0.4
+        }).addTo(nocemap);
 
 
     /*
