@@ -9,8 +9,8 @@
 	<!-- Import gyroscope plugin -->
      <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
         touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
-        
-	
+  
+    
 	<scene name="videopano" title="Video Isola del Gal" thumburl="../../assets/media/POI-Videos/IsolaGal-POIvideo.mp4_low_.jpg">
 		
 		<!-- include the videoplayer interface / skin (with VR support) -->

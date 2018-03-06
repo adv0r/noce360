@@ -771,4 +771,8 @@
 		  );
 	</action>
 
+	<!-- startup action -->
+	<action name="initFishEye" autorun="onstart">
+		skin_view_fisheye();
+	</action>
 </krpano>
