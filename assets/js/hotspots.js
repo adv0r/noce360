@@ -1,8 +1,8 @@
 var hotspots = {
     "version":"1",
     "hotspotsDir":"hotspots/",
-    "centerLat" : 46.336089,
-    "centerLong" : 10.885649,
+    "centerLat" : 46.345567, 
+    "centerLong" : 10.869602,
 	"spotsWithMedia": [
 	    {
 	      "name": "Corno dei Tre Signori",
