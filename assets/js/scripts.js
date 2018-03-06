@@ -63,6 +63,16 @@ function initMap() {
 
     loadMarkersFromDb(nocemap);
 
+
+
+    var testPolygon = L.polygon([
+        [lat+0.09, long+0.003],
+        [lat+0.02, long+0.009],
+        [lat+0.02, long+0.009],
+        [lat-0.01, long+0.14]
+    ]).addTo(nocemap);
+
+
     /*
     //add testCircle
     var testCircle = L.circle([lat-0.0023, long-0.033], {
@@ -73,12 +83,7 @@ function initMap() {
     }).addTo(nocemap);
 
     //add testPoligon
-    
-    var testPolygon = L.polygon([
-        [lat+0.09, long+0.003],
-        [lat+0.02, long+0.009],
-        [lat-0.01, long+0.14]
-    ]).addTo(nocemap);
+   
     
 
     //Add Markers 
