@@ -1,14 +1,8 @@
 ﻿<krpano version="1.19" title="Molino Ruatti">
 
     <include url="../../assets/krpano/skin/noceskin.xml" />
-	
-	<!-- Override noce's skin -->
-    	<skin_settings 	
-    		title="true"
-    		thumbs_text="true"
- 		/>
-		
 
+    
 	<!-- Import model plugin for schede -->
 	<include url="../../assets/krpano/plugins/showtext.xml" />
 

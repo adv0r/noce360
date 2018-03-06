@@ -294,7 +294,7 @@
 
 			<!-- use the video events for getting state updates -->
 			set(plugin[video].onvideoready, skin_video_updatestate() );
-			set(plugin[video].onvideoplay, skin_video_updatestate() );
+			set(plugin[video].onvideoplay, skin_video_updatestate(); if(skin_settings_opened !== true, skin_autohide(2.0)); );
 			set(plugin[video].onvideopaused, skin_video_updatestate(); skin_show_playpause(); );
 			set(plugin[video].onvideocomplete, skin_video_updatestate(); skin_show_playpause(); skin_show(); );
 			set(plugin[video].onerror, skin_video_error() );

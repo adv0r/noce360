@@ -244,14 +244,40 @@ function loadMarkersFromDb(map) {
 // Scheda Info su mappa ------- 
 
 function showScheda(filename) {
+    widthW = "60%";
+    heightH = "60%";
+
+    if(isSmallScreen()){
+         widthW = "90%";
+         heightH = "90%";
+    }
+
     $.fancybox.open({
                 src  : 'schede/'+filename+'.html',
                 type : 'iframe',
                 iframe : {
                     smallBtn : 'auto',
                     attr : {scrolling : 'yes'},
-                    css : { width : '60%',  
-                            height : '60%'}
+                    css : { width : widthW,  
+                            height : heightH}
                 }  
             });
+}
+
+function isSmallScreen(){
+    if (getWidth()<800)
+        return true;
+    else
+        return false;
+}
+
+
+function getWidth() {
+  return Math.max(
+    document.body.scrollWidth,
+    document.documentElement.scrollWidth,
+    document.body.offsetWidth,
+    document.documentElement.offsetWidth,
+    document.documentElement.clientWidth
+  );
 }

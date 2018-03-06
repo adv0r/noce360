@@ -11,7 +11,7 @@
         touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
         
 	
-	<scene name="videopano" title="Video Contre" thumburl="../../assets/media/video-tematici/Natura3.5.mp4_low_.jpg">
+	<scene name="videopano" title="Video Natura" thumburl="../../assets/media/video-tematici/Natura3.5.mp4_low_.jpg">
 		
 		<!-- include the videoplayer interface / skin (with VR support) -->
 		<include url="../../assets/krpano/skin/videointerface.xml" />
@@ -20,7 +20,7 @@
 		<plugin name="video"
 		        url.html5="../../assets/krpano/plugins/videoplayer.js"
 		        pausedonstart="false"
-		        loop="true"
+		        loop="false"
 		        volume="1.0"
 		        onloaded="add_video_sources();"
 		        />

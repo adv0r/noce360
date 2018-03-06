@@ -24,7 +24,6 @@
 h3 {
 
 	margin-top:0px;
-
 }
 
 h1, h2{
@@ -32,9 +31,29 @@ h1, h2{
     font-family: 'walkUltra', sans-serif;
 }
 
-h2{
-    font-size: 27px;
+
+ @media only screen and (max-width: 767px) {
+    h1{
+    font-size: 26px!important;
+	}
+
+	h2{
+	    font-size: 21px!important;
+	}
 }
+
+
+	 @media only screen and (max-width: 480px) {
+    h1{
+    font-size: 21px!important;
+	}
+
+	h2{
+	    font-size: 17px!important;
+	}
+}
+
+
 .master {
 
 	/*border: solid 2px #35506f;*/
