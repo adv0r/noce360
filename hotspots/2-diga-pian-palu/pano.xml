@@ -14,7 +14,7 @@
 	<!-- start Scene 1 -->
 		<scene name="scene_palu-acqua" title="palu-acqua" onstart="" thumburl="panos/palu-acqua.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/palu-acqua.tiles/preview.jpg" />
 
@@ -31,7 +31,7 @@
 
 	<scene name="scene_palu-diga" title="palu-diga" onstart="" thumburl="panos/palu-diga.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="160.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="160.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/palu-diga.tiles/preview.jpg" />
 
@@ -48,7 +48,7 @@
 
 	<scene name="scene_palu-lago" title="palu-lago" onstart="" thumburl="panos/palu-lago.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="45.0" vlookat="0.0" fovtype="MFOV" fov="140" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="45.0" vlookat="0.0" fovtype="MFOV" fov="140" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/palu-lago.tiles/preview.jpg" />
 
@@ -84,7 +84,7 @@
 
 	<scene name="scene_palu-maso" title="palu-maso" onstart="" thumburl="panos/palu-maso.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="90.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/palu-maso.tiles/preview.jpg" />
 
@@ -101,7 +101,7 @@
 
 	<scene name="scene_palu-strada" title="palu-strada" onstart="" thumburl="panos/palu-strada.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="100.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="100.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/palu-strada.tiles/preview.jpg" />
 

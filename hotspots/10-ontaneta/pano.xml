@@ -14,7 +14,7 @@
 
 	<scene name="scene_HD1" title="HD1" onstart="" thumburl="panos/HD1.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/HD1.tiles/preview.jpg" />
 
@@ -31,7 +31,7 @@
 
 	<scene name="scene_HDR2" title="HDR2" onstart="" thumburl="panos/HDR2.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/HDR2.tiles/preview.jpg" />
 
@@ -81,7 +81,7 @@
            type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
         /><!-- Fine scheda-nymphalis-antiopa -->
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/ontaneta-foresta.tiles/preview.jpg" />
 
@@ -98,7 +98,7 @@
 
 	<scene name="scene_ontaneta-lago" title="ontaneta-lago" onstart="" thumburl="panos/ontaneta-lago.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/ontaneta-lago.tiles/preview.jpg" />
 
@@ -115,7 +115,7 @@
 
 	<scene name="scene_ontaneta-misto" title="ontaneta-misto" onstart="" thumburl="panos/ontaneta-misto.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/ontaneta-misto.tiles/preview.jpg" />
 

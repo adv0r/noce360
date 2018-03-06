@@ -13,7 +13,7 @@
 	
 	<scene name="scene_saent-cascata" title="saent-cascata" onstart="" thumburl="panos/saent-cascata.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/saent-cascata.tiles/preview.jpg" />
 
@@ -30,7 +30,7 @@
 
 	<scene name="scene_saent-cascatalaterale" title="saent-cascatalaterale" onstart="" thumburl="panos/saent-cascatalaterale.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/saent-cascatalaterale.tiles/preview.jpg" />
 
@@ -47,7 +47,7 @@
 
 	<scene name="scene_saent-cima" title="saent-cima" onstart="" thumburl="panos/saent-cima.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/saent-cima.tiles/preview.jpg" />
 
@@ -64,7 +64,7 @@
 
 	<scene name="scene_saent-partenza" title="saent-ponte-tibetano" onstart="" thumburl="panos/saent-partenza.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="0.0" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="0.0" limitview="auto" />
 
 		<preview url="panos/saent-partenza.tiles/preview.jpg" />
 
@@ -81,7 +81,7 @@
 
 	<scene name="scene_saent-rio" title="saent-rio" onstart="" thumburl="panos/saent-rio.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
 
 		<preview url="panos/saent-rio.tiles/preview.jpg" />
 

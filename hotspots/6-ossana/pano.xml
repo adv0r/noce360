@@ -12,7 +12,7 @@
         
 	<scene name="scene_ossana-castello1" title="ossana-castello1" onstart="" thumburl="panos/ossana-castello1.tiles/thumb.jpg" lat="" lng="" heading="">
 		
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/ossana-castello1.tiles/preview.jpg" />
 
@@ -65,7 +65,7 @@
            type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
         /><!-- Fine scheda-castello-di-ossana -->
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/ossana-gigapix.tiles/preview.jpg" />
 
@@ -88,7 +88,7 @@
 
 	<scene name="scene_ossana-plastico" title="ossana-plastico" onstart="" thumburl="panos/ossana-plastico.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/ossana-plastico.tiles/preview.jpg" />
 

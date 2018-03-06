@@ -14,7 +14,7 @@
 	
 	<scene name="scene_pondasio-1" title="pondasio-1" onstart="" thumburl="panos/pondasio-1.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="70" vlookat="30" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="70" vlookat="30" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<!--scheda-macchine-acqua -->
         <hotspot name="scheda-macchine-acqua-Trigger"
@@ -50,7 +50,7 @@
 
 	<scene name="scene_pondasio-2" title="pondasio-2" onstart="" thumburl="panos/pondasio-2.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pondasio-2.tiles/preview.jpg" />
 
@@ -67,7 +67,7 @@
 
 	<scene name="scene_pondasio-3" title="pondasio-3" onstart="" thumburl="panos/pondasio-3.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pondasio-3.tiles/preview.jpg" />
 
@@ -84,7 +84,7 @@
 
 	<scene name="scene_pondasio-4" title="pondasio-4" onstart="" thumburl="panos/pondasio-4.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pondasio-4.tiles/preview.jpg" />
 
@@ -101,7 +101,7 @@
 
 	<scene name="scene_pondasio-5" title="pondasio-5" onstart="" thumburl="panos/pondasio-5.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="100.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="100.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pondasio-5.tiles/preview.jpg" />
 

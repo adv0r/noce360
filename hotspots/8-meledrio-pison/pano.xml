@@ -13,7 +13,7 @@
 	
 	<scene name="scene_pison-artificiali" title="pison-artificiali" onstart="" thumburl="panos/pison-artificiali.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-55.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-55.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pison-artificiali.tiles/preview.jpg" />
 
@@ -30,7 +30,7 @@
 
 	<scene name="scene_pison-gigapixel" title="pison-gigapixel" onstart="" thumburl="panos/pison-gigapixel.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pison-gigapixel.tiles/preview.jpg" />
 
@@ -70,7 +70,7 @@
 
 	<scene name="scene_pison-meledrio" title="pison-meledrio" onstart="" thumburl="panos/pison-meledrio.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="70.0" vlookat="20.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="70.0" vlookat="20.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pison-meledrio.tiles/preview.jpg" />
 
@@ -105,7 +105,7 @@
 
 	<scene name="scene_pison-canyon" title="pison-canyon" onstart="" thumburl="panos/pison-canyon.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pison-canyon.tiles/preview.jpg" />
 
