@@ -22,41 +22,6 @@
         />
         
 
-	
-	<scene name="scene_camera2" title="camera2" onstart="" thumburl="panos/camera2.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/camera2.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/camera2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/camera2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
-	<scene name="scene_cucina" title="cucina" onstart="" thumburl="panos/cucina.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/cucina.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/cucina.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/cucina.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
 	<scene name="scene_ext1" title="ext1" onstart="" thumburl="panos/ext1.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -108,324 +73,341 @@
 
 	</scene>
 
-	<scene name="scene_primo_" title="primo " onstart="" thumburl="panos/primo_.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_pri1" title="pri1" onstart="" thumburl="panos/pri1.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/primo_.tiles/preview.jpg" />
+		<preview url="panos/pri1.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/primo_.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/pri1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/primo_.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/pri1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_primo_2a" title="primo 2a" onstart="" thumburl="panos/primo_2a.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_pri2" title="pri2" onstart="" thumburl="panos/pri2.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/primo_2a.tiles/preview.jpg" />
+		<preview url="panos/pri2.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/primo_2a.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/pri2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/primo_2a.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/pri2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_primo1a" title="primo1a" onstart="" thumburl="panos/primo1a.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_pri3" title="pri3" onstart="" thumburl="panos/pri3.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/primo1a.tiles/preview.jpg" />
+		<preview url="panos/pri3.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/primo1a.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/pri3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/primo1a.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/pri3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_primo3" title="primo3" onstart="" thumburl="panos/primo3.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_pri4-stube" title="pri4-stube" onstart="" thumburl="panos/pri4-stube.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/primo3.tiles/preview.jpg" />
+		<preview url="panos/pri4-stube.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/primo3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/pri4-stube.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/primo3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/pri4-stube.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_primo3a" title="primo3a" onstart="" thumburl="panos/primo3a.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_pri5-cucina" title="pri5-cucina" onstart="" thumburl="panos/pri5-cucina.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/primo3a.tiles/preview.jpg" />
+		<preview url="panos/pri5-cucina.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/primo3a.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/pri5-cucina.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/primo3a.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/pri5-cucina.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_primo4" title="primo4" onstart="" thumburl="panos/primo4.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_pri6-camera" title="pri6-camera" onstart="" thumburl="panos/pri6-camera.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/primo4.tiles/preview.jpg" />
+		<preview url="panos/pri6-camera.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/primo4.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/pri6-camera.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/primo4.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/pri6-camera.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_salamuse" title="salamuse" onstart="" thumburl="panos/salamuse.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_pri7-stubeletto" title="pri7-stubeletto" onstart="" thumburl="panos/pri7-stubeletto.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/salamuse.tiles/preview.jpg" />
+		<preview url="panos/pri7-stubeletto.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/salamuse.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/pri7-stubeletto.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/salamuse.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/pri7-stubeletto.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_salamuseo_(2)" title="salamuseo (2)" onstart="" thumburl="panos/salamuseo_(2).tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_pri8" title="pri8" onstart="" thumburl="panos/pri8.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/salamuseo_(2).tiles/preview.jpg" />
+		<preview url="panos/pri8.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/salamuseo_(2).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/pri8.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/salamuseo_(2).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/pri8.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_salamuseo_1bis" title="salamuseo 1bis" onstart="" thumburl="panos/salamuseo_1bis.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_pri9-ricordi" title="pri9-ricordi" onstart="" thumburl="panos/pri9-ricordi.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/salamuseo_1bis.tiles/preview.jpg" />
+		<preview url="panos/pri9-ricordi.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/salamuseo_1bis.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/pri9-ricordi.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/salamuseo_1bis.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/pri9-ricordi.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_salamuseo" title="salamuseo" onstart="" thumburl="panos/salamuseo.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_sala-2" title="sala-2" onstart="" thumburl="panos/sala-2.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/salamuseo.tiles/preview.jpg" />
+		<preview url="panos/sala-2.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/salamuseo.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/sala-2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/salamuseo.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/sala-2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_salamuseo1" title="salamuseo1" onstart="" thumburl="panos/salamuseo1.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_sala" title="sala" onstart="" thumburl="panos/sala.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/salamuseo1.tiles/preview.jpg" />
+		<preview url="panos/sala.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/salamuseo1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/sala.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/salamuseo1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/sala.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_salamuseo2" title="salamuseo2" onstart="" thumburl="panos/salamuseo2.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_sala1" title="sala1" onstart="" thumburl="panos/sala1.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/salamuseo2.tiles/preview.jpg" />
+		<preview url="panos/sala1.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/salamuseo2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/sala1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/salamuseo2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/sala1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_salamuseo3" title="salamuseo3" onstart="" thumburl="panos/salamuseo3.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_sala1bis" title="sala1bis" onstart="" thumburl="panos/sala1bis.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/salamuseo3.tiles/preview.jpg" />
+		<preview url="panos/sala1bis.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/salamuseo3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/sala1bis.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/salamuseo3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/sala1bis.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_salamuseo14" title="salamuseo14" onstart="" thumburl="panos/salamuseo14.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_sala2" title="sala2" onstart="" thumburl="panos/sala2.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/salamuseo14.tiles/preview.jpg" />
+		<preview url="panos/sala2.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/salamuseo14.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/sala2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/salamuseo14.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/sala2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_soffitta_1" title="soffitta 1" onstart="" thumburl="panos/soffitta_1.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_sala3" title="sala3" onstart="" thumburl="panos/sala3.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/soffitta_1.tiles/preview.jpg" />
+		<preview url="panos/sala3.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/soffitta_1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/sala3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/soffitta_1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/sala3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_soffitta_2" title="soffitta 2" onstart="" thumburl="panos/soffitta_2.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_sala4" title="sala4" onstart="" thumburl="panos/sala4.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/soffitta_2.tiles/preview.jpg" />
+		<preview url="panos/sala4.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/soffitta_2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/sala4.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/soffitta_2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/sala4.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_soffitta_3" title="soffitta 3" onstart="" thumburl="panos/soffitta_3.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_sala5" title="sala5" onstart="" thumburl="panos/sala5.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/soffitta_3.tiles/preview.jpg" />
+		<preview url="panos/sala5.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/soffitta_3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/sala5.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/soffitta_3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/sala5.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_soggiorno" title="soggiorno" onstart="" thumburl="panos/soggiorno.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_soff1" title="soff1" onstart="" thumburl="panos/soff1.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/soggiorno.tiles/preview.jpg" />
+		<preview url="panos/soff1.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/soggiorno.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/soff1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/soggiorno.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/soff1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 	</scene>
 
-	<scene name="scene_stanza1" title="stanza1" onstart="" thumburl="panos/stanza1.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_soff2-fienile" title="soff2-fienile" onstart="" thumburl="panos/soff2-fienile.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/stanza1.tiles/preview.jpg" />
+		<preview url="panos/soff2-fienile.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/stanza1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+				<cube url="panos/soff2-fienile.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/stanza1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/soff2-fienile.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+	</scene>
+
+	<scene name="scene_soff3-camera" title="soff3-camera" onstart="" thumburl="panos/soff3-camera.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/soff3-camera.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2176" tiledimageheight="2176">
+				<cube url="panos/soff3-camera.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1152" tiledimageheight="1152">
+				<cube url="panos/soff3-camera.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
