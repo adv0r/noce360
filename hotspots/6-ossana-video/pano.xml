@@ -1,0 +1,69 @@
+﻿<krpano>
+	
+	<!-- Import model plugin for schede -->
+	<include url="../../assets/krpano/plugins/showtext.xml" />
+
+	<!-- include the videoplayer interface / skin (with VR support) -->
+	<include url="../../assets/krpano/skin/videointerface.xml" />
+
+	<!-- Import gyroscope plugin -->
+     <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
+        touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
+        
+	
+	<scene name="videopano" title="Video Ossana" thumburl="../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_low_.jpg">
+		
+		<!-- include the videoplayer interface / skin (with VR support) -->
+		<include url="../../assets/krpano/skin/videointerface.xml" />
+
+		<!-- include the videoplayer plugin -->
+		<plugin name="video"
+		        url.html5="../../assets/krpano/plugins/videoplayer.js"
+		        pausedonstart="false"
+		        loop="true"
+		        volume="1.0"
+		        onloaded="add_video_sources();"
+		        />
+
+		<!-- use the videoplayer plugin as panoramic image source -->
+		<image>
+			<sphere url="plugin:video" />
+		</image>
+
+
+		<!-- set the default view -->
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="130" fovmin="75" fovmax="150" distortion="0.0" />
+
+		<!-- add the video sources and play the video -->
+		<action name="add_video_sources">
+			videointerface_addsource('1024x512','../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_low.mp4|../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_low.webm|../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_iphone-audio.m4a','../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_low_.jpg');
+
+			videointerface_addsource('1920x960','../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_mid.mp4|../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_mid.webm|../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_iphone-audio.m4a','../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_mid_.jpg');
+
+			videointerface_addsource('3840×1920','../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_high.mp4|../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_high.webm|../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_iphone-audio.m4a','../../assets/media/POI-Videos/FucinaMarinelliPOIvideo.mp4_high_.jpg');
+
+			if(device.ios,
+				<!-- iOS Safari has a very slow 'video-to-webgl-texture' transfer, therefore use a low-res video by default -->
+				videointerface_play('1024x512');
+			  ,
+				videointerface_play('1920x960');
+			  );
+		</action>
+	</scene>
+
+
+	<!-- start Actions-->
+	<action name="startup" autorun="onstart">
+		
+		if(device.panovideosupport == false,
+			error('Sorry, but panoramic videos are not supported by your current browser!');
+		  ,
+			loadscene(videopano);
+		  );
+	</action>
+
+
+	<!-- end Actions-->
+
+
+</krpano>
