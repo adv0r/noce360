@@ -85,3 +85,18 @@ function loadScheda(nomeScheda){
             });
 }
 
+function hideTitle(){
+     $(".hotspot-title").hide( "slow", function() {
+        $(".hotspot-title-hidden").show( "fast", function() {
+        });
+     });
+}
+
+
+function showTitle(){
+
+      $(".hotspot-title-hidden").hide( "fast", function() {
+        $(".hotspot-title").show( "slow", function() {
+        });
+     });
+}
