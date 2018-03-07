@@ -22,8 +22,15 @@
 			</level>
 			<level tiledimagewidth="1152" tiledimageheight="1152">
 				<cube url="panos/derniga-ferrovia-fiore.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
+			</level>F
 		</image>
+		<hotspot name="scene_derniga-ferrovia"
+			 onclick="loadscene('scene_derniga-ferrovia', null, MERGE);"
+			 ath="-165.0" atv="0.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+
 
 
 	</scene>
@@ -42,6 +49,12 @@
 				<cube url="panos/derniga-ferrovia.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_derniga-ferrovia-fiore"
+			 onclick="loadscene('scene_derniga-ferrovia-fiore', null, MERGE);"
+			 ath="-25.0" atv="0.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
@@ -126,6 +139,13 @@
 				<cube url="panos/derniga-ponte.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_derniga-orchidea"
+			 onclick="loadscene('scene_derniga-orchidea', null, MERGE);"
+			 ath="-25.0" atv="15.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+
 
 	</scene>
 

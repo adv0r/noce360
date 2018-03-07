@@ -43,6 +43,26 @@
 				<cube url="panos/palu-diga.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		
+		<hotspot name="scene_palu-maso"
+			 onclick="loadscene('scene_palu-maso', null, MERGE);"
+			 ath="130.0" atv="-4.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_palu-strada"
+			 onclick="loadscene('scene_palu-strada', null, MERGE);"
+			 ath="250.0" atv="0.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_palu-acqua"
+			 onclick="loadscene('scene_palu-acqua', null, MERGE);"
+			 ath="180.0" atv="-5.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+			
 
 	</scene>
 
@@ -68,6 +88,7 @@
            oy="50"
            type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
         /><!-- Fine scheda-dighe -->
+		
 
 
 
@@ -79,7 +100,12 @@
 				<cube url="panos/palu-lago.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-
+		<hotspot name="scene_palu-maso"
+			 onclick="loadscene('scene_palu-maso', null, MERGE);"
+			 ath="80.0" atv="-5.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
 
 	<scene name="scene_palu-maso" title="palu-maso" onstart="" thumburl="panos/palu-maso.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -96,6 +122,20 @@
 				<cube url="panos/palu-maso.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_palu-lago"
+			 onclick="loadscene('scene_palu-lago', null, MERGE);"
+			 ath="80.0" atv="5.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_palu-diga"
+			 onclick="loadscene('scene_palu-diga', null, MERGE);"
+			 ath="110.0" atv="3.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+			
+			
 
 	</scene>
 
@@ -113,6 +153,12 @@
 				<cube url="panos/palu-strada.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_palu-diga"
+			 onclick="loadscene('scene_palu-diga', null, MERGE);"
+			 ath="75.0" atv="3.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
