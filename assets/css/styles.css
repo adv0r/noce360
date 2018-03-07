@@ -31,8 +31,6 @@
  h1, h2, h3{
      color:#2382c0;
      font-family: 'walkUltra', sans-serif;
-     font-size: 24px;
-     margin-top: 0px!important;
 }
  h2{
      font-size: 27px;
@@ -189,6 +187,9 @@
     }
 }
  @media only screen and (max-width: 480px) {
+    .lookVideos {
+        margin-top: 0px;
+    }
      #mapdiv{
          height: 380px;
     }
@@ -211,7 +212,7 @@
      text-transform: uppercase;
 }
 
- .hotspot-title-hidden {
+.hotspot-title-hidden {
      padding-right: 5px;
      padding-left: 8px;
      padding-bottom: 10px;
@@ -223,8 +224,8 @@
      left: 20%;
      text-transform: uppercase;
      display: none;
-
 }
+
 /* ---- Scheda informativa su mappa ------------- */
  .schedaSuMappa {
      position: absolute;
@@ -254,7 +255,6 @@
      cursor: pointer;
 }
 
-/*Modifiche Denis 20feb*/
 .lookVideos {
     display: inline-block;
     vertical-align: middle;
