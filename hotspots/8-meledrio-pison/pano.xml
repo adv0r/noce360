@@ -37,7 +37,7 @@
 		<!--scheda-orso -->
         <hotspot name="scheda-orso-Trigger"
            ath="-10" atv="5"
-           scale="0.3"
+           scale="0.6"
            vr="false"
            onclick="jscall(loadScheda('scheda-orso'));"           
            type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"

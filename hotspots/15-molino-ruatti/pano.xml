@@ -40,13 +40,13 @@
 		<hotspot name="arrowName"
 			 onclick="loadscene('scene_ext2', null, MERGE);"
 			 ath="-165.0" atv="10.0"
-			 scale="0.15"
+			 scale="0.30"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="arrowName2"
 			 onclick="loadscene('scene_ext3', null, MERGE);"
 			 ath="150.0" atv="-3.0"
-			 scale="0.15"
+			 scale="0.30"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
@@ -74,7 +74,7 @@
 		<hotspot name="arrowName2"
 			 onclick="loadscene('scene_terra1', null, MERGE);"
 			 ath="210.0" atv="35.0"
-			 scale="0.25"
+			 scale="0.40"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
@@ -96,7 +96,7 @@
 		<hotspot name="arrowNameXX"
 			 onclick="loadscene('scene_ext1', null, MERGE);"
 			 ath="25.0" atv="15.0"
-			 scale="0.25"
+			 scale="0.40"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
@@ -118,25 +118,25 @@
 		<hotspot name="scene_terra1"		 
 		onclick="loadscene('scene_terra1', null, MERGE);"
 		 ath="5.0" atv="55.0"
-		 scale="0.25"
+		 scale="0.40"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_pri2"		 
 		onclick="loadscene('scene_pri2', null, MERGE);"
 		 ath="180.0" atv="35.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_pri8"		 
 		onclick="loadscene('scene_pri8', null, MERGE);"
 		 ath="-15.0" atv="20.0"
-		 scale="0.25"
+		 scale="0.40"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_pri3"		 
 		onclick="loadscene('scene_pri3', null, MERGE);"
 		 ath="135.0" atv="15.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
@@ -158,13 +158,13 @@
 		<hotspot name="scene_pri1"		 
 		onclick="loadscene('scene_pri1', null, MERGE);"
 		 ath="-100.0" atv="45.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_pri7-stubeletto"		 
 		onclick="loadscene('scene_pri7-stubeletto', null, MERGE);"
 		 ath="-190.0" atv="30.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
@@ -187,25 +187,25 @@
 		<hotspot name="scene_pri5-cucina"		 
 		onclick="loadscene('scene_pri5-cucina', null, MERGE);"
 		 ath="-180.0" atv="30.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_pri4-stube"		 
 		onclick="loadscene('scene_pri4-stube', null, MERGE);"
 		 ath="90.0" atv="30.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_pri6-camera"		 
 		onclick="loadscene('scene_pri6-camera', null, MERGE);"
 		 ath="-90.0" atv="30.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_pri1"		 
 		onclick="loadscene('scene_pri1', null, MERGE);"
 		 ath="0.0" atv="30.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
@@ -228,7 +228,7 @@
 		<hotspot name="scene_pri3"		 
 		onclick="loadscene('scene_pri3', null, MERGE);"
 		 ath="10.0" atv="30.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
@@ -251,7 +251,7 @@
 		<hotspot name="scene_pri3"		 
 		onclick="loadscene('scene_pri3', null, MERGE);"
 		 ath="-90.0" atv="30.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
@@ -274,7 +274,7 @@
 		<hotspot name="scene_pri3"		 
 		onclick="loadscene('scene_pri3', null, MERGE);"
 		 ath="-20.0" atv="30.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
@@ -297,7 +297,7 @@
 		<hotspot name="scene_pri2"		 
 		onclick="loadscene('scene_pri2', null, MERGE);"
 		 ath="-45.0" atv="30.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
@@ -319,19 +319,19 @@
 		<hotspot name="scene_pri9-ricordi"		 
 		onclick="loadscene('scene_pri9-ricordi', null, MERGE);"
 		 ath="190.0" atv="30.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_pri1"		 
 		onclick="loadscene('scene_pri1', null, MERGE);"
 		 ath="0.0" atv="30.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_soff1"		 
 		onclick="loadscene('scene_soff1', null, MERGE);"
 		 ath="-20.0" atv="00.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
@@ -354,7 +354,7 @@
 		<hotspot name="scene_pri8"		 
 		onclick="loadscene('scene_pri8', null, MERGE);"
 		 ath="-70.0" atv="30.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
@@ -377,7 +377,7 @@
 				<hotspot name="scene_sala1bis"
 			 onclick="loadscene('scene_sala1bis', null, MERGE);"
 			 ath="180.0" atv="00.0"
-			 scale="0.35"
+			 scale="0.50"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
@@ -406,7 +406,7 @@
 			<hotspot name="scene_ext2"
 			 onclick="loadscene('scene_ext2', null, MERGE);"
 			 ath="255.0" atv="35.0"
-			 scale="0.25"
+			 scale="0.40"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		
@@ -430,25 +430,25 @@
 		<hotspot name="scene_sala1"
 			 onclick="loadscene('scene_sala1', null, MERGE);"
 			 ath="60.0" atv="45.0"
-			 scale="0.35"
+			 scale="0.50"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 				<hotspot name="scene_sala"
 			 onclick="loadscene('scene_sala', null, MERGE);"
 			 ath="-100.0" atv="30.0"
-			 scale="0.35"
+			 scale="0.50"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 				<hotspot name="scene_sala3"
 			 onclick="loadscene('scene_sala3', null, MERGE);"
 			 ath="-100.0" atv="00.0"
-			 scale="0.35"
+			 scale="0.50"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 				<hotspot name="scene_sala4"
 			 onclick="loadscene('scene_sala4', null, MERGE);"
 			 ath="-90.0" atv="15.0"
-			 scale="0.35"
+			 scale="0.50"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 			</scene>
@@ -470,7 +470,7 @@
 		<hotspot name="scene_sala1bis"
 			 onclick="loadscene('scene_sala1bis', null, MERGE);"
 			 ath="0.0" atv="00.0"
-			 scale="0.35"
+			 scale="0.50"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
@@ -515,13 +515,13 @@
 		<hotspot name="scene_soff2-fienile"		 
 		onclick="loadscene('scene_soff2-fienile', null, MERGE);"
 		 ath="-90.0" atv="30.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_pri8"		 
 		onclick="loadscene('scene_pri8', null, MERGE);"
 		 ath="-190.0" atv="45.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		
@@ -545,13 +545,13 @@
 		<hotspot name="scene_soff3-camera"		 
 		onclick="loadscene('scene_soff3-camera', null, MERGE);"
 		 ath="-190.0" atv="45.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_soff1"		 
 		onclick="loadscene('scene_soff1', null, MERGE);"
 		 ath="90.0" atv="45.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
@@ -574,7 +574,7 @@
 		<hotspot name="scene_soff2-fienile"		 
 		onclick="loadscene('scene_soff2-fienile', null, MERGE);"
 		 ath="-130.0" atv="45.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
@@ -598,25 +598,25 @@
 		<hotspot name="scene_terra2"
 		 onclick="loadscene('scene_terra2', null, MERGE);"
 		 ath="-140.0" atv="35.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_terra3"
 		 onclick="loadscene('scene_terra3', null, MERGE);"
 		 ath="48.0" atv="10.0"
-		 scale="0.15"
+		 scale="0.30"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 		<hotspot name="scene_ext2"
 		 onclick="loadscene('scene_ext2', null, MERGE);"
 		 ath="-45.0" atv="00.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	<hotspot name="scene_pri1"		 
 		onclick="loadscene('scene_pri1', null, MERGE);"
 		 ath="15.0" atv="-10.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
@@ -638,7 +638,7 @@
 		<hotspot name="scene_terra1"		 
 		onclick="loadscene('scene_terra1', null, MERGE);"
 		 ath="-75.0" atv="35.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
@@ -660,7 +660,7 @@
 	<hotspot name="scene_terra1"		 
 		onclick="loadscene('scene_terra1', null, MERGE);"
 		 ath="-120.0" atv="35.0"
-		 scale="0.35"
+		 scale="0.50"
 		 rotate="0.0"
 		type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 	</scene>
