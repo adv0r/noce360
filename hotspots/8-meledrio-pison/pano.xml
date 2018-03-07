@@ -2,7 +2,11 @@
 	
 	<!-- Import noce's sking -->
     <include url="../../assets/krpano/skin/noceskin.xml" />
-	
+	<!-- Override noce's skin 
+    	<skin_settings 	
+    		title="true"
+    		thumbs_text="true"
+ 		/>  -->
 	<!-- Import model plugin for schede -->
 	<include url="../../assets/krpano/plugins/showtext.xml" />
 
@@ -65,6 +69,14 @@
 				<cube url="panos/pison-gigapixel.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_pison-meledrio"
+			 onclick="loadscene('scene_pison-meledrio', null, MERGE);"
+			 ath="-125.0" atv="35.0"
+			 scale="0.35"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+
+		
 
 	</scene>
 
@@ -100,7 +112,20 @@
 				<cube url="panos/pison-meledrio.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_pison-gigapixel"
+			 onclick="loadscene('scene_pison-gigapixel', null, MERGE);"
+			 ath="-45.0" atv="-35.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_pison-canyon"
+			 onclick="loadscene('scene_pison-canyon', null, MERGE);"
+			 ath="40.0" atv="10.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
+		
 	</scene>
 
 	<scene name="scene_pison-canyon" title="pison-canyon" onstart="" thumburl="panos/pison-canyon.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -117,6 +142,12 @@
 				<cube url="panos/pison-canyon.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_pison-meledrio"
+			 onclick="loadscene('scene_pison-meledrio', null, MERGE);"
+			 ath="-165.0" atv="-15"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 	

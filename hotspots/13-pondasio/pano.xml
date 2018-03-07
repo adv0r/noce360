@@ -2,6 +2,11 @@
 	
 	<!-- Import noce's sking -->
     <include url="../../assets/krpano/skin/noceskin.xml" />
+	<!-- Override noce's skin  
+    	<skin_settings 	
+    		title="true"
+    		thumbs_text="true"
+ 		/> -->
 	
 	<!-- Import model plugin for schede -->
 	<include url="../../assets/krpano/plugins/showtext.xml" />
@@ -33,8 +38,6 @@
            type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
         /><!-- Fine scheda-macchine-acqua -->
 
-
-
 		<preview url="panos/pondasio-1.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
@@ -45,6 +48,14 @@
 				<cube url="panos/pondasio-1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		
+		<hotspot name="scene_pondasio-2"
+			 onclick="loadscene('scene_pondasio-2', null, MERGE);"
+			 ath="0.0" atv="20.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+
 
 	</scene>
 
@@ -62,6 +73,18 @@
 				<cube url="panos/pondasio-2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_pondasio-1"
+			 onclick="loadscene('scene_pondasio-1', null, MERGE);"
+			 ath="-180.0" atv="20.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_pondasio-3"
+			 onclick="loadscene('scene_pondasio-3', null, MERGE);"
+			 ath="0.0" atv="20.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
@@ -79,6 +102,20 @@
 				<cube url="panos/pondasio-3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		
+		<hotspot name="scene_pondasio-2"
+			 onclick="loadscene('scene_pondasio-2', null, MERGE);"
+			 ath="-160.0" atv="20.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_pondasio-4"
+			 onclick="loadscene('scene_pondasio-4', null, MERGE);"
+			 ath="0.0" atv="20.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+
 
 	</scene>
 
@@ -96,6 +133,19 @@
 				<cube url="panos/pondasio-4.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_pondasio-3"
+			 onclick="loadscene('scene_pondasio-3', null, MERGE);"
+			 ath="-150.0" atv="20.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_pondasio-5"
+			 onclick="loadscene('scene_pondasio-5', null, MERGE);"
+			 ath="-10.0" atv="20.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+
 
 	</scene>
 
@@ -114,7 +164,13 @@
 			</level>
 		</image>
 
-	</scene>
+		<hotspot name="scene_pondasio-4"
+			 onclick="loadscene('scene_pondasio-4', null, MERGE);"
+			 ath="-160.0" atv="20.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		</scene>
 
 
 	<!-- start Actions-->

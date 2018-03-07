@@ -2,7 +2,11 @@
 	
 	<!-- Import noce's sking -->
     <include url="../../assets/krpano/skin/noceskin.xml" />
-	
+	<!-- Override noce's skin
+    	<skin_settings 	
+    		title="true"
+    		thumbs_text="true"
+ 		/>  -->
 	<!-- Import model plugin for schede -->
 	<include url="../../assets/krpano/plugins/showtext.xml" />
 
@@ -84,6 +88,12 @@
 			 scale="0.25"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_segheriadimaro-caduta"
+			 onclick="loadscene('scene_segheriadimaro-caduta', null, MERGE);"
+			 ath="-190.0" atv="-25.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
@@ -104,6 +114,12 @@
 		<hotspot name="scene_segheriadimaro-martellone"
 			 onclick="loadscene('scene_segheriadimaro-martellone', null, MERGE);"
 			 ath="-15.0" atv="15.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_segheriadimaro-caduta"
+			 onclick="loadscene('scene_segheriadimaro-caduta', null, MERGE);"
+			 ath="-40.0" atv="0.0"
 			 scale="0.25"
 			 rotate="0.0"
 			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>

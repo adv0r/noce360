@@ -2,7 +2,11 @@
 	
 	<!-- Import noce's skin -->
     <include url="../../assets/krpano/skin/noceskin.xml" />
-	
+	<!-- Override noce's skin  
+    	<skin_settings 	
+    		title="true"
+    		thumbs_text="true"
+ 		/> -->
 	<!-- Import model plugin for schede -->
 	<include url="../../assets/krpano/plugins/showtext.xml" />
 
@@ -14,7 +18,7 @@
 
 	<scene name="scene_HD1" title="HD1" onstart="" thumburl="panos/HD1.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/HD1.tiles/preview.jpg" />
 
@@ -26,6 +30,18 @@
 				<cube url="panos/HD1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_HDR2"
+			 onclick="loadscene('scene_HDR2', null, MERGE);"
+			 ath="-80.0" atv="5.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+		<hotspot name="scene_ontaneta-foresta"
+			 onclick="loadscene('scene_ontaneta-foresta', null, MERGE);"
+			 ath="0.0" atv="5.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
 
 	</scene>
 
@@ -59,6 +75,13 @@
 				<cube url="panos/HDR2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_HD1"
+			 onclick="loadscene('scene_HD1', null, MERGE);"
+			 ath="55.0" atv="5.0"
+			 scale="0.15"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+
 
 	</scene>
 
@@ -110,6 +133,13 @@
 				<cube url="panos/ontaneta-lago.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_ontaneta-misto"
+			 onclick="loadscene('scene_ontaneta-misto', null, MERGE);"
+			 ath="90.0" atv="25.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>	
+		
 
 	</scene>
 
@@ -127,6 +157,13 @@
 				<cube url="panos/ontaneta-misto.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_ontaneta-lago"
+			 onclick="loadscene('scene_ontaneta-lago', null, MERGE);"
+			 ath="90.0" atv="25.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+
 
 	</scene>
 

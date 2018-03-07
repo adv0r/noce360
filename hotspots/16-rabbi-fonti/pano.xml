@@ -2,6 +2,11 @@
 	
 	<!-- Import noce's sking -->
     <include url="../../assets/krpano/skin/noceskin.xml" />
+		<!-- Override noce's skin  
+    	<skin_settings 	
+    		title="true"
+    		thumbs_text="true"
+ 		/> -->
 	
 	<!-- Import model plugin for schede -->
 	<include url="../../assets/krpano/plugins/showtext.xml" />
@@ -24,6 +29,13 @@
 				<cube url="panos/rabbifonti-coperto.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_rabbifonti-fuori"
+			 onclick="loadscene('scene_rabbifonti-fuori', null, MERGE);"
+			 ath="150.0" atv="20.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+
 
 	</scene>
 
@@ -41,6 +53,13 @@
 				<cube url="panos/rabbifonti-fuori.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
+		<hotspot name="scene_rabbifonti-coperto"
+			 onclick="loadscene('scene_rabbifonti-coperto', null, MERGE);"
+			 ath="0.0" atv="20.0"
+			 scale="0.25"
+			 rotate="0.0"
+			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
+
 
 	</scene>
 
