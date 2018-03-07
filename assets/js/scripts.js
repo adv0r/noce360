@@ -25,7 +25,7 @@ function initMap() {
 
     var zoomLevelDesktop = 11.2;
     if (L.Browser.mobile) {
-        zoomLevelDesktop = 10;
+        zoomLevelDesktop = 9;
     }
     var bounds = new L.LatLngBounds(new L.LatLng(lat + boundsOffset, long + boundsOffset), new L.LatLng(lat - boundsOffset, long - boundsOffset));
 
