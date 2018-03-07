@@ -14,11 +14,11 @@
 	               webvr_gyro_keeplookingdirection="false"
 	               webvr_prev_next_hotspots="true"
 	               littleplanetintro="false"
-	               title="true"
+	               title="false"
 	               thumbs="true"
 	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
 	               thumbs_opened="true"
-	               thumbs_text="true"
+	               thumbs_text="false"
 	               thumbs_dragging="true"
 	               thumbs_onhoverscrolling="false"
 	               thumbs_scrollbuttons="true"
@@ -344,9 +344,15 @@
 					<layer name="skin_btn_in"    style="skin_base|skin_glow" crop="0|320|64|64"  align="center"      x="+60"  y="0"  scale="0.5" ondown2="set(fov_moveforce,-1);"     onup2="set(fov_moveforce,0);" />
 					<layer name="skin_btn_out"   style="skin_base|skin_glow" crop="64|320|64|64" align="center"      x="+100" y="0"  scale="0.5" ondown2="set(fov_moveforce,+1);"     onup2="set(fov_moveforce,0);" />
 				</layer>
+
+
 				<layer name="skin_btn_vr"        style="skin_base|skin_glow" crop="0|0|80|64"    align="center"      x="+146" y="0"  scale="0.5" onclick="webvr.enterVR();" visible="false" />
+
 				<layer name="skin_btn_fs"        style="skin_base|skin_glow" crop="0|576|64|64"  align="right"       x="90"   y="0"  scale="0.5" onclick="switch(fullscreen);" devices="fullscreensupport" />
+
 				<layer name="skin_btn_hide"      style="skin_base|skin_glow" crop="0|448|64|64"  align="right"       x="50"   y="0"  scale="0.5" onclick="skin_hideskin()" />
+
+
 				<layer name="skin_btn_show" type="container" bgcapture="true" align="bottom" width="100%" height="get:skin_settings.controlbar_height" y="calc:skin_settings.controlbar_height - skin_settings.controlbar_offset_closed" onclick="skin_showskin()" onhover="tween(alpha,1.0);" onout="tween(alpha,0.25);" ondown.touch="onhover();" onup.touch="onout();" visible="false" capture="false" alpha="0.0">
 					<layer name="skin_btn_show_icon" style="skin_base" crop="64|448|64|64" scale="0.5" align="bottom" y="2" enabled="false" />
 				</layer>
@@ -629,7 +635,6 @@
 		calc(show_dirbuttons, !device.mobile AND ((area.pixelwidth + 2*cpos) GT 520));
 
 		copy(layer[skin_btn_navi].visible, show_dirbuttons);
-		copy(layer[skin_btn_hide].visible, show_dirbuttons);
 
 		copy(layer[skin_btn_prev].visible, show_selbuttons);
 		copy(layer[skin_btn_next].visible, show_selbuttons);
@@ -664,8 +669,8 @@
 
 			set(layer[skin_btn_vr].align, right);
 			copy(layer[skin_btn_vr].visible, show_vrbutton);
-			copy(layer[skin_btn_vr].x, lpos);
-			if(show_vrbutton, inc(lpos,80));
+			copy(layer[skin_btn_vr].x, rpos);
+			if(show_vrbutton, inc(rpos,80));
 		  );
 
 		copy(layer[skin_btn_hide].x, rpos);
