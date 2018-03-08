@@ -186,6 +186,8 @@
 			<!-- left buttons - play/pause, volume -->
 			<layer name="skin_btn_playpause" style="skin_base|skin_glow" crop="0|640|64|64" align="left" x="5" y="0" scale="0.5" onclick="plugin[video].togglepause();" />
 
+
+
 			<!-- noce360 home -->
 
 			<layer name="skin_btn_home"  visible.no-desktop="true"   style="skin_base|skin_glow" crop="64|770|64|64"  align="left" x.desktop="45" x.no-desktop="40"    y="0"  scale="0.5" ondown2="goHome();" />
@@ -281,7 +283,7 @@
 		<layer name="skin_video_playpause" keep="true" style="skin_base|skin_glow" crop="0|640|64|64" scale="0.75" align="center" alpha="0.0" autoalpha="true" state="hidden" onclick="skin_video_playpause_click();" />
 
 		<!-- error window -->
-		<layer name="skin_error" visible="false" zorder="99" type="container" align="center" width="100" height="100" bgcapture="true" onclick="set(visible,false);" bgcolor="get:skin_settings.design_bgcolor" bgalpha="get:skin_settings.design_bgalpha" bgborder="get:skin_settings.design_bgborder" bgroundedge="get:skin_settings.design_bgroundedge" bgshadow="get:skin_settings.design_bgshadow">
+		<layer name="skin_error" visible="false" zorder="99" type="container" align="center" width="100" height="100" bgcapture="true" onclick="" bgcolor="get:skin_settings.design_bgcolor" bgalpha="get:skin_settings.design_bgalpha" bgborder="get:skin_settings.design_bgborder" bgroundedge="get:skin_settings.design_bgroundedge" bgshadow="get:skin_settings.design_bgshadow">
 			<layer name="skin_error_msg" style="skintext" align="center" html="" enabled="false" padding="8 16" onautosized="copy(layer[skin_error].width, width); copy(layer[skin_error].height, height)" />
 		</layer>
 
@@ -775,4 +777,5 @@
 	<action name="initFishEye" autorun="onstart">
 		skin_view_fisheye();
 	</action>
+
 </krpano>
