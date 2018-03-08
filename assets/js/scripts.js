@@ -12,6 +12,15 @@ $(document).ready(function() {
     //Load the Leaflet Map
     console.log("Document ready...");
 
+    var isMobileApple = navigator.userAgent.toLowerCase().match(/(ipad|iphone)/); //TODO not sure
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+    if (isSafari && isMobileApple==null) {
+        //Do the following only for safari desktop
+         $("#videolink-natura").html("<a href='https://youtu.be/v9JuKiJmag8'><img src='assets/images/under_tematic_video.jpg' alt='video'/></a>");
+         $("#videolink-cultura").html("<a href='https://youtu.be/u5XlNICF_oY'><img src='assets/images/under_tematic_video.jpg' alt='video'/></a>");
+    }
+
     initMap();
 });
 
@@ -23,15 +32,15 @@ function initMap() {
     var long = hotspots.centerLong;
     var boundsOffset = 0.5;
 
-    var zoomLevelDesktop = 11.2;
+    var zoomLevel = 10.9;
     if (L.Browser.mobile) {
-        zoomLevelDesktop = 9;
+        zoomLevel = 8.7;
     }
     var bounds = new L.LatLngBounds(new L.LatLng(lat + boundsOffset, long + boundsOffset), new L.LatLng(lat - boundsOffset, long - boundsOffset));
 
     nocemap = new L.Map('mapdiv', {
         center: bounds.getCenter(),
-        zoom: zoomLevelDesktop,
+        zoom: zoomLevel,
         maxBounds: bounds,
         maxBoundsViscosity: 0.75,
         attributionControl: false,
@@ -293,3 +302,6 @@ function getWidth() {
     document.documentElement.clientWidth
   );
 }
+
+
+

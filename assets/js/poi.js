@@ -140,15 +140,12 @@ $(function(){
     var isMobileApple = navigator.userAgent.toLowerCase().match(/(ipad|iphone)/); //TODO not sure
     var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-    console.log("isSafari" + isSafari);
-    console.log("isMobileApple" + isMobileApple);
-
     if (isSafari && isMobileApple==null) {
         //Do the following only for safari desktop
-        console.log("here");
         if ($('#videolink').length){ //This POI has a video
             var POIID = $( "#videolink" ).data("poi");
             var videoID = videomap[POIID];
+            //Note, if you change the following line also update the code on index.htm
             var contentString = "<a href='https://youtu.be/"+videoID+"' target='_blank' > <img src='../../assets/images/open_video.png' style='width: 20px; vertical-align: middle'>&nbsp;Watch video</a>";
             $("#videolink").html(contentString);
         }
