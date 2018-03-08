@@ -55,7 +55,7 @@ var hotspots = {
 	      "bounce": false
 	    },
 	    {
-	      "name": "Ossana",
+	      "name": "Castello di Ossana",
 	      "lat": 46.30798,
 	      "long": 10.73726,
 	      "href": "6-ossana/",
@@ -64,6 +64,17 @@ var hotspots = {
 	      "description": "Il fiume e il suo castello",
 	      "bounce": false
 	    },
+	    {
+	      "name": "Confluenza Vermigliana",
+	      "lat": 46.310972, 
+	      "long": 10.742609,
+	      "href": "20-confluenza-vermigliana/",
+	      "type": "normal",
+	      "marker": "normal",
+	      "description": "Qui confluiscono la Vermigliana e il Noce",
+	      "bounce": false
+	    },
+	    
 	    {
 	      "name": "Val Meledrio - Segheria di Dimaro",
 	      "lat": 46.31877,

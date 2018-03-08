@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>Noce360 - Ossana Video</title>
+	<title>Noce360 - Confluenza Vermigliana</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -25,9 +25,14 @@
 	<script src="../../assets/krpano/pano.js"></script>
 	<script src="../../assets/js/poi.js"></script>
 
+	<div class="hotspot-title">
+		<div class="chiudi"><a href="#" onclick="javascript:hideTitle()">X</a></div>
+		<h1>Confluenza Vermigliana</h1>
+		<p id="videolink" class="aprischedalink" data-poi="20" ><a href="../20-confluenza-vermigliana-video/" > <img src="../../assets/images/open_video.png" style="width: 20px; vertical-align: middle">&nbsp;Watch video</a></p>
+	</div>
 
-	<div class="hotspot-title"">
-		<p class="aprischedalink"><a href="../6-ossana" > <img src="../../assets/images/open_graph.png" style="width: 20px; vertical-align: middle">&nbsp;Torna alle foto</a></p>
+	<div class="hotspot-title-hidden">
+		<div class="chiudi"><a href="#" onclick="javascript:showTitle()">+</a></div>
 	</div>
 
 	<div id="pano" style="width:100%;height:100%;">
@@ -35,7 +40,6 @@
 		<script>
 			embedpano({xml:"pano.xml" +'?ver=' + Math.random(), target:"pano", html5:"prefer", initvars:{design:"flat"}, passQueryParameters:true,id:"krpanoObject"});
     	</script>
-		
 	</div>
 
 </body>

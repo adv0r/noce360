@@ -9,54 +9,6 @@
 	<!-- Import gyroscope plugin -->
      <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
         touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
-        
-	<scene name="scene_derniga-ferrovia-fiore" title="derniga-ferrovia-fiore" onstart="" thumburl="panos/derniga-ferrovia-fiore.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="-40.0" vlookat="0.0" fovtype="MFOV" fov="140" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
-
-		<preview url="panos/derniga-ferrovia-fiore.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/derniga-ferrovia-fiore.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/derniga-ferrovia-fiore.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>F
-		</image>
-		<hotspot name="scene_derniga-ferrovia"
-			 onclick="loadscene('scene_derniga-ferrovia', null, MERGE);"
-			 ath="-165.0" atv="0.0"
-			 scale="0.25"
-			 rotate="0.0"
-			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
-
-
-
-	</scene>
-
-	<scene name="scene_derniga-ferrovia" title="derniga-ferrovia" onstart="" thumburl="panos/derniga-ferrovia.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" fisheye="1.0" limitview="auto" />
-
-		<preview url="panos/derniga-ferrovia.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="2176" tiledimageheight="2176">
-				<cube url="panos/derniga-ferrovia.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1152" tiledimageheight="1152">
-				<cube url="panos/derniga-ferrovia.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-		<hotspot name="scene_derniga-ferrovia-fiore"
-			 onclick="loadscene('scene_derniga-ferrovia-fiore', null, MERGE);"
-			 ath="-25.0" atv="0.0"
-			 scale="0.25"
-			 rotate="0.0"
-			type="image" url="../../assets/images/arrow.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center" zoom="false" borderwidth="2" bordercolor="#0xAAAAAA" alpha="1.0"/>
-
-	</scene>
 
 	<scene name="scene_derniga-gnomo" title="derniga-gnomo" onstart="" thumburl="panos/derniga-gnomo.tiles/thumb.jpg" lat="" lng="" heading="">
 
@@ -156,7 +108,7 @@
 
 	<!-- startup action - load the first scene -->
 		<action name="startup" autorun="onstart">
-		loadscene(scene_derniga-orchidea, null, MERGE);
+		loadscene(scene_derniga-ponte, null, MERGE);
 	</action>
 
 	<action name="togglescheda" type="Javascript"><![CDATA[
