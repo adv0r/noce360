@@ -330,7 +330,7 @@
 				<layer name="skin_btn_prev"      style="skin_base|skin_glow" crop="0|64|64|64"   align="left"        x="5"    y="0"  scale="0.5" alpha="0.5"  onclick="if(skin_settings.thumbs_loop, skin_nextscene_loop(-1), skin_nextscene(-1) );" />
 				<layer name="skin_btn_thumbs"    style="skin_base|skin_glow" crop="0|128|64|64"  align="left"        x="50"   y="0"  scale="0.5" ondown2="skin_showmap(false); skin_showthumbs();" />
 
-				<layer name="skin_btn_home"      style="skin_base|skin_glow" crop="64|770|64|64"  align="left"        x="90"   y="0"  scale="0.5" ondown2="goHome();" />
+				<layer name="skin_btn_home"      style="skin_base|skin_glow" crop="64|770|64|64"  align="left"        x="50"   y="0"  scale="0.5" ondown2="goHome();" />
 
 <!-- 
 				<layer name="skin_btn_soundtoggle_off"      style="skin_base|skin_glow" crop="0|845|64|64"  align="left"        x="130"   y="0"  scale="0.5" ondown2="toggle_sounds();"  />
