@@ -21,23 +21,56 @@
 
 	<preview url="tonale-gigapixel.tiles/preview.jpg" />
 
-	<!--scheda-piante-carnivore -->
+	<!--scheda-torbiera-del-tonale -->
+
+        <hotspot name="scheda-torbiera-del-tonale-Trigger"
+         keep="false"
+         visible="true"
+         enabled="true"
+         distorted="true"
+         handcursor="true"
+         capture="true"
+         style=""
+         alpha="0.5"
+         fillcolor="0xAAAAAA"
+         fillalpha="0.7"
+         borderwidth="3.0"
+         bordercolor="0xAAAAAA"
+         borderalpha="1.0"
+         onclick="jscall(loadScheda('scheda-torbiera-del-tonale'));"           
+         onloaded="">
+   		 <point ath="-90" atv="0" />
+    	 <point ath="-90" atv="25" />
+    	 <point ath="-60" atv="25" />
+    	 <point ath="-60" atv="0" />
+    
+		</hotspot>
+
+        <hotspot name="scheda-torbiera-del-tonale-TriggerLabel"
+           html="Torbiera del Tonale"
+           ath="-75" atv="0"
+           vr="false"
+           oy="50"
+           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-torbiera-del-tonale -->
+
+
+        <!--scheda-piante-carnivore -->
         <hotspot name="scheda-piante-carnivore-Trigger"
-           ath="-75" atv="11"
-           scale="0.7"
+           ath="-60" atv="30"
+           scale="0.4"
            vr="false"
            onclick="jscall(loadScheda('scheda-piante-carnivore'));"           
            type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
         />
 
-        <hotspot name="scheda-piante-carnivore-TriggerLabel"
+ 		<hotspot name="scheda-piante-carnivore-TriggerLabel"
            html="Piante Carnivore"
-           ath="-75" atv="11"
+           ath="-60" atv="30"
            vr="false"
            oy="50"
-           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+           type="text" css="font-family:Arial; font-size:20px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
         /><!-- Fine scheda-piante-carnivore -->
-
 
 	<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
 		<level tiledimagewidth="9472" tiledimageheight="9472">
