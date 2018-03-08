@@ -26,65 +26,6 @@
 		</image>
 	</scene>
 
-	<scene name="scene_ossana-gigapix" title="ossana-gigapix" onstart="" thumburl="panos/ossana-gigapix.tiles/thumb.jpg" lat="46.31095006" lng="10.74265769" heading="0.0">
-
-		<!--scheda-prati-terrazzati -->
-        <hotspot name="scheda-prati-terrazzati-Trigger"
-           ath="5" atv="0"
-           scale="0.6"
-           vr="false"
-           onclick="jscall(loadScheda('scheda-prati-terrazzati'));"           
-           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
-        />
-
-        <hotspot name="scheda-prati-terrazzati-TriggerLabel"
-           html="Prati terrazzati"
-           ath="5" atv="0"
-           vr="false"
-           oy="50"
-           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
-        /><!-- Fine scheda-prati-terrazzati -->
-
-
-
-
-        	<!--scheda-castello-di-ossana -->
-        <hotspot name="scheda-castello-di-ossana-Trigger"
-           ath="-12" atv="2"
-           scale="0.6"
-           vr="false"
-           onclick="jscall(loadScheda('scheda-castello-di-ossana'));"           
-           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
-        />
-
-        <hotspot name="scheda-castello-di-ossana-TriggerLabel"
-           html="Castello di Ossana"
-           ath="-12" atv="2"
-           vr="false"
-           oy="50"
-           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
-        /><!-- Fine scheda-castello-di-ossana -->
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/ossana-gigapix.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-			<level tiledimagewidth="7808" tiledimageheight="7808">
-				<cube url="panos/ossana-gigapix.tiles/%s/l4/%v/l4_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="3840" tiledimageheight="3840">
-				<cube url="panos/ossana-gigapix.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="2048" tiledimageheight="2048">
-				<cube url="panos/ossana-gigapix.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="panos/ossana-gigapix.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-	</scene>
 
 	<scene name="scene_ossana-plastico" title="ossana-plastico" onstart="" thumburl="panos/ossana-plastico.tiles/thumb.jpg" lat="" lng="" heading="">
 
@@ -110,7 +51,7 @@
 
 	<!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
-		loadscene(scene_ossana-gigapix);
+		loadscene(scene_ossana-castello1);
 	</action>
 
 	<action name="togglescheda" type="Javascript"><![CDATA[

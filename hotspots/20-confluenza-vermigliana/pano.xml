@@ -40,7 +40,7 @@
            ath="35" atv="55"
            vr="false"
            oy="70"
-           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized="" handcursor="false" 
+           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""  
         /><!-- Fine marker-vermigliana -->
 
 
@@ -55,7 +55,7 @@
 
         <!-- Freccia castello -->
 			<hotspot name="castello-ossana"
-			onclick="openurl('../6-ossana',_self);"			 
+			onclick="openurl('../18-contre',_self);"			 
 			ath="-10" atv="7"
 			scale="0.30"
 			rotate="0.0"

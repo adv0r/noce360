@@ -196,6 +196,16 @@ var hotspots = {
 	      "bounce": false
 	    },
 	    {
+	      "name": "Confluenza Rabies",
+	      "lat": 46.355490, 
+	      "long": 10.925182,
+	      "href": "21-confluenza-rabies/",
+	      "type": "normal",
+	      "marker": "normal",
+	      "description": "Qui confluiscono Rabies e Noce",
+	      "bounce": false
+	    },
+	    {
 	      "name": "Forra prima di Mostizzolo",
 	      "lat": 46.39313,
 	      "long": 11.01212,

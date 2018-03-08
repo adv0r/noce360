@@ -1,46 +1,79 @@
 ﻿<krpano>
 	
-	<!-- Import noce's sking -->
-    <include url="../../assets/krpano/skin/noceskin.xml" />
-	
 	<!-- Import model plugin for schede -->
 	<include url="../../assets/krpano/plugins/showtext.xml" />
+
+	<!-- include the videoplayer interface / skin (with VR support) -->
+	<include url="../../assets/krpano/skin/videointerface.xml" />
 
 	<!-- Import gyroscope plugin -->
      <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
         touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
         
 	
+	<scene name="videopano" title="Video Contre" thumburl="../../assets/media/POI-Videos/ContrePOI.mp4_low_.jpg">
 		
-	<!-- view settings -->
-	<view hlookat="0" vlookat="0" maxpixelzoom="1.0" fovmax="150" limitview="auto" />
-	
+		<!-- include the videoplayer interface / skin (with VR support) -->
+		<include url="../../assets/krpano/skin/videointerface.xml" />
 
-	<preview url="contre-gigapix.tiles/preview.jpg" />
+		<!-- include the videoplayer plugin -->
+		<plugin name="video"
+		        url.html5="../../assets/krpano/plugins/videoplayer.js"
+		        pausedonstart="false"
+		        loop="true"
+		        volume="1.0"
+		        onloaded="add_video_sources();"
+		        />
 
-	<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">
-		<level tiledimagewidth="7808" tiledimageheight="7808">
-			<cube url="contre-gigapix.tiles/%s/l4/%v/l4_%s_%v_%h.jpg" />
-		</level>
-		<level tiledimagewidth="3840" tiledimageheight="3840">
-			<cube url="contre-gigapix.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
-		</level>
-		<level tiledimagewidth="2048" tiledimageheight="2048">
-			<cube url="contre-gigapix.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-		</level>
-		<level tiledimagewidth="1024" tiledimageheight="1024">
-			<cube url="contre-gigapix.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-		</level>
-	</image>
+		<!-- use the videoplayer plugin as panoramic image source -->
+		<image>
+			<sphere url="plugin:video" />
+		</image>
 
 
+		<!-- set the default view -->
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="130" fovmin="75" fovmax="150" distortion="0.0" />
+
+		<!-- add the video sources and play the video -->
+		<action name="add_video_sources">
+			videointerface_addsource('1024x512','../../assets/media/POI-Videos/ContrePOI.mp4_low.mp4|../../assets/media/POI-Videos/ContrePOI.mp4_low.webm|../../assets/media/POI-Videos/ContrePOI.mp4_iphone-audio.m4a','../../assets/media/POI-Videos/ContrePOI.mp4_low_.jpg');
+
+			videointerface_addsource('1920x960','../../assets/media/POI-Videos/ContrePOI.mp4_mid.mp4|../../assets/media/POI-Videos/ContrePOI.mp4_mid.webm|../../assets/media/POI-Videos/ContrePOI.mp4_iphone-audio.m4a','../../assets/media/POI-Videos/ContrePOI.mp4_mid_.jpg');
+
+			videointerface_addsource('3840×1920','../../assets/media/POI-Videos/ContrePOI.mp4_high.mp4|../../assets/media/POI-Videos/ContrePOI.mp4_high.webm|../../assets/media/POI-Videos/ContrePOI.mp4_iphone-audio.m4a','../../assets/media/POI-Videos/ContrePOI.mp4_high_.jpg');
+
+			if(device.ios,
+				<!-- iOS Safari has a very slow 'video-to-webgl-texture' transfer, therefore use a low-res video by default -->
+				videointerface_play('1024x512');
+			  ,
+				if(device.safari,
+					<!-- Safari11 Bug found by Nico-->
+					calc(layer[skin_error_msg].html, 
+						'<h2>Oooppst.... Safari non supporta questo contenuto</h2> ' + 
+						'<h3>Prova a cambiare browser (Chrome, Firefox...)</h3>');
+					set(layer[skin_error].visible, true);
+					set(layer[skin_control_bar].visible, false);
+					set(layer[skin_video_playpause].visible, false);
+
+ 					<!-- Defined in videointerface.xml Display error message, disable play.-->
+			  	,
+					videointerface_play('1920x960');
+			  		);
+			  );
+		</action>
+	</scene>
 
 
 	<!-- start Actions-->
+	<action name="startup" autorun="onstart">
+		
+		if(device.panovideosupport == false,
+			error('Sorry, but panoramic videos are not supported by your current browser!');
+		  ,
+			loadscene(videopano);
+		  );
+	</action>
 
-	<action name="togglescheda" type="Javascript"><![CDATA[
-		toggleScheda();
-	]]></action>
 
 	<!-- end Actions-->
 
