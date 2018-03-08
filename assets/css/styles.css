@@ -188,7 +188,7 @@
 }
  @media only screen and (max-width: 480px) {
     .lookVideos {
-        margin-top: 0px;
+        margin-top: 0px!important;
     }
      #mapdiv{
          height: 380px;
@@ -200,6 +200,7 @@
          margin-bottom: 1rem;
     }
 }
+
 /* ---- Hotspots POI ------------- */
  .hotspot-title {
      padding-right: 15px;
