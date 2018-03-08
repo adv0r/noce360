@@ -46,7 +46,19 @@
 				<!-- iOS Safari has a very slow 'video-to-webgl-texture' transfer, therefore use a low-res video by default -->
 				videointerface_play('1024x512');
 			  ,
-				videointerface_play('1920x960');
+				if(device.safari,
+					<!-- Safari11 Bug found by Nico-->
+					calc(layer[skin_error_msg].html, 
+						'<h2>Oooppst.... Safari non supporta questo contenuto</h2> ' + 
+						'<h3>Prova a cambiare browser (Chrome, Firefox...)</h3>');
+					set(layer[skin_error].visible, true);
+					set(layer[skin_control_bar].visible, false);
+					set(layer[skin_video_playpause].visible, false);
+
+ 					<!-- Defined in videointerface.xml Display error message, disable play.-->
+			  	,
+					videointerface_play('1920x960');
+			  		);
 			  );
 		</action>
 	</scene>
