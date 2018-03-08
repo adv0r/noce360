@@ -332,9 +332,10 @@
 
 				<layer name="skin_btn_home"      style="skin_base|skin_glow" crop="64|770|64|64"  align="left"        x="90"   y="0"  scale="0.5" ondown2="goHome();" />
 
+<!-- 
 				<layer name="skin_btn_soundtoggle_off"      style="skin_base|skin_glow" crop="0|845|64|64"  align="left"        x="130"   y="0"  scale="0.5" ondown2="toggle_sounds();"  />
 				<layer name="skin_btn_soundtoggle_on"      style="skin_base|skin_glow" crop="0|773|64|64"  align="left"        x="130"   y="0"  scale="0.5" ondown2="toggle_sounds();" visible="false"/>
-
+-->
 
 				<layer name="skin_btn_navi" type="container" align="center" x="0" width="240" height="32">
 					<layer name="skin_btn_left"  style="skin_base|skin_glow" crop="0|192|64|64"  align="center"      x="-100" y="0"  scale="0.5" ondown2="set(hlookat_moveforce,-1);" onup2="set(hlookat_moveforce,0);" />
