@@ -48,11 +48,14 @@ r(function() {
         });
 
 });
-*/
 
 function r(f) {
     /in/.test(document.readyState) ? setTimeout('r(' + f + ')', 9) : f()
 }
+
+*/
+
+
 
 
 function mouseEnteredScheda(){
@@ -129,3 +132,47 @@ function getWidth() {
     document.documentElement.clientWidth
   );
 }
+
+
+
+// shorter jQuery version 
+$(function(){
+    var isMobileApple = navigator.userAgent.toLowerCase().match(/(ipad|iphone)/); //TODO not sure
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+    console.log("isSafari" + isSafari);
+    console.log("isMobileApple" + isMobileApple);
+
+    if (isSafari && isMobileApple==null) {
+        //Do the following only for safari desktop
+        console.log("here");
+        if ($('#videolink').length){ //This POI has a video
+            var POIID = $( "#videolink" ).data("poi");
+            var videoID = videomap[POIID];
+            var contentString = "<a href='https://youtu.be/"+videoID+"' target='_blank' > <img src='../../assets/images/open_video.png' style='width: 20px; vertical-align: middle'>&nbsp;Watch video</a>";
+            $("#videolink").html(contentString);
+        }
+    }
+    
+});
+
+
+var videomap= {
+    "1":"rnkVxplgEWc",
+    "2":"jRDzSQ212t8",
+    "3":"7zN4maNyrN0",
+    "6":"MMzSxgmRV5g",
+    "8":"TxBR2V3JqA0",
+    "9":"3OtdWxAf-Ug",
+    "10":"m6zMxXJw9qw",
+    "11":"6IgfMwDtrfU",
+    "12":"FLePlqWvL6c",
+    "13":"-SOQR31FytY",
+    "15":"Vr8rjtqeNTw",
+    "17":"sEBYeH2Fde4",
+    "18":"P7124Yo9zVs",
+    "19":"2Op_uO5AcSg"
+};
+
+
+
