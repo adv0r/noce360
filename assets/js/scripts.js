@@ -32,9 +32,9 @@ function initMap() {
     var long = hotspots.centerLong;
     var boundsOffset = 0.8;
 
-    var zoomLevel = 10.9;
+    var zoomLevel = 9.5;
     if (L.Browser.mobile) {
-        zoomLevel = 8.7;
+        zoomLevel = 9.5;
     }
     var bounds = new L.LatLngBounds(new L.LatLng(lat + boundsOffset, long + boundsOffset), new L.LatLng(lat - boundsOffset, long - boundsOffset));
 
@@ -53,7 +53,7 @@ function initMap() {
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
         maxZoom: 16,
-        minZoom: 10,
+        minZoom: 6,
         maxBounds: bounds,
         id: 'mapbox.streets',
         accessToken: MapBoxAccessToken
