@@ -1,4 +1,4 @@
-﻿<krpano>
+<krpano>
 	
 	<!-- Import noce's sking -->
     <include url="../../assets/krpano/skin/noceskin.xml" />
@@ -55,7 +55,7 @@
 
         <!-- Freccia castello -->
 			<hotspot name="castello-ossana"
-			onclick="openurl('../18-contre',_self);"			 
+			onclick="openurl('../6-ossana',_self);"			 
 			ath="-10" atv="7"
 			scale="0.30"
 			rotate="0.0"
