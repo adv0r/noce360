@@ -30,11 +30,11 @@ function initMap() {
 
     var lat = hotspots.centerLat;
     var long = hotspots.centerLong;
-    var boundsOffset = 0.3;
+    var boundsOffset = 0.8;
 
     var zoomLevel = 9.5;
     if (L.Browser.mobile) {
-        zoomLevel = 9.5;
+        zoomLevel = 8.5;
     }
     var bounds = new L.LatLngBounds(new L.LatLng(lat + boundsOffset, long + boundsOffset), new L.LatLng(lat - boundsOffset, long - boundsOffset));
 
