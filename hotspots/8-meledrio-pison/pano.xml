@@ -19,6 +19,24 @@
 
 		<view hlookat="-55.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
+		<!--scheda-trota-marmorata -->
+        <hotspot name="scheda-trota-marmorata-Trigger"
+           ath="-20" atv="25"
+           scale="0.6"
+           vr="false"
+           onclick="jscall(loadScheda('scheda-trota-marmorata'));"           
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+        />
+
+        <hotspot name="scheda-trota-marmorata-TriggerLabel"
+           html="La trota marmorata"
+           ath="-20" atv="25"
+           vr="false"
+           oy="50"
+           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-trota-marmorata -->
+
+
 		<preview url="panos/pison-artificiali.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
@@ -133,6 +151,23 @@
 		<view hlookat="0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/pison-canyon.tiles/preview.jpg" />
+
+		<!--scheda-trota-marmorata -->
+        <hotspot name="scheda-trota-marmorata-Trigger"
+           ath="90" atv="35"
+           scale="0.6"
+           vr="false"
+           onclick="jscall(loadScheda('scheda-trota-marmorata'));"           
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+        />
+
+        <hotspot name="scheda-trota-marmorata-TriggerLabel"
+           html="La trota marmorata"
+           ath="90" atv="35"
+           vr="false"
+           oy="50"
+           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-trota-marmorata -->
 
 		<image type="CUBE" multires="true" tilesize="512">
 			<level tiledimagewidth="2176" tiledimageheight="2176">

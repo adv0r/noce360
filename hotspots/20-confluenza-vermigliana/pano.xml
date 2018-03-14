@@ -37,19 +37,21 @@
 
         <hotspot name="marker-vermigliana-TriggerLabel"
            html="Vermigliana"
-           ath="35" atv="55"
+           ath="13" atv="55"
            vr="false"
            oy="70"
-           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""  
+           rotate="270.0"
+           type="text" css="font-family:Arial; font-size:28px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.8" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""  
         /><!-- Fine marker-vermigliana -->
 
 
         <hotspot name="marker-noce-TriggerLabel"
            html="Noce"
-           ath="81" atv="55"
+           ath="58" atv="55"
            vr="false"
            oy="70"
-           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized="" handcursor="false" 
+           rotate="-100.0"
+           type="text" css="font-family:Arial; font-size:28px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.8" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized="" handcursor="false" 
         /><!-- Fine marker-noce -->
 
 
