@@ -10,7 +10,7 @@
      <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
         touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
         
-	<scene name="scene_ossana-castello1" title="ossana-castello1" onstart="" thumburl="panos/ossana-castello1.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_ossana-castello1" title="ossana-castello1" onstart="skin_view_fisheye();" thumburl="panos/ossana-castello1.tiles/thumb.jpg" lat="" lng="" heading="">
 		
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -27,7 +27,7 @@
 	</scene>
 
 
-	<scene name="scene_ossana-plastico" title="ossana-plastico" onstart="" thumburl="panos/ossana-plastico.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_ossana-plastico" title="ossana-plastico" onstart="skin_view_fisheye();" thumburl="panos/ossana-plastico.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -44,7 +44,7 @@
 
 	</scene>
 
-	<scene name="scene_A_pari" title="A_pari" onstart="" thumburl="panos/A_pari.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_A_pari" title="A_pari" onstart="skin_view_normal();"  thumburl="panos/A_pari.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-63.005" vlookatmax="63.005" />
 
@@ -64,7 +64,7 @@
 
 	</scene>
 
-	<scene name="scene_b_pari" title="b_pari" onstart="" thumburl="panos/b_pari.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_b_pari" title="b_pari" onstart="skin_view_normal();"  thumburl="panos/b_pari.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-64.545" vlookatmax="64.545" />
 
@@ -84,7 +84,7 @@
 
 	</scene>
 
-	<scene name="scene_C_pari" title="C_pari" onstart="" thumburl="panos/C_pari.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_C_pari" title="C_pari" onstart="skin_view_normal();"  thumburl="panos/C_pari.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-63.635" vlookatmax="63.635" />
 
@@ -104,7 +104,7 @@
 
 	</scene>
 
-	<scene name="scene_d_dispari" title="d_dispari" onstart="" thumburl="panos/d_dispari.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_d_dispari" title="d_dispari" onstart="skin_view_normal();"  thumburl="panos/d_dispari.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-64.070" vlookatmax="64.070" />
 
@@ -124,7 +124,7 @@
 
 	</scene>
 
-	<scene name="scene_d_pariNEW" title="d_pariNEW" onstart="" thumburl="panos/d_pariNEW.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_d_pariNEW" title="d_pariNEW" onstart="skin_view_normal();"  thumburl="panos/d_pariNEW.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-63.180" vlookatmax="63.180" />
 
@@ -144,7 +144,7 @@
 
 	</scene>
 
-	<scene name="scene_DentroLaTorre" title="DentroLaTorre" onstart="" thumburl="panos/DentroLaTorre.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_DentroLaTorre" title="DentroLaTorre" onstart="skin_view_normal();"  thumburl="panos/DentroLaTorre.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -161,7 +161,7 @@
 
 	</scene>
 
-	<scene name="scene_e_pari" title="e_pari" onstart="" thumburl="panos/e_pari.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_e_pari" title="e_pari" onstart="skin_view_normal();"  thumburl="panos/e_pari.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -181,7 +181,7 @@
 
 	</scene>
 
-	<scene name="scene_F" title="F" onstart="" thumburl="panos/F.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_F" title="F" onstart="skin_view_normal();"  thumburl="panos/F.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-61.075" vlookatmax="61.075" />
 
@@ -201,7 +201,7 @@
 
 	</scene>
 
-	<scene name="scene_finestra1" title="finestra1" onstart="" thumburl="panos/finestra1.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_finestra1" title="finestra1" onstart="skin_view_normal();"  thumburl="panos/finestra1.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -218,7 +218,7 @@
 
 	</scene>
 
-	<scene name="scene_Torrione1" title="Torrione1" onstart="" thumburl="panos/Torrione1.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_Torrione1" title="Torrione1" onstart="skin_view_normal();"  thumburl="panos/Torrione1.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -235,7 +235,7 @@
 
 	</scene>
 
-	<scene name="scene_Torrione2" title="Torrione2" onstart="" thumburl="panos/Torrione2.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_Torrione2" title="Torrione2" onstart="skin_view_normal();"  thumburl="panos/Torrione2.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
