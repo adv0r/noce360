@@ -1,5 +1,5 @@
 function backHome() {
-    document.location.href = '../../'; //one level up;
+    document.location.href = '../../map.htm'; //one level up;
 }
 
 
