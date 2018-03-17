@@ -24,6 +24,10 @@ p strong{
     cursor: pointer;
     
 }
+a{
+    text-decoration: underline;
+    cursor: pointer;
+}
 #footerline3 p, #footerline3 p a:hover, #footerline3 p a:visited, #footerline3 p a{
     font-family: 'walkBlack', sans-serif;
     color:#A9A9A9;
