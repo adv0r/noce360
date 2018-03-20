@@ -145,7 +145,7 @@ $(function(){
         if ($('#videolink').length){ //This POI has a video
             var POIID = $( "#videolink" ).data("poi");
             var videoID = videomap[POIID];
-            //Note, if you change the following line also update the code on index.htm
+            //Note, if you change the following line also update the code on map.htm
             var contentString = "<a href='https://youtu.be/"+videoID+"' target='_blank' > <img src='../../assets/images/open_video.png' style='width: 20px; vertical-align: middle'>&nbsp;Watch video</a>";
             $("#videolink").html(contentString);
         }
