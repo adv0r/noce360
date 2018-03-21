@@ -9,10 +9,6 @@
 	<!-- Override noce's skin -->
    	<skin_settings thumbs="false"/>
 
-	<!-- Import gyroscope plugin -->
-     <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
-        touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
-
 	<scene name="scene_ossana-gigapix" title="ossana-gigapix" onstart="" thumburl="panos/ossana-gigapix.tiles/thumb.jpg" lat="46.31095006" lng="10.74265769" heading="0.0">
 
 		<!--scheda-prati-terrazzati -->

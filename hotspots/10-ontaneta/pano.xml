@@ -9,13 +9,7 @@
  		/> -->
 	<!-- Import model plugin for schede -->
 	<include url="../../assets/krpano/plugins/showtext.xml" />
-
-	<!-- Import gyroscope plugin -->
-     <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
-        touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
-        
-		        	         
-
+		        	        
 	<scene name="scene_HD1" title="HD1" onstart="" thumburl="panos/HD1.tiles/thumb.jpg" lat="46.00000000" lng="10.00000000" heading="0.0">
 
 		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />

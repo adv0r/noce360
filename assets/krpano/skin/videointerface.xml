@@ -130,7 +130,7 @@
 
 
 	<!-- gyro plugin -->
-	<plugin name="skin_gyro" keep="true" url="../plugins/gyro2.js" devices="html5.and.touch" enabled="true" onavailable="skin_have_gyro_support();" onenable="skin_gyro_enabled();" ondisable="skin_gyro_disabled();" />
+	<plugin name="skin_gyro" keep="true" url="../plugins/gyro2.js" devices="html5.and.touch" enabled="false" onavailable="skin_have_gyro_support();" onenable="skin_gyro_enabled();" ondisable="skin_gyro_disabled();" />
 
 
 	<!-- skin styles -->

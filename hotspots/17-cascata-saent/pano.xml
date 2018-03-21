@@ -4,12 +4,7 @@
     <include url="../../assets/krpano/skin/noceskin.xml" />
 	
 	<!-- Import model plugin for schede -->
-	<include url="../../assets/krpano/plugins/showtext.xml" />
-
-	<!-- Import gyroscope plugin -->
-     <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
-        touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
-        
+	<include url="../../assets/krpano/plugins/showtext.xml" />    
 	
 	<scene name="scene_saent-cascata" title="saent-cascata" onstart="" thumburl="panos/saent-cascata.tiles/thumb.jpg" lat="" lng="" heading="">
 

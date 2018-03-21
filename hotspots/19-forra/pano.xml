@@ -4,12 +4,7 @@
 	<include url="../../assets/krpano/plugins/showtext.xml" />
 
 	<!-- include the videoplayer interface / skin (with VR support) -->
-	<include url="../../assets/krpano/skin/videointerface.xml" />
-
-	<!-- Import gyroscope plugin -->
-     <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
-        touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
-        
+	<include url="../../assets/krpano/skin/videointerface.xml" />    
 	
 	<scene name="videopano" title="Forra del Noce" thumburl="../../assets/media/POI-Videos/ForranocePOIvideo.mp4_low_.jpg">
 		

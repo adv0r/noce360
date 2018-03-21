@@ -5,10 +5,6 @@
 	
 	<!-- Import model plugin for schede -->
 	<include url="../../assets/krpano/plugins/showtext.xml" />
-
-	<!-- Import gyroscope plugin -->
-     <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
-        touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
         
 	<scene name="scene_ossana-castello1" title="ossana-castello1" onstart="skin_view_fisheye();" thumburl="panos/ossana-castello1.tiles/thumb.jpg" lat="" lng="" heading="">
 		

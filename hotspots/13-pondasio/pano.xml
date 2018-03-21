@@ -9,13 +9,7 @@
  		/> -->
 	
 	<!-- Import model plugin for schede -->
-	<include url="../../assets/krpano/plugins/showtext.xml" />
-
-	<!-- Import gyroscope plugin -->
-     <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
-        touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
-        
-	
+	<include url="../../assets/krpano/plugins/showtext.xml" />	
 	
 	<scene name="scene_pondasio-1" title="pondasio-1" onstart="" thumburl="panos/pondasio-1.tiles/thumb.jpg" lat="" lng="" heading="">
 

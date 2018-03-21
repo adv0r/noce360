@@ -9,11 +9,6 @@
 
 	<!-- Override noce's skin -->
 	<skin_settings thumbs_opened="false" />
-
-	<!-- Import gyroscope plugin -->
-     <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="true" camroll="true" friction="0.0"
-        touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
-        
 	
 	<!-- view settings -->
 	<view hlookat="-90" vlookat="0" maxpixelzoom="1.0" fovmax="150" limitview="auto" />
