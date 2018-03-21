@@ -338,10 +338,6 @@
 -->
 
 				<layer name="skin_btn_navi" type="container" align="center" x="0" width="240" height="32">
-					<layer name="skin_btn_left"  style="skin_base|skin_glow" crop="0|192|64|64"  align="center"      x="-100" y="0"  scale="0.5" ondown2="set(hlookat_moveforce,-1);" onup2="set(hlookat_moveforce,0);" />
-					<layer name="skin_btn_right" style="skin_base|skin_glow" crop="64|192|64|64" align="center"      x="-60"  y="0"  scale="0.5" ondown2="set(hlookat_moveforce,+1);" onup2="set(hlookat_moveforce,0);" />
-					<layer name="skin_btn_up"    style="skin_base|skin_glow" crop="0|256|64|64"  align="center"      x="-20"  y="0"  scale="0.5" ondown2="set(vlookat_moveforce,-1);" onup2="set(vlookat_moveforce,0);" />
-					<layer name="skin_btn_down"  style="skin_base|skin_glow" crop="64|256|64|64" align="center"      x="+20"  y="0"  scale="0.5" ondown2="set(vlookat_moveforce,+1);" onup2="set(vlookat_moveforce,0);" />
 					<layer name="skin_btn_in"    style="skin_base|skin_glow" crop="0|320|64|64"  align="center"      x="+60"  y="0"  scale="0.5" ondown2="set(fov_moveforce,-1);"     onup2="set(fov_moveforce,0);" />
 					<layer name="skin_btn_out"   style="skin_base|skin_glow" crop="64|320|64|64" align="center"      x="+100" y="0"  scale="0.5" ondown2="set(fov_moveforce,+1);"     onup2="set(fov_moveforce,0);" />
 				</layer>
@@ -373,11 +369,6 @@
 	<layer name="skin_btn_next_fs" keep="true" type="container" align="righttop" x="-50" width="40" height="100%" bgcapture="true" alpha="0.25" capture="false" zorder="2" onclick="skin_nextscene_loop(+1);" onhover="tween(alpha,1.0);" onout="tween(alpha,0.25);" ondown.touch="onhover();" onup.touch="onout();">
 		<layer name="skin_btn_next_fs_icon" style="skin_base" crop="64|64|64|64" align="center" scale="0.5" enabled="false" />
 	</layer>
-
-
-	<!-- gyro plugin -->
-	<plugin name="skin_gyro" keep="true" url="" html5_url="../plugins/gyro2.js" softstart="1.0" enabled="false" onavailable="skin_arrange_buttons();" devices="html5" />
-
 
 	<!-- skin events -->
 	<events name="skin_events" keep="true"
@@ -1157,7 +1148,7 @@
 
 
 	<!-- Import gyroscope plugin -->
-     <plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="false" camroll="true" friction="0.0"
+     <plugin name="gyro" devices="html5" keep="true" url="../plugins/gyro2.js" enabled="false" camroll="true" friction="0.0"
         touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
 
 
