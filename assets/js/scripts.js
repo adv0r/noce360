@@ -213,7 +213,7 @@ function loadMarkersFromDb(map) {
 
     //Create custom marker for POIs without 360 media
     var poiNoMediaMarker = L.icon({
-        iconUrl: 'assets/images/poinomedia.png',
+        iconUrl: 'assets/images/poi.png', //change to poinomedia.png to get a different color
         shadowUrl: 'assets/images/poi_shadow.png',
         iconSize: [30, 30],
         shadowSize: [30, 30],
