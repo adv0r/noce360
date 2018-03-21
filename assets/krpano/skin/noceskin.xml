@@ -902,9 +902,6 @@
 		tween(layer[skin_splitter_bottom].y, get(layer[skin_splitter_bottom].y_closed), get(hidetime));
 		tween(layer[skin_control_bar].y,     get(layer[skin_control_bar    ].y_closed), get(hidetime));
 
-		tween(layer[skin_btn_prev_fs].x, 0, get(hidetime));
-		tween(layer[skin_btn_next_fs].x, 0, get(hidetime));
-
 		if(layer[skin_logo], tween(layer[skin_logo].alpha, 0.0, 0.5, default, set(layer[skin_logo].visible,false)); );
 
 		stopdelayedcall(skin_btn_show_alpha);
@@ -917,9 +914,6 @@
 		tween(layer[skin_scroll_window  ].y, get(layer[skin_scroll_window  ].y_opened));
 		tween(layer[skin_splitter_bottom].y, get(layer[skin_splitter_bottom].y_opened));
 		tween(layer[skin_control_bar    ].y, get(layer[skin_control_bar    ].y_opened));
-
-		tween(layer[skin_btn_prev_fs].x, -50);
-		tween(layer[skin_btn_next_fs].x, -50);
 
 		if(layer[skin_logo], set(layer[skin_logo].visible,true); tween(layer[skin_logo].alpha, 1.0); );
 
@@ -1030,6 +1024,8 @@
 	<!-- startup action -->
 	<action name="initFishEye" autorun="onstart">
 		skin_view_fisheye();
+		tween(layer[skin_btn_prev_fs].x, 0, get(hidetime));
+		tween(layer[skin_btn_next_fs].x, 0, get(hidetime));
 	</action>
 
 	<!-- videopano support - http://krpano.com/plugins/videoplayer/ -->
