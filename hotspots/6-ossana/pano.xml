@@ -5,44 +5,11 @@
 	
 	<!-- Import model plugin for schede -->
 	<include url="../../assets/krpano/plugins/showtext.xml" />
-        
-	<scene name="scene_ossana-castello1" title="ossana-castello1" onstart="skin_view_fisheye();" thumburl="panos/ossana-castello1.tiles/thumb.jpg" lat="" lng="" heading="">
-		
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/ossana-castello1.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="1664" tiledimageheight="1664">
-				<cube url="panos/ossana-castello1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="768" tiledimageheight="768">
-				<cube url="panos/ossana-castello1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-	</scene>
-
-
-	<scene name="scene_ossana-plastico" title="ossana-plastico" onstart="skin_view_fisheye();" thumburl="panos/ossana-plastico.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/ossana-plastico.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="1664" tiledimageheight="1664">
-				<cube url="panos/ossana-plastico.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="768" tiledimageheight="768">
-				<cube url="panos/ossana-plastico.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-	</scene>
-
+	
+	
 	<scene name="scene_A_pari" title="A_pari" onstart="skin_view_normal();"  thumburl="panos/A_pari.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-63.005" vlookatmax="63.005" />
+		<view hlookat="180.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-63.005" vlookatmax="63.005" />
 
 		<preview url="panos/A_pari.tiles/preview.jpg" />
 
@@ -59,6 +26,9 @@
 		</image>
 
 	</scene>
+	
+
+
 
 	<scene name="scene_b_pari" title="b_pari" onstart="skin_view_normal();"  thumburl="panos/b_pari.tiles/thumb.jpg" lat="" lng="" heading="">
 
@@ -140,22 +110,6 @@
 
 	</scene>
 
-	<scene name="scene_DentroLaTorre" title="DentroLaTorre" onstart="skin_view_normal();"  thumburl="panos/DentroLaTorre.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/DentroLaTorre.tiles/preview.jpg" />
-
-		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="1600" tiledimageheight="1600">
-				<cube url="panos/DentroLaTorre.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="768" tiledimageheight="768">
-				<cube url="panos/DentroLaTorre.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-	</scene>
 
 	<scene name="scene_e_pari" title="e_pari" onstart="skin_view_normal();"  thumburl="panos/e_pari.tiles/thumb.jpg" lat="" lng="" heading="">
 
@@ -196,23 +150,23 @@
 		</image>
 
 	</scene>
+	
+<scene name="scene_ossana-castello1" title="ossana-castello1" onstart="skin_view_fisheye();" thumburl="panos/ossana-castello1.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
-	<scene name="scene_finestra1" title="finestra1" onstart="skin_view_normal();"  thumburl="panos/finestra1.tiles/thumb.jpg" lat="" lng="" heading="">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/finestra1.tiles/preview.jpg" />
+		<preview url="panos/ossana-castello1.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512">
-			<level tiledimagewidth="1600" tiledimageheight="1600">
-				<cube url="panos/finestra1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			<level tiledimagewidth="1664" tiledimageheight="1664">
+				<cube url="panos/ossana-castello1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
 			</level>
 			<level tiledimagewidth="768" tiledimageheight="768">
-				<cube url="panos/finestra1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/ossana-castello1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-
 	</scene>
+
 
 	<scene name="scene_Torrione1" title="Torrione1" onstart="skin_view_normal();"  thumburl="panos/Torrione1.tiles/thumb.jpg" lat="" lng="" heading="">
 
@@ -247,13 +201,31 @@
 		</image>
 
 	</scene>
+	
+<scene name="scene_ossana-plastico" title="ossana-plastico" onstart="skin_view_fisheye();" thumburl="panos/ossana-plastico.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/ossana-plastico.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="1664" tiledimageheight="1664">
+				<cube url="panos/ossana-plastico.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/ossana-plastico.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+</scene>
+
 
 	<!-- start Actions-->
 
 
 	<!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
-		loadscene(scene_ossana-castello1);
+		loadscene(scene_A_pari);
 	</action>
 
 	<action name="togglescheda" type="Javascript"><![CDATA[
