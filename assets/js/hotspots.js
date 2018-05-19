@@ -77,8 +77,8 @@ var hotspots = {
 	    
 	    {
 	      "name": "Val Meledrio - Fosinace di Dimaro",
-	      "lat": 46.31877,
-	      "long": 10.87632,
+	      "lat": 46.316623, 
+	      "long": 10.876633,
 	      "href": "7-meledrio-fosinace/",
 	      "type": "normal",
 	      "marker": "normal",
