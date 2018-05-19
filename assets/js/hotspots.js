@@ -76,10 +76,10 @@ var hotspots = {
 	    },
 	    
 	    {
-	      "name": "Val Meledrio - Segheria di Dimaro",
+	      "name": "Val Meledrio - Fosinace di Dimaro",
 	      "lat": 46.31877,
 	      "long": 10.87632,
-	      "href": "7-meledrio-segheria/",
+	      "href": "7-meledrio-fosinace/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Porta dell’Ecomuseo del Meledrio",
@@ -253,6 +253,22 @@ var hotspots = {
 	      },
 	      "lat": 46.32138,
 	      "long": 10.77149,
+	      "href": "",
+	      "type": "normal",
+	      "marker": "nomedia",
+	      "bounce": false
+	    },
+	    {
+	      "name": "Segheria di Dimaro",
+	      "description": "Scopri di più",
+ 		  "scheda": {
+ 		  		"filename" : "scheda-segheria-dimaro",
+	      		"titolo" :"MULINI E SEGHERIE SUL RIO VALLETTA" ,
+	      		"sottotitolo" :"Uno straordinario complesso tra Ortisé e Menas" ,
+	      		"contenuto" :" <p>Uno straordinario complesso di macchine ad acqua sul Rio Valletta, piccolo e ripido corso d’acqua che scorre tra i paesi in quota di Ortisé e Menas, nel comune di Mezzana. Qui, a circa 1500 metri di altitudine, l’attività umana ha portato alla edificazione di un’interessante coppia di edifici produttivi, unica in Val di Sole e rara da trovarsi in Trentino, con il mulino a monte e la segheria a valle rispetto alla strada che ancora oggi collega i due piccoli paesi solandri.</p> <br /> </div> </div> <div class='row'> <div class='col-xs-12 '> <img src='assets/images/schede/01-mulino-ortise.jpg' alt='Macchine ad acqua sul Rio Valletta' class='imageInright img-responsive'> <p> Nelle mappe catastali del 1859 è presente solamente il mulino, non la segheria, che venne pertanto costruita successivamente. Il mulino risale probabilmente al XVIII secolo: ne può dare ragionevole testimonianza l’affresco raffigurante la Madonna dell’Aiuto che si trova sulla sua facciata, di discreto stile settecentesco, recentemente restaurato. L’opera permette di ascrivere a quest’epoca l’intero opificio, riconosciuto quale “bene ambientale” della Provincia autonoma di Trento nel 1996.<br /> Tuttavia nel 2006-2007 il mulino, di proprietà privata, venne venduto ad una immobiliare e sottoposto ad una ristrutturazione che non doveva essere autorizzata dalle autorità comunali senza previa autorizzazione della provincia, in virtù del suo status di “bene ambientale”; irregolarità poi sanate. La stessa amministrazione comunale di Mezzana ha quindi intrapreso il restauro della segheria, oggi completamente ripristinata.</p> " 
+	      },
+	      "lat": 46.322362, 
+	      "long": 10.874661
 	      "href": "",
 	      "type": "normal",
 	      "marker": "nomedia",
