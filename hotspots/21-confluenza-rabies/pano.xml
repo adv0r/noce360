@@ -41,7 +41,7 @@
            scale="0.4"
            vr="false"
            onclick="openurl('../18-contre',_self);"		
-           type="image" url="../../assets/images/drone-icon.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
         />
 
         <hotspot name="contre-TriggerLabel"
