@@ -6,7 +6,7 @@
 	<!-- include the videoplayer interface / skin (with VR support) -->
 	<include url="../../assets/krpano/skin/videointerface.xml" />
 	
-	<scene name="videopano" title="Video Segheria Malè" thumburl="../../assets/media/POI-Videos/SegheriaMalePOIvideo.mp4_low_.jpg">
+	<scene name="videopano" title="Video Segheria Malé" thumburl="../../assets/media/POI-Videos/SegheriaMalePOIvideo.mp4_low_.jpg">
 		
 		<!-- include the videoplayer interface / skin (with VR support) -->
 		<include url="../../assets/krpano/skin/videointerface.xml" />

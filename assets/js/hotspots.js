@@ -116,7 +116,7 @@ var hotspots = {
 	      "bounce": false
 	    },
 	    {
-	      "name": "Segheria di Malè",
+	      "name": "Segheria di Malé",
 	      "lat": 46.3466,
 	      "long": 10.9144,
 	      "href": "11-segheria-male/",
