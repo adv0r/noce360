@@ -98,7 +98,7 @@ function loadScheda(nomeScheda){
 }
 
 function hideTitle(){
-     $(".hotspot-title").hide( "slow", function() {
+     $(".hotspot-title").hide( 1200, function() {
         $(".hotspot-title-hidden").show( "fast", function() {
         });
      });
@@ -108,7 +108,7 @@ function hideTitle(){
 function showTitle(){
 
       $(".hotspot-title-hidden").hide( "fast", function() {
-        $(".hotspot-title").show( "slow", function() {
+        $(".hotspot-title").show( 1200, function() {
         });
      });
 }
@@ -153,6 +153,13 @@ $(function(){
     
 });
 
+
+//Autohide titlebar after 3 seconds on small screens
+$( document ).ready(function() {
+    if(isSmallScreen()){
+        setTimeout(function(){  hideTitle(); }, 3000);
+    }
+});
 
 var videomap= {
     "1":"rnkVxplgEWc",
