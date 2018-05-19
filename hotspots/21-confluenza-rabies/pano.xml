@@ -18,7 +18,7 @@
 
 
 		<!--markerConfluenza -->
-        <hotspot name="markerConfluenza-Trigger"
+        <!--hotspot name="markerConfluenza-Trigger"
            ath="180" atv="30"
            scale="0.6"
            vr="false"
@@ -31,8 +31,27 @@
            vr="false"
            oy="50"
            type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized="" handcursor="false"
-        /><!-- Fine markerConfluenza -->
+        /--><!-- Fine markerConfluenza -->
 
+
+		<hotspot name="marker-rabbies-TriggerLabel"
+           html="Rabbies"
+           ath="186" atv="19"
+           vr="false"
+           oy="70"
+           rotate="-25.0"
+           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.6" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""  
+        /><!-- Fine marker-rabbies -->
+
+
+        <hotspot name="marker-noce-TriggerLabel"
+           html="Noce"
+           ath="168" atv="28"
+           vr="false"
+           oy="70"
+           rotate="-40.0"
+           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.6" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized="" handcursor="false" 
+        /><!-- Fine marker-noce -->
 
 
         	<!--contre -->
