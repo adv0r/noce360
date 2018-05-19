@@ -30,6 +30,25 @@
 
 
 
+		<!--scheda-trota -->
+        <hotspot name="scheda-trota-Trigger"
+           ath="20" atv="85"
+           scale="0.8"
+           vr="false"
+           onclick="jscall(loadScheda('scheda-trota-marmorata'));"           
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+        />
+
+        <hotspot name="scheda-trota-TriggerLabel"
+           html="La trota marmorata"
+           ath="20" atv="85"
+           vr="false"
+           oy="50"
+           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-trota -->
+
+
+
 
         <hotspot name="marker-vermigliana-TriggerLabel"
            html="Vermigliana"
