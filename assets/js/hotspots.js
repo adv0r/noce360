@@ -267,8 +267,8 @@ var hotspots = {
 	      		"sottotitolo" :"Nel 1993 inizia l’entusiasmante avventura degli sport fluviali" ,
 	      		"contenuto" :" <p>Il Noce come paradiso degli sport fluviali: un’avventura che all’inizio ebbe il sorriso della lontra Gaia, la simpatica mascotte dei campionati mondiali di canoa kayak che nel 1993 la Val di Sole ebbe l’onore di ospitare sul fiume Noce. </p> <br /> </div> </div> <div class='row'> <div class='col-xs-12 '> <img src='assets/images/schede/01-sport-fluviali-apt-sole.jpg' alt='Lo stadio fluviale di Mezzana' class='imageInright img-responsive'> <p> Proprio in quell’occasione venne inaugurato lo stadio fluviale di Mezzana, da allora simbolo di un corso d’acqua diventato leggendario in tutto il mondo per la pratica della canoa, del kayak, del rafting.<br /> Una vocazione confermata da innumerevoli gare internazionali disputatesi negli anni successivi nelle acque del Noce e sancita in maniera definitiva nel 2013 da National Geographic, che ha inserito il fiume della Val di Sole al 9° posto della sua “Top 10 White-Water Rafting”, la classifica mondiale dei corsi d’acqua ideali per il rafting, il primo e unico in Europa. </p>" 
 	      },
-	      "lat": 46.31405,
-	      "long": 10.79917,
+	      "lat": 46.317984, 
+	      "long": 10.813045,
 	      "href": "",
 	      "type": "normal",
 	      "marker": "nomedia",
