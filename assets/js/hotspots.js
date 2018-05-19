@@ -196,13 +196,13 @@ var hotspots = {
 	      "bounce": false
 	    },
 	    {
-	      "name": "Confluenza Rabies",
+	      "name": "Confluenza Rabbies",
 	      "lat": 46.355490, 
 	      "long": 10.925182,
 	      "href": "21-confluenza-rabies/",
 	      "type": "normal",
 	      "marker": "normal",
-	      "description": "Qui confluiscono Rabies e Noce",
+	      "description": "Qui confluiscono Rabbies e Noce",
 	      "bounce": false
 	    },
 	    {
