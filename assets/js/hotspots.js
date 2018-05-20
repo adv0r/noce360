@@ -126,7 +126,7 @@ var hotspots = {
 	      "bounce": false
 	    },
 	    {
-	      "name": "Isola del gal",
+	      "name": "Riserva Locale Malé",
 	      "lat": 46.353275, 
 	      "long": 10.923102,
 	      "href": "12-isola-gal/",
