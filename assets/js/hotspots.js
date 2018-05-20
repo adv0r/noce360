@@ -127,8 +127,8 @@ var hotspots = {
 	    },
 	    {
 	      "name": "Isola del gal",
-	      "lat": 46.353599,
-	      "long": 10.923331,
+	      "lat": 46.353275, 
+	      "long": 10.923102,
 	      "href": "12-isola-gal/",
 	      "type": "normal",
 	      "marker": "normal",
