@@ -333,3 +333,30 @@
 #lowerbar .row .logos p a{
     margin: 5px 20px;
 }
+
+.chiudiAbs{
+     font-family: 'walkBlack', sans-serif;
+     position: absolute;
+     background: black;
+     right: 0px;
+     top: 0px;
+     padding-right: 15px;
+     padding-left: 15px;
+     padding-top:5px;
+     z-index: 2;
+     text-transform: uppercase;
+     opacity: 0.4;
+     font-weight:bold;
+     font-size:2.5em;
+}
+
+
+ .chiudiAbs a, .chiudiAbs a:link, .chiudiAbs a:visited, .chiudiAbs a:active {
+     text-decoration:none;
+     text-shadow: 1px 1px 3px #2d2d2d;
+     color:#385370;
+}
+ .chiudiAbs a:hover {
+     color:#ffffff;
+     background-color:transparent;
+}
