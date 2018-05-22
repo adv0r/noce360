@@ -129,7 +129,7 @@
 	</action>
 
 
-	<plugin name="gyro" devices="html5" keep="true" url="../../assets/krpano/plugins/gyro2.js" enabled="false" camroll="true" friction="0.0"
+	<plugin name="gyro" devices="html5" keep="true" url="../plugins/gyro2.js" enabled="false" camroll="true" friction="0.0"
       touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
 
 
