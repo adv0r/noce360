@@ -76,10 +76,10 @@ var hotspots = {
 	    },
 	    
 	    {
-	      "name": "Val Meledrio - Segheria di Dimaro",
-	      "lat": 46.31877,
-	      "long": 10.87632,
-	      "href": "7-meledrio-segheria/",
+	      "name": "Val Meledrio - Fosinace di Dimaro",
+	      "lat": 46.316623, 
+	      "long": 10.876633,
+	      "href": "7-meledrio-fosinace/",
 	      "type": "normal",
 	      "marker": "normal",
 	      "description": "Porta dell’Ecomuseo del Meledrio",
@@ -116,7 +116,7 @@ var hotspots = {
 	      "bounce": false
 	    },
 	    {
-	      "name": "Segheria di Malè",
+	      "name": "Segheria di Malé",
 	      "lat": 46.3466,
 	      "long": 10.9144,
 	      "href": "11-segheria-male/",
@@ -126,9 +126,9 @@ var hotspots = {
 	      "bounce": false
 	    },
 	    {
-	      "name": "Isola del gal",
-	      "lat": 46.353599,
-	      "long": 10.923331,
+	      "name": "Riserva Locale Malé",
+	      "lat": 46.353275, 
+	      "long": 10.923102,
 	      "href": "12-isola-gal/",
 	      "type": "normal",
 	      "marker": "normal",
@@ -196,13 +196,13 @@ var hotspots = {
 	      "bounce": false
 	    },
 	    {
-	      "name": "Confluenza Rabies",
+	      "name": "Confluenza Rabbies",
 	      "lat": 46.355490, 
 	      "long": 10.925182,
 	      "href": "21-confluenza-rabies/",
 	      "type": "normal",
 	      "marker": "normal",
-	      "description": "Qui confluiscono Rabies e Noce",
+	      "description": "Qui confluiscono Rabbies e Noce",
 	      "bounce": false
 	    },
 	    {
@@ -258,6 +258,22 @@ var hotspots = {
 	      "marker": "nomedia",
 	      "bounce": false
 	    },
+	      {
+	      "name": "Segheria di Dimaro",
+	      "description": "Scopri di più sulla segheria",
+ 		  "scheda": {
+ 		  		"filename" : "scheda-segheria-dimaro",
+	      		"titolo" :"MULINI E SEGHERIE SUL RIO VALLETTA" ,
+	      		"sottotitolo" :"Uno straordinario complesso tra Ortisé e Menas" ,
+	      		"contenuto" :" <p>Uno straordinario complesso di macchine ad acqua sul Rio Valletta, piccolo e ripido corso d’acqua che scorre tra i paesi in quota di Ortisé e Menas, nel comune di Mezzana. Qui, a circa 1500 metri di altitudine, l’attività umana ha portato alla edificazione di un’interessante coppia di edifici produttivi, unica in Val di Sole e rara da trovarsi in Trentino, con il mulino a monte e la segheria a valle rispetto alla strada che ancora oggi collega i due piccoli paesi solandri.</p> <br /> </div> </div> <div class='row'> <div class='col-xs-12 '> <img src='assets/images/schede/01-mulino-ortise.jpg' alt='Macchine ad acqua sul Rio Valletta' class='imageInright img-responsive'> <p> Nelle mappe catastali del 1859 è presente solamente il mulino, non la segheria, che venne pertanto costruita successivamente. Il mulino risale probabilmente al XVIII secolo: ne può dare ragionevole testimonianza l’affresco raffigurante la Madonna dell’Aiuto che si trova sulla sua facciata, di discreto stile settecentesco, recentemente restaurato. L’opera permette di ascrivere a quest’epoca l’intero opificio, riconosciuto quale “bene ambientale” della Provincia autonoma di Trento nel 1996.<br /> Tuttavia nel 2006-2007 il mulino, di proprietà privata, venne venduto ad una immobiliare e sottoposto ad una ristrutturazione che non doveva essere autorizzata dalle autorità comunali senza previa autorizzazione della provincia, in virtù del suo status di “bene ambientale”; irregolarità poi sanate. La stessa amministrazione comunale di Mezzana ha quindi intrapreso il restauro della segheria, oggi completamente ripristinata.</p> " 
+	      },
+	      "lat": 46.322362,
+	      "long":  10.874661,
+	      "href": "",
+	      "type": "normal",
+	      "marker": "nomedia",
+	      "bounce": false
+	    },
 	    {
 	      "name": "Stadio Canoa Mondiali '93",
 	      "description": "Il Noce navigabile",
@@ -267,8 +283,8 @@ var hotspots = {
 	      		"sottotitolo" :"Nel 1993 inizia l’entusiasmante avventura degli sport fluviali" ,
 	      		"contenuto" :" <p>Il Noce come paradiso degli sport fluviali: un’avventura che all’inizio ebbe il sorriso della lontra Gaia, la simpatica mascotte dei campionati mondiali di canoa kayak che nel 1993 la Val di Sole ebbe l’onore di ospitare sul fiume Noce. </p> <br /> </div> </div> <div class='row'> <div class='col-xs-12 '> <img src='assets/images/schede/01-sport-fluviali-apt-sole.jpg' alt='Lo stadio fluviale di Mezzana' class='imageInright img-responsive'> <p> Proprio in quell’occasione venne inaugurato lo stadio fluviale di Mezzana, da allora simbolo di un corso d’acqua diventato leggendario in tutto il mondo per la pratica della canoa, del kayak, del rafting.<br /> Una vocazione confermata da innumerevoli gare internazionali disputatesi negli anni successivi nelle acque del Noce e sancita in maniera definitiva nel 2013 da National Geographic, che ha inserito il fiume della Val di Sole al 9° posto della sua “Top 10 White-Water Rafting”, la classifica mondiale dei corsi d’acqua ideali per il rafting, il primo e unico in Europa. </p>" 
 	      },
-	      "lat": 46.31405,
-	      "long": 10.79917,
+	      "lat": 46.317984, 
+	      "long": 10.813045,
 	      "href": "",
 	      "type": "normal",
 	      "marker": "nomedia",

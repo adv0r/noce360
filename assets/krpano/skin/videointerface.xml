@@ -129,8 +129,8 @@
 	</action>
 
 
-	<!-- gyro plugin -->
-	<plugin name="skin_gyro" keep="true" url="../plugins/gyro2.js" devices="html5.and.touch" enabled="false" onavailable="skin_have_gyro_support();" onenable="skin_gyro_enabled();" ondisable="skin_gyro_disabled();" />
+	<plugin name="gyro" devices="html5" keep="true" url="../plugins/gyro2.js" enabled="false" camroll="true" friction="0.0"
+      touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
 
 
 	<!-- skin styles -->

@@ -18,7 +18,7 @@
 
 
 		<!--markerConfluenza -->
-        <hotspot name="markerConfluenza-Trigger"
+        <!--hotspot name="markerConfluenza-Trigger"
            ath="180" atv="30"
            scale="0.6"
            vr="false"
@@ -31,17 +31,36 @@
            vr="false"
            oy="50"
            type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized="" handcursor="false"
-        /><!-- Fine markerConfluenza -->
+        /--><!-- Fine markerConfluenza -->
 
 
+		<hotspot name="marker-rabbies-TriggerLabel"
+           html="Rabbies"
+           ath="186" atv="19"
+           vr="false"
+           oy="70"
+           rotate="-25.0"
+           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.6" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""  
+        /><!-- Fine marker-rabbies -->
 
-        	<!--contre -->
+
+        <hotspot name="marker-noce-TriggerLabel"
+           html="Noce"
+           ath="168" atv="28"
+           vr="false"
+           oy="70"
+           rotate="-40.0"
+           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.6" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized="" handcursor="false" 
+        /><!-- Fine marker-noce -->
+
+
+        <!--contre -->
         <hotspot name="contre-Trigger"
            ath="178" atv="65"
            scale="0.4"
            vr="false"
            onclick="openurl('../18-contre',_self);"		
-           type="image" url="../../assets/images/drone-icon.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
         />
 
         <hotspot name="contre-TriggerLabel"
@@ -52,6 +71,61 @@
            type="text" css="font-family:Arial; font-size:18px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
         /><!-- Fine contre -->
 
+
+        <!--scheda-trote -->
+        <hotspot name="scheda-trote-Trigger"
+           ath="17" atv="50"
+           scale="0.5"
+           vr="false"
+           onclick="jscall(loadScheda('scheda-trota-marmorata'));"           
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+        />
+
+        <hotspot name="scheda-trote-TriggerLabel"
+           html="La trota marmorata"
+           ath="17" atv="50"
+           vr="false"
+           oy="50"
+           type="text" css="font-family:Arial; font-size:18px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-trote -->
+
+
+         <!--scheda-chirotteri -->
+        <hotspot name="scheda-chirotteri-Trigger"
+           ath="-2" atv="14"
+           scale="0.5"
+           vr="false"
+           onclick="jscall(loadScheda('scheda-chirotteri'));"           
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+        />
+
+        <hotspot name="scheda-chirotteri-TriggerLabel"
+           html="I Chirotteri"
+           ath="-2" atv="14"
+           vr="false"
+           oy="50"
+           type="text" css="font-family:Arial; font-size:18px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-chirotteri -->
+
+
+
+
+         <!--scheda-riparialeVegetazione Ripariale -->
+        <hotspot name="scheda-ripariale-Trigger"
+           ath="20" atv="70"
+           scale="0.5"
+           vr="false"
+           onclick="jscall(loadScheda('scheda-vegetazione-ripariale'));"           
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+        />
+
+        <hotspot name="scheda-riparialeVegetazione Ripariale-TriggerLabel"
+           html="Vegetazione ripariale"
+           ath="20" atv="70"
+           vr="false"
+           oy="50"
+           type="text" css="font-family:Arial; font-size:18px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-ripariale -->
 
 
 	<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512">

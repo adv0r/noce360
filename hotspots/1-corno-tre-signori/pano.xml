@@ -30,6 +30,25 @@
 
 		<preview url="panos/corno-gigapixel.tiles/preview.jpg" />
 
+		<!--scheda-geologia -->
+        <hotspot name="scheda-geologia-Trigger"
+           ath="20" atv="-13"
+           scale="0.8"
+           vr="false"
+           onclick="jscall(loadScheda('scheda-geologia-val-di-sole'));"           
+           type="image" url="../../assets/images/element.png" keep="false" visible="true" enabled="true" handcursor="true" distorted="true" maskchildren="false" edge="center"  zoom="false"  rotate="0.0"  alpha="1.0" borderwidth="2" bordercolor="#0xAAAAAA"
+        />
+
+        <hotspot name="scheda-geologia-TriggerLabel"
+           html="La geologia della Val di Sole"
+           ath="20" atv="-13"
+           vr="false"
+           oy="50"
+           type="text" css="font-family:Arial; font-size:24px; color:#000000;" vcenter="false" padding="2" edge="center" distorted="true" renderer="webgl" wordwrap="true" bg="true" bgcolor="0xFFFFFF" bgalpha="0.5" bgborder="0" bgroundedge="0" bgshadow="" txtshadow="" mergedalpha="true" oversampling="1.0" mipmapping="false" onautosized=""
+        /><!-- Fine scheda-geologia -->
+
+
+
 		<image type="CUBE" multires="true" tilesize="512" prealign="0|0|-8">>
 			<level tiledimagewidth="7424" tiledimageheight="7424">
 				<cube url="panos/corno-gigapixel.tiles/%s/l4/%v/l4_%s_%v_%h.jpg" />
@@ -92,7 +111,7 @@
 
 	</scene-->
 
-	<scene name="scene_corno-roccia" title="corno-roccia" onstart="" thumburl="panos/corno-roccia.tiles/thumb.jpg" lat="" lng="" heading="">
+	<!--cene name="scene_corno-roccia" title="corno-roccia" onstart="" thumburl="panos/corno-roccia.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
@@ -107,7 +126,7 @@
 			</level>
 		</image>
 
-	</scene>
+	</scene-->
 
 
 	<!-- start Actions-->
