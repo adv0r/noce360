@@ -78,6 +78,12 @@
 		toggleScheda();
 	]]></action>
 
+	<!-- startup action - hide lateral buttons -->
+	<action name="startup" autorun="onstart">
+				set(layer[skin_btn_next_fs].visible,false);
+				set(layer[skin_btn_prev_fs].visible,false);
+	</action>
+
 	<!-- end Actions-->
 
 
