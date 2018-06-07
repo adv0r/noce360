@@ -1162,9 +1162,18 @@
 
 
 	<!-- Import gyroscope plugin -->
-     <plugin name="gyro" devices="html5" keep="true" url="../plugins/gyro2.js" enabled="false" camroll="true" friction="0.0"
-        touch_mode="full" sensor_mode="1" softstart="0.5" autocalibration="false" />
-
+     <plugin name="gyro" 
+     	devices="html5.and.touch" 
+     	keep="true" 
+     	url="../plugins/gyro2.js" 
+     	enabled="false" 
+     	camroll="true" 
+     	friction="auto"
+        touch_mode="off" 
+        sensor_mode="1" 
+        softstart="0.5" 
+        autocalibration="true"
+         />
 
 
 	<action name="littleplanetoff">
